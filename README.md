@@ -19,7 +19,7 @@
 #### Main Page
 
 #### Database Schema
-
+![db](https://github.com/nasanov/numizmat/blob/main/docs/db.png)
 #### Authentication
 - Users can sign up, and log in
 - 
