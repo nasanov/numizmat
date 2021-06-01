@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>Welcome to Numizmat <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
+   <h1>Welcome to Numizmat <img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"><img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"><img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"> </h1>
 </div>
 
 [Numizmat](<!-- Live Link -->) is a coin tracking application, built using Python Flask, JavaScript, React, Redux and PostgresSQL.
@@ -41,3 +41,6 @@ This project can be run by following these steps:
 For additional information, checkout project's [Wiki](https://github.com/nasanov/numizmat/wiki) page.
 
 > Developed By: [Nurs Asanov](https://github.com/nasanov)
+
+<img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif">
+
