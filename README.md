@@ -42,5 +42,5 @@ For additional information, checkout project's [Wiki](https://github.com/nasanov
 
 > Developed By: [Nurs Asanov](https://github.com/nasanov)
 
-<img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif">
+<img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif">
 
