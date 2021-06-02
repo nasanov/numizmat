@@ -17,3 +17,22 @@ for i in coin_ids:
     f2.write(str(i))
     f2.write('\n')
 f2.close()
+
+
+# import json
+
+# f = open('result.json')
+
+# data = json.load(f)
+# coins = []
+
+# for i in data:
+#     coins.append(data[i])
+
+# # print(data)
+# # print(coins)
+
+# for i in coins:
+# 	print(i['years'][0]['year'])
+
+# f.close()
