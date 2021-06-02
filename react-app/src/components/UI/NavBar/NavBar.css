@@ -1,0 +1,52 @@
+.main-nav {
+	padding: 0;
+	background-color: #ccc;
+	display: grid;
+	grid-template-columns: 100px 100px 160px 1fr 200px;
+	height: 38px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.main-nav-home {
+	display: block;
+	padding: 10px 17px;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+/* SEARCH */
+.nav-search {
+	width: 40%;
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.nav-searchBar {
+	width: 80%;
+	border-radius: 7px;
+	outline: none;
+	height: 24px;
+	border: 1px solid #cccccc;
+	padding: 0 0 0 10px;
+	font-size: 13px;
+}
+
+.username_logo {
+	display: flex;
+	align-items: center;
+	justify-self: flex-end;
+}
+
+.username {
+	margin-right: 20px;
+}
