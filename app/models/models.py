@@ -88,6 +88,8 @@ class Coin(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
+    collection_id = db.Column(db.Integer, db.ForeignKey(
+        "collections.id"), nullable=False)
     obverse_photo = db.Column(db.String(255))
     reverse_photo = db.Column(db.String(255))
     country = db.Column(db.String(255))
@@ -111,7 +113,6 @@ class Coin(db.Model):
     collections = db.relationship(
         "Collection",
         back_populates="coin",
-        cascade='all, delete-orphan'
     )
 
     collections_in = db.relationship(
