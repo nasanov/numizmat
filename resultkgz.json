@@ -1,0 +1,2136 @@
+{
+    "2": {
+        "commemorative_description": "Great Silk Road Series - Tashrabat",
+        "commemorative_name": "Tashrabat",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 15162,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/31-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/31-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/32-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/32-original.jpg"
+            },
+            "copyright": "\u00a9 World Coin Gallery"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 19"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "56",
+        "shape": "Round",
+        "title": "1 Som Tashrabat",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2008",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2008"
+    },
+    "3": {
+        "commemorative_description": "Great Silk Road Series - Uzgen architecture complex",
+        "commemorative_name": "Uzgen Architecture",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 15163,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/29-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/29-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/30-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/30-original.jpg"
+            },
+            "copyright": "\u00a9 World Coin Gallery"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 21"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "55",
+        "shape": "Round",
+        "title": "1 Som Uzgen Architecture",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2008",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2008"
+    },
+    "4": {
+        "commemorative_description": "Great Silk Road Series - Burana Tower",
+        "commemorative_name": "Burana Tower",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 15161,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/33-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/33-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/34-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/34-original.jpg"
+            },
+            "copyright": "\u00a9 World Coin Gallery"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 35"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "57",
+        "shape": "Round",
+        "title": "1 Som Burana Tower",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2008",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2008"
+    },
+    "5": {
+        "commemorative_description": "Great Silk Road Series - Suilaman Mountain",
+        "commemorative_name": "Sulayman Mountain",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 15165,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/27-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/27-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/28-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/28-original.jpg"
+            },
+            "copyright": "\u00a9 World Coin Gallery"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 31"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "52",
+        "shape": "Round",
+        "title": "1 Som Sulayman Mountain",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "6": {
+        "commemorative_description": "Great Silk Road Series - Lake Issykkul",
+        "commemorative_name": "Lake Issykkul",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 15166,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/25-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/25-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/26-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/26-original.jpg"
+            },
+            "copyright": "\u00a9 World Coin Gallery"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 33"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "52",
+        "shape": "Round",
+        "title": "1 Som Lake Issykkul",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "7": {
+        "commemorative_description": "20th Anniversary of Independence - Pobeda Peak",
+        "commemorative_name": "Victory Peak",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 27455,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/187-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/187-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/188-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/188-original.jpg"
+            },
+            "copyright": "\u00a9 nalaberong"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 45"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "55",
+        "shape": "Round",
+        "title": "1 Som Victory Peak",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    },
+    "8": {
+        "commemorative_description": "20th Anniversary of Independence - Khan Tengri Peak",
+        "commemorative_name": "Khan Tengri Peak",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 27456,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/143-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/143-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/144-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/144-original.jpg"
+            },
+            "copyright": "\u00a9 atupr"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 47"
+        ],
+        "metal": "Copper-nickel",
+        "rarity_index": "55",
+        "shape": "Round",
+        "title": "1 Som Khan Tengri Peak",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    },
+    "9": {
+        "commemorative_description": "Historical and architectural monuments of Kyrgyzstan - Saimaluu-Tash",
+        "commemorative_name": "Saimaluu-Tash",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 50865,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/189-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/189-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/190-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/190-original.jpg"
+            },
+            "copyright": "\u00a9 iwantallcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 51"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "58",
+        "shape": "Round",
+        "title": "1 Som Saimaluu-Tash",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2013",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "BU"
+            }
+        ],
+        "years_range": "2013"
+    },
+    "10": {
+        "commemorative_description": "Barsbek",
+        "commemorative_name": "Barsbek",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 64519,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/213-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/213-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/214-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/214-original.jpg"
+            },
+            "copyright": "\u00a9 iwantallcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 58"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "63",
+        "shape": "Round",
+        "thickness": 2.2,
+        "title": "1 Som Barsbek",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2014",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": ""
+            }
+        ],
+        "years_range": "2014"
+    },
+    "11": {
+        "commemorative_description": "Kumbez of Manas",
+        "commemorative_name": "Kumbez of Manas",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 64522,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/215-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/215-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/216-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/216-original.jpg"
+            },
+            "copyright": "\u00a9 iwantallcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 70"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "62",
+        "shape": "Round",
+        "thickness": 2.2,
+        "title": "1 Som Kumbez of Manas",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2014",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": ""
+            }
+        ],
+        "years_range": "2014"
+    },
+    "12": {
+        "commemorative_description": "Series Age of the Kyrgyz kaganate",
+        "commemorative_name": "Lightly armed warriour of the Kyrgyz Kaganate",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 105099,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/263-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/263-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/264-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/264-original.jpg"
+            },
+            "copyright": "\u00a9 lektrobal"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 72"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "77",
+        "shape": "Round",
+        "thickness": 2.2,
+        "title": "1 Som Lightly armed warriour of the Kyrgyz Kaganate",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2016",
+                "mintage": "4 000",
+                "frequency": "",
+                "remark": "BU"
+            }
+        ],
+        "years_range": "2016"
+    },
+    "13": {
+        "commemorative_description": "Series Age of the Kyrgyz kaganate",
+        "commemorative_name": "Heavily armed warrior of the Kyrgyz kaganate",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 130696,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/265-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/265-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/266-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/266-original.jpg"
+            },
+            "copyright": "\u00a9 Coins-SPB"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 76"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "76",
+        "shape": "Round",
+        "title": "1 Som Heavily armed warrior of the Kyrgyz kaganate",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2017",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "BU"
+            }
+        ],
+        "years_range": "2017"
+    },
+    "14": {
+        "commemorative_description": "Series Age of the Kyrgyz kaganate",
+        "commemorative_name": "Yurta - Kyrgyz house",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 148676,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/273-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/273-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/274-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/274-original.jpg"
+            },
+            "copyright": "\u00a9 Coins-SPB"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel",
+        "rarity_index": "78",
+        "shape": "Round",
+        "title": "1 Som Yurta - Kyrgyz house",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2018",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2018"
+    },
+    "15": {
+        "commemorative_description": "The World Nomad Games",
+        "commemorative_name": "Ulak Tartysh",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 148677,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/275-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/275-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/276-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/276-original.jpg"
+            },
+            "copyright": "\u00a9 Coins-SPB"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel",
+        "rarity_index": "79",
+        "shape": "Rectangular",
+        "title": "1 Som Ulak Tartysh",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2018",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2018"
+    },
+    "16": {
+        "commemorative_name": "Earring",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 186846,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/290-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/290-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/289-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/289-original.jpg"
+            },
+            "copyright": ""
+        },
+        "is_commemorative": false,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel (Colored)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "76",
+        "shape": "Round",
+        "thickness": 2.15,
+        "title": "1 Som Earring",
+        "value": "1 som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2019",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2019"
+    },
+    "17": {
+        "commemorative_description": "10 years of April revolution",
+        "commemorative_name": "10 Years of April Revolution",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 240632,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/5f87f328ee5e26.02087133-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/5f87f328ee5e26.02087133-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/5f87f328d96e16.04997894-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/5f87f328d96e16.04997894-original.jpg"
+            },
+            "copyright": ""
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "1 Som 10 Years of April Revolution",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2020",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": ""
+            }
+        ],
+        "years_range": "2020"
+    },
+    "18": {
+        "commemorative_description": "75th anniversary of Great Victory",
+        "commemorative_name": "75th anniversary of Great Victory",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 239226,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/5f7b6d192b3086.97058647-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/5f7b6d192b3086.97058647-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/5f7b6d19742b57.35262486-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/5f7b6d19742b57.35262486-original.jpg"
+            },
+            "copyright": "\u00a9 National Bank of the Kyrgyz Republic"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "82",
+        "shape": "Round",
+        "title": "1 Som 75th anniversary of Great Victory",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2020",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2020"
+    },
+    "19": {
+        "commemorative_description": "The World Nomad Games",
+        "commemorative_name": "Kyrgyz Wrestling",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 30,
+        "id": 267907,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/6008b58ac905f6.34622993-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/6008b58ac905f6.34622993-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/6008b58b0dd981.33560378-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/6008b58b0dd981.33560378-original.jpg"
+            },
+            "copyright": "\u00a9 https://www.nbkr.kg/contout.jsp?item=3306&lang=ENG&material=100806"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [],
+        "metal": "Copper-nickel",
+        "rarity_index": "88",
+        "shape": "Square with rounded corners (30x30 mm)",
+        "title": "1 Som Kyrgyz Wrestling",
+        "value": "1 Som",
+        "weight": 12,
+        "years": [
+            {
+                "year": "2020",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2020"
+    },
+    "20": {
+        "commemorative_description": "National Musical Instruments Series - Komuz",
+        "commemorative_name": "Komuz",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 33,
+        "id": 38454,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/135-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/135-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/136-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/136-original.jpg"
+            },
+            "copyright": "\u00a9 Gizmo Maguai"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 52"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "60",
+        "shape": "Round",
+        "title": "5 Som Komuz",
+        "value": "5 Som",
+        "weight": 14.35,
+        "years": [
+            {
+                "year": "2012",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Brilliant Uncirculated"
+            }
+        ],
+        "years_range": "2012"
+    },
+    "21": {
+        "commemorative_description": "",
+        "commemorative_name": "Kyz Kuumay",
+        "commemorative_series": "National Sports and folk-games",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 33,
+        "id": 75771,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/245-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/245-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/246-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/246-original.jpg"
+            },
+            "copyright": "\u00a9 derfsnumismatics"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 71"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "75",
+        "shape": "Round",
+        "title": "5 Som Kyz Kuumay",
+        "value": "5 Som",
+        "weight": 14.44,
+        "years": [
+            {
+                "year": "2015",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2015"
+    },
+    "22": {
+        "commemorative_description": "25 Years of the National Currency",
+        "commemorative_name": "25 Years of the National Currency",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 33,
+        "id": 140611,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/271-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/271-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/272-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/272-original.jpg"
+            },
+            "copyright": "\u00a9 Alexander Vaade"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 78"
+        ],
+        "metal": "Copper-nickel",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "77",
+        "shape": "Round",
+        "title": "5 Som 25 Years of the National Currency",
+        "value": "5 Som",
+        "weight": 15.5,
+        "years": [
+            {
+                "year": "2018",
+                "mintage": "5 000",
+                "frequency": "",
+                "remark": "Proof-like"
+            }
+        ],
+        "years_range": "2018"
+    },
+    "23": {
+        "commemorative_description": "Millennium of Manas",
+        "commemorative_name": "Millennium of Manas",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30620,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/81-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/81-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/82-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/82-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 1",
+            "Sch\u00f6n# 1"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "80",
+        "shape": "Round",
+        "title": "10 Som Millennium of Manas",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "1995",
+                "mintage": "20 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "1995"
+    },
+    "24": {
+        "commemorative_description": "10th Anniversary of Republic",
+        "commemorative_name": "Anniversary of Republic",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30619,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/83-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/83-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/84-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/84-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 4"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "95",
+        "shape": "Round",
+        "title": "10 Som Anniversary of Republic",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2001",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2001"
+    },
+    "25": {
+        "commemorative_description": "International Year of the Mountains",
+        "commemorative_name": "Edelweiss",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 34972,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/131-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/131-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/132-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/132-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 5"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "95",
+        "shape": "Round",
+        "title": "10 Som Edelweiss",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2002",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2002"
+    },
+    "26": {
+        "commemorative_description": "Fauna",
+        "commemorative_name": "Arkhar Ram",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30628,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/85-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/85-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/86-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/86-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 6"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "95",
+        "shape": "Round",
+        "title": "10 Som Arkhar Ram",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2002",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2002"
+    },
+    "27": {
+        "commemorative_description": "Genesis of the Kyrgyz Statehood",
+        "commemorative_name": "Genesis of the Kyrgyz Statehood",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 35595,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/133-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/133-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/134-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/134-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 7"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Genesis of the Kyrgyz Statehood",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2003",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2003"
+    },
+    "28": {
+        "commemorative_description": "10th Anniversary of National Currency",
+        "commemorative_name": "National Currency",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30629,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/87-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/87-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/88-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/88-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 36"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som National Currency",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2003",
+                "mintage": "",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2003"
+    },
+    "29": {
+        "commemorative_description": "60th Anniversary of Great Victory",
+        "commemorative_name": "Great Victory Anniversary",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30621,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/89-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/89-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/90-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/90-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 8"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Great Victory Anniversary",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2005",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2005"
+    },
+    "30": {
+        "commemorative_description": "Great Silk Road Series - Tashrabat",
+        "commemorative_name": "Tashrabat",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30622,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/91-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/91-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/92-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/92-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 9"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Tashrabat",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2005",
+                "mintage": "1 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2005"
+    },
+    "31": {
+        "commemorative_description": "Shanghai Cooperation Organization",
+        "commemorative_name": "Shanghai Cooperation Organization",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30633,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/93-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/93-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/94-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/94-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 10"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "95",
+        "shape": "Round",
+        "title": "10 Som Shanghai Cooperation Organization",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2007",
+                "mintage": "1 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2007"
+    },
+    "32": {
+        "commemorative_description": "Great Silk Road Series - Uzgen",
+        "commemorative_name": "Uzgen Architecture",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30626,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/95-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/95-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/96-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/96-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 22"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Uzgen Architecture",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2007",
+                "mintage": "1 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2007"
+    },
+    "33": {
+        "commemorative_description": "Great Silk Road Series - Tower of Burana",
+        "commemorative_name": "Burana Tower",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30625,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/98-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/98-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/97-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/97-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 18"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Burana Tower",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2008",
+                "mintage": "1 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2008"
+    },
+    "34": {
+        "commemorative_description": "Capitals of the EurAsEC - Bishkek",
+        "commemorative_name": "Bishkek",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30623,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/99-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/99-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/100-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/100-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 23"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som Bishkek",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2008",
+                "mintage": "2 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2008"
+    },
+    "35": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "Chingiz Aitmatov",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30630,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/101-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/101-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/102-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/102-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 24"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "93",
+        "shape": "Round",
+        "title": "10 Som Chingiz Aitmatov",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "2 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "36": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "Jamila",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 53601,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/241-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/241-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/242-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/242-original.jpg"
+            },
+            "copyright": "\u00a9 bronckhorstcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 25"
+        ],
+        "metal": "Silver (.925)",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som Jamila",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "37": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "Duishen",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 53600,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/239-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/239-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/240-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/240-original.jpg"
+            },
+            "copyright": "\u00a9 bronckhorstcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 26"
+        ],
+        "metal": "Silver (.925)",
+        "rarity_index": "93",
+        "shape": "Round",
+        "title": "10 Som Duishen",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "38": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "Mother Field",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 53602,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/237-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/237-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/238-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/238-original.jpg"
+            },
+            "copyright": "\u00a9 bronckhorstcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 27"
+        ],
+        "metal": "Silver (.925)",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Mother Field",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "39": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "Farewell Gulsary",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 53604,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/235-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/235-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/236-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/236-original.jpg"
+            },
+            "copyright": "\u00a9 bronckhorstcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 28"
+        ],
+        "metal": "Silver (.925)",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Farewell Gulsary",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "40": {
+        "commemorative_description": "Chingiz Aitmatov",
+        "commemorative_name": "The White Ship",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 53603,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/233-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/233-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/234-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/234-original.jpg"
+            },
+            "copyright": "\u00a9 bronckhorstcoins"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 29"
+        ],
+        "metal": "Silver (.925)",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som The White Ship",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "41": {
+        "commemorative_description": "Great Silk Road Series - Sulayman Mountain",
+        "commemorative_name": "Sulayman Mountain",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30632,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/103-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/103-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/104-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/104-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 32"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "94",
+        "shape": "Round",
+        "title": "10 Som Sulayman Mountain",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "1 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "42": {
+        "commemorative_description": "Great Silk Road Series - Lake Issykkul",
+        "commemorative_name": "Lake Issykkul",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30631,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/105-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/105-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/106-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/106-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 34"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som Lake Issykkul",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "1 500",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "43": {
+        "commemorative_description": "Golden eagle",
+        "commemorative_name": "Golden eagle",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30634,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/107-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/107-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/108-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/108-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 38"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "89",
+        "shape": "Round",
+        "title": "10 Som Golden eagle",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "44": {
+        "commemorative_description": "Mother-deer",
+        "commemorative_name": "Mother-deer",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30635,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/109-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/109-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/110-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/110-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 41"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "90",
+        "shape": "Round",
+        "title": "10 Som Mother-deer",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2009",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2009"
+    },
+    "45": {
+        "commemorative_description": "Yurt Construction",
+        "commemorative_name": "Yurt Construction",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30638,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/111-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/111-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/112-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/112-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 39"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "91",
+        "shape": "Round",
+        "title": "10 Som Yurt Construction",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2010",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2010"
+    },
+    "46": {
+        "commemorative_description": "10th Anniversary - Eurasian Econimic Community",
+        "commemorative_name": "EurAsEC Anniversary",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30636,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/113-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/113-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/114-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/114-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 40"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "90",
+        "shape": "Round",
+        "title": "10 Som EurAsEC Anniversary",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2010",
+                "mintage": "2 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2010"
+    },
+    "47": {
+        "commemorative_description": "20 Anniversary of Independence",
+        "commemorative_name": "Independence",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30640,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/115-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/115-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/116-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/116-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 44"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som Independence",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "2 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    },
+    "48": {
+        "commemorative_description": "20th Anniversary of Independence - Pobeda Peak",
+        "commemorative_name": "Victory Peak",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.6,
+        "id": 30639,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/119-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/119-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/120-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/120-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 46"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "93",
+        "shape": "Round",
+        "title": "10 Som Victory Peak",
+        "value": "10 Som",
+        "weight": 28.28,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    },
+    "49": {
+        "commemorative_description": "The Great Silk Road",
+        "commemorative_name": "The Great Silk Road",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 38.61,
+        "id": 30644,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/121-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/121-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/122-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/122-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 48"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "93",
+        "shape": "Round",
+        "title": "10 Som The Great Silk Road",
+        "value": "10 Som",
+        "weight": 31.1,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "2 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    },
+    "50": {
+        "commemorative_description": "The World of our Children",
+        "commemorative_name": "The World of our Children",
+        "country": {
+            "id": "/catalogue/kirghizistan",
+            "name": "Kyrgyzstan"
+        },
+        "diameter": 39,
+        "id": 30643,
+        "images": {
+            "obverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/117-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/117-original.jpg"
+            },
+            "reverse": {
+                "preview": "https://en.numista.com/catalogue/photos/kirghizistan/118-180.jpg",
+                "fullsize": "https://en.numista.com/catalogue/photos/kirghizistan/118-original.jpg"
+            },
+            "copyright": "\u00a9 spica"
+        },
+        "is_commemorative": true,
+        "is_demonetized": false,
+        "is_non_circulating": false,
+        "is_token": false,
+        "km": [
+            "KM# 49"
+        ],
+        "metal": "Silver (.925)",
+        "orientation": "Medal alignment \u2191\u2191",
+        "rarity_index": "92",
+        "shape": "Round",
+        "title": "10 Som The World of our Children",
+        "value": "10 Som",
+        "weight": 33.94,
+        "years": [
+            {
+                "year": "2011",
+                "mintage": "3 000",
+                "frequency": "",
+                "remark": "Proof"
+            }
+        ],
+        "years_range": "2011"
+    }
+}

@@ -88,14 +88,16 @@ class Coin(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
+    # collection_id = db.Column(db.Integer, db.ForeignKey(
+    #     "collections.id"), nullable=False)
     obverse_photo = db.Column(db.String(255))
     reverse_photo = db.Column(db.String(255))
     country = db.Column(db.String(255))
     is_collectible = db.Column(db.Boolean(), default=True)
     series = db.Column(db.String(255))
-    year = db.Column(db.Integer)
-    mintage = db.Column(db.Integer)
-    value = db.Column(db.Integer)
+    year = db.Column(db.String(255))
+    mintage = db.Column(db.String(255))
+    value = db.Column(db.String(255))
     # currency = db.Column(db.String(10))
     composition = db.Column(db.String(255))
     weight = db.Column(db.Float)
@@ -108,17 +110,20 @@ class Coin(db.Model):
     # verified = db.Column(db.Integer)
     # user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False) # Who created this coin, admin by default
 
-    collections = db.relationship(
-        "Collection",
-        back_populates="coin",
-        cascade='all, delete-orphan'
-    )
+    # collections = db.relationship(
+    #     "Collection",
+    #     back_populates="coin",
+    # )
 
-    collections_in = db.relationship(
-        "Collection",
-        secondary=coin_collections,
-        back_populates="coins_in"
-    )
+    # collections_in = db.relationship(
+    #     "Collection",
+    #     secondary=coin_collections,
+    #     back_populates="coins_in"
+    # )
+
+    collections = db.relationship("Collection",
+                               secondary=coin_collections,
+							   back_populates="coins")
 
     def to_dict(self):
         return {
@@ -148,16 +153,20 @@ class Collection(db.Model):
     name = db.Column(db.String(255), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
 
-    coin = db.relationship(
-        "Coin",
-        back_populates="collections"
-    )
+    # coin = db.relationship(
+    #     "Coin",
+    #     back_populates="collections"
+    # )
 
-    coins_in = db.relationship(
-        "Coin",
-        secondary=coin_collections,
-        back_populates="collections_in"
-    )
+    # coins_in = db.relationship(
+    #     "Coin",
+    #     secondary=coin_collections,
+    #     back_populates="collections_in"
+    # )
+
+    coins = db.relationship("Coin",
+                               secondary=coin_collections,
+							   back_populates="collections")
 
     user = db.relationship(
         "User",
