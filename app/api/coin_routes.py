@@ -35,7 +35,7 @@ def all_coins():
 #         orientation=request.json['orientation'],
 #     )
 
-#     db.session.add(channel)
+#     db.session.add(coin)
 #     db.session.commit()
 #     return {"coin": coin.to_dict()}
 

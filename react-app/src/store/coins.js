@@ -4,8 +4,8 @@
 
 const SET_COINS = 'set/COINS';
 // ? const ADD_COIN = 'add/COIN';
-// ? const EDIT_COIN = 'EDIT/COIN';
-// ? const DELETE_COIN = 'DELETE/COIN';
+// ? const EDIT_COIN = 'edit/COIN';
+// ? const DELETE_COIN = 'delete/COIN';
 
 // ################################################################## //
 // ############################  ACTIONS  ########################### //

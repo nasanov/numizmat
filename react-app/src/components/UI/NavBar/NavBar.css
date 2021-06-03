@@ -2,7 +2,7 @@
 	padding: 0;
 	background-color: #ccc;
 	display: grid;
-	grid-template-columns: 100px 100px 160px 1fr 200px;
+	grid-template-columns: 100px 70px 160px 1fr 160px 100px 100px 120px;
 	height: 38px;
 	position: fixed;
 	top: 0;
@@ -21,7 +21,7 @@
 
 /* SEARCH */
 .nav-search {
-	width: 40%;
+	width: 60%;
 	position: relative;
 	display: flex;
 	margin: 0 auto;
@@ -29,7 +29,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 
 .nav-searchBar {
 	width: 80%;
