@@ -4,37 +4,45 @@
 
 [Numizmat](<!-- Live Link -->) is a coin tracking application, built using Python Flask, JavaScript, React, Redux and PostgresSQL.
 
-
 ## Technologies
-- React/Redux
-- Python
-- Flask
-- SQLAlchemy
-- PostgresQL
-- WebSockets
+
+-   React/Redux
+-   Python
+-   Flask
+-   SQLAlchemy
+-   PostgresQL
+-   WebSockets
+-   Faker
 
 ## Features
+
 #### Splash Page
 
 #### Main Page
 
 #### Database Schema
+
 ![db](https://github.com/nasanov/numizmat/blob/main/docs/db3.png)
+
 #### Authentication
-- Users can sign up, and log in
-- 
+
+-   Users can sign up, and log in
+-
+
 #### Live chat
-- Live chat is implemented by using Socket.io library. It enables real-time, bidirectional and event-based communication.
+
+-   Live chat is implemented by using Socket.io library. It enables real-time, bidirectional and event-based communication.
 
 ## Installation
+
 This project can be run by following these steps:
 
-- Clone the repo into your desired folder.
-- Run `pipenv install` from the root project directory.
-- Run `npm install` from the react-app directory
-- Create a .env file in the root directory (use .env.example).
-- Run `pipenv shell` command
-- Run `flask run` command from the root directory and `npm start` from the react-app directory
+-   Clone the repo into your desired folder.
+-   Run `pipenv install` from the root project directory.
+-   Run `npm install` from the react-app directory
+-   Create a .env file in the root directory (use .env.example).
+-   Run `pipenv shell` command
+-   Run `flask run` command from the root directory and `npm start` from the react-app directory
 
 ## Future Improvements
 
@@ -43,4 +51,3 @@ For additional information, checkout project's [Wiki](https://github.com/nasanov
 > Developed By: [Nurs Asanov](https://github.com/nasanov)
 
 <img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif"><img src="https://media.giphy.com/media/s9kqO10sLE9smNFM8V/giphy.gif">
-
