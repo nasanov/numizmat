@@ -12,7 +12,7 @@ coin_collections = db.Table(
               db.ForeignKey("collections.id"), primary_key=True),
     db.Column("coin_id", db.Integer, db.ForeignKey(
         "coins.id"), primary_key=True),
-    db.Column("coin_quantity", db.Integer)
+    db.Column("coin_quantity", db.Integer, default=1)
 
 )
 
@@ -129,21 +129,41 @@ class Coin(db.Model):
         return {
             "id": self.id,
             "name": self.name,
-            "obverse_photo ": self.obverse_photo,
-            "reverse_photo ": self.reverse_photo,
-            "country ": self.country,
-            "is_collectible ": self.is_collectible,
-            "series ": self.series,
-            "year ": self.year,
-            "mintage ": self.mintage,
-            "value ": self.value,
-            "composition ": self.composition,
-            "weight ": self.weight,
-            "diameter ": self.diameter,
-            "thickness ": self.thickness,
-            "shape ": self.shape,
-            "orientation ": self.orientation,
-            'in_collections': [collection.to_dict() for collection in self.in_collections],
+            "obverse_photo": self.obverse_photo,
+            "reverse_photo": self.reverse_photo,
+            "country": self.country,
+            "is_collectible": self.is_collectible,
+            "series": self.series,
+            "year": self.year,
+            "mintage": self.mintage,
+            "value": self.value,
+            "composition": self.composition,
+            "weight": self.weight,
+            "diameter": self.diameter,
+            "thickness": self.thickness,
+            "shape": self.shape,
+            "orientation": self.orientation,
+            'in_collections': [collection.to_dict_basic() for collection in self.in_collections],
+        }
+
+    def to_dict_basic(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "obverse_photo": self.obverse_photo,
+            "reverse_photo": self.reverse_photo,
+            "country": self.country,
+            "is_collectible": self.is_collectible,
+            "series": self.series,
+            "year": self.year,
+            "mintage": self.mintage,
+            "value": self.value,
+            "composition": self.composition,
+            "weight": self.weight,
+            "diameter": self.diameter,
+            "thickness": self.thickness,
+            "shape": self.shape,
+            "orientation": self.orientation,
         }
 
 
@@ -179,5 +199,12 @@ class Collection(db.Model):
             "id": self.id,
             "name": self.name,
             "user_id": self.user_id,
-            'coins_in': [coin.to_dict() for coin in self.coins_in],
+            'coins_in': [coin.to_dict_basic() for coin in self.coins_in],
+        }
+
+    def to_dict_basic(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "user_id": self.user_id,
         }
