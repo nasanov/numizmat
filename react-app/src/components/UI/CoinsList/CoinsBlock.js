@@ -7,7 +7,7 @@ export default function CoinBlock({ coin }) {
 		<div className="coin__container">
 			<div>
 				<NavLink to={`/coins/${coin.id}`}>
-					<img src={coin['obverse_photo ']} alt={`${coin.name}`} className="coin_img"></img>
+					<img src={coin.obverse_photo} alt={`${coin.name}`} className="coin_img"></img>
 					{/* <img src={coin['reverse_photo ']} alt={`${coin.name}`} className="coin_img"></img> */}
 				</NavLink>
 			</div>

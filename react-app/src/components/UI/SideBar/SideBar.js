@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './SideBar.css';
 
-function SideBar() {
+export default function SideBar() {
 	const user = useSelector(state => state.session.user);
 	// console.log(user);
 	return (
@@ -83,5 +83,3 @@ function SideBar() {
 		</>
 	);
 }
-
-export default SideBar;
