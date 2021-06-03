@@ -1,0 +1,19 @@
+.login-container {
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.loginWrap {
+	position: relative;
+	margin: 90px auto;
+	width: 400px;
+	border-radius: 5px;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}

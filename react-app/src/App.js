@@ -4,10 +4,12 @@ import { useDispatch } from 'react-redux';
 import LoginForm from './components/auth/LoginForm';
 import SignUpForm from './components/auth/SignUpForm';
 import UI from './components/UI/UI';
-import NavBar from './components/NavBar';
+import Collection from './components/UI/Collection/Collection';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
+import NavBar from './components/UI/NavBar/NavBar';
+
 import { authenticate } from './store/session';
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			{/* <NavBar /> */}
+			<NavBar />
 			<Switch>
 				<Route path="/" exact={true}>
 					<h1>Splash Page</h1>
@@ -45,9 +47,12 @@ function App() {
 				<ProtectedRoute path="/users/:userId" exact={true}>
 					<User />
 				</ProtectedRoute>
-				<ProtectedRoute path="/home" exact={true}>
-					<UI />
+				<ProtectedRoute path="/collections" exact={true}>
+					<Collection />
 				</ProtectedRoute>
+				<Route path="/home" exact={true}>
+					<UI />
+				</Route>
 				<Route>
 					<h1>404</h1>
 				</Route>

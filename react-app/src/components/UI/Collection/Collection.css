@@ -1,0 +1,12 @@
+.collection-list__container {
+	margin: 0 auto;
+	width: 70%;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.add-collection_img {
+	font-size: 185px;
+	color: #333;
+}

@@ -20,10 +20,16 @@ export default function CoinsList() {
 
 	return (
 		<div className="coins-list__container">
-			<h1 className="coins-list__header">All coins</h1>
 			{arr.map(coin => {
 				return <CoinBlock coin={coin} key={coin.id} />;
 			})}
+			<div className="coin__container">
+				<div>
+					<i class="fas fa-plus add-coin_img"></i>
+				</div>
+				<div className="coin__title">Add new coin</div>
+				<button className="coin__add-to-collection--btn">Add New Coin</button>
+			</div>
 		</div>
 	);
 }
