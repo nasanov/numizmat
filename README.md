@@ -27,7 +27,6 @@
 #### Authentication
 
 -   Users can sign up, and log in
--
 
 #### Live chat
 
