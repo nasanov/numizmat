@@ -110,20 +110,20 @@ class Coin(db.Model):
     # verified = db.Column(db.Integer)
     # user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False) # Who created this coin, admin by default
 
+    collections = db.relationship("Collection",
+                                  secondary=coin_collections,
+                                  back_populates="coins")
+
     # collections = db.relationship(
     #     "Collection",
     #     back_populates="coin",
     # )
 
-    # collections_in = db.relationship(
-    #     "Collection",
-    #     secondary=coin_collections,
-    #     back_populates="coins_in"
-    # )
-
-    collections = db.relationship("Collection",
-                               secondary=coin_collections,
-							   back_populates="coins")
+    in_collections = db.relationship(
+        "Collection",
+        secondary=coin_collections,
+        back_populates="coins_in"
+    )
 
     def to_dict(self):
         return {
@@ -143,6 +143,7 @@ class Coin(db.Model):
             "thickness ": self.thickness,
             "shape ": self.shape,
             "orientation ": self.orientation,
+            'in_collections': [collection.to_dict() for collection in self.in_collections],
         }
 
 
@@ -153,20 +154,20 @@ class Collection(db.Model):
     name = db.Column(db.String(255), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
 
+    coins = db.relationship("Coin",
+                            secondary=coin_collections,
+                            back_populates="collections")
+
     # coin = db.relationship(
     #     "Coin",
     #     back_populates="collections"
     # )
 
-    # coins_in = db.relationship(
-    #     "Coin",
-    #     secondary=coin_collections,
-    #     back_populates="collections_in"
-    # )
-
-    coins = db.relationship("Coin",
-                               secondary=coin_collections,
-							   back_populates="collections")
+    coins_in = db.relationship(
+        "Coin",
+        secondary=coin_collections,
+        back_populates="in_collections"
+    )
 
     user = db.relationship(
         "User",
@@ -178,4 +179,5 @@ class Collection(db.Model):
             "id": self.id,
             "name": self.name,
             "user_id": self.user_id,
+            'coins_in': [coin.to_dict() for coin in self.coins_in],
         }
