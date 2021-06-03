@@ -11,7 +11,7 @@ import UsersList from './components/UsersList';
 import User from './components/User';
 import CoinDetail from './components/UI/CoinDetail/CoinDetail';
 import CollectionContent from './components/UI/CollectionContent/CollectionContent'
-
+import { getCollections } from './store/collections';
 import { authenticate } from './store/session';
 
 function App() {
@@ -24,6 +24,10 @@ function App() {
 			await dispatch(authenticate());
 			setLoaded(true);
 		})();
+	}, [dispatch]);
+
+	useEffect(() => {
+		dispatch(getCollections());
 	}, [dispatch]);
 
 	if (!loaded) {

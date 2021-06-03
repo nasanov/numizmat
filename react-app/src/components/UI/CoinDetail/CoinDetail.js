@@ -5,17 +5,23 @@ import { useParams, NavLink } from 'react-router-dom';
 export default function CoinDetail() {
 	const { coinId } = useParams();
 	const coin = useSelector(state => state.coins[coinId]);
-	// const coin = coins['id'] ==
-	console.log(coin);
+	const collections = useSelector(state => state.collections);
+
+	let collections_array = [];
+	for (let i in collections) {
+		collections_array.push(collections[i])
+	}
+
+	console.log(collections);
 	return (
 		<div className="coin-detail__container">
 			<h1 className="coin-info-title">{coin?.name}</h1>
 			<div className="coin-info-photos">
-				<img src={coin['obverse_photo ']} alt={`${coin.name}`} className="coin_img"></img>
-				<img src={coin['reverse_photo ']} alt={`${coin.name}`} className="coin_img"></img>
+				<img src={coin?.obverse_photo} alt={`${coin?.name}`} className="coin_img"></img>
+				<img src={coin?.reverse_photo} alt={`${coin?.name}`} className="coin_img"></img>
 			</div>
 			<div className="coin__additional-info">
-				<span>{coin['value ']}</span>
+				<span>{coin?.value}</span>
 			</div>
 			<div className="coin-info-additional_info">
 				<div className="coin-information">
@@ -33,7 +39,7 @@ export default function CoinDetail() {
 					</div>
 					<div className="detail-entry">
 						<span>is_collectible:</span>
-						<span>{coin?.is_collectible}</span>
+						<span>{coin?.is_collectible ? "True" : "False"}</span>
 					</div>
 					<div className="detail-entry">
 						<span>series:</span>
@@ -77,7 +83,14 @@ export default function CoinDetail() {
 					</div>
 				</div>
 			</div>
-			<button className="coin__add-to-collection--btn">Add</button>
+			<button className="coin__add-to-collection--btn">Add to</button>
+			<select>
+				{collections_array.map(collection => {
+					return (
+						<option>{collection?.name}</option>
+					)
+				})}
+			</select>
 		</div>
 	);
 }

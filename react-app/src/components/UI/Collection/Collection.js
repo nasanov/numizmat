@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getCollections } from '../../../store/collections';
+
 import CollectionBlock from './CollectionBlock'
 import './Collection.css'
 
 export default function Collection() {
-	const dispatch = useDispatch();
 
-	useEffect(() => {
-		dispatch(getCollections());
-	}, [dispatch]);
 
 	const collections = useSelector(state => state.collections);
 	// console.log(collections);
