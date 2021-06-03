@@ -21,15 +21,15 @@ function Navigation() {
 			<form className="nav-search">
 				<input type="text" placeholder="Search..." className="nav-searchBar" />
 			</form>
-			<div className="username_logo">
-				<span className="username">{user?.username}</span>
-				<div className="nav-logo"></div>
-			</div>
 			<NavLink to="/users" exact={true} className="main-nav-home" activeClassName="active">
 				Users
 			</NavLink>
 			{user ? (
 				<>
+					<div className="username_logo ">
+						<span className="username">{user?.username}</span>
+						<div className="nav-logo"></div>
+					</div>
 					<LogoutButton />
 				</>
 			) : (

@@ -1,5 +1,4 @@
 .coins-list__container {
-	margin-top: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -7,4 +6,8 @@
 .add-coin_img {
 	font-size: 185px;
 	color: #333;
+}
+
+.coin__container {
+	margin-top: 40px;
 }

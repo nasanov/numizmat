@@ -4,11 +4,13 @@ import { useDispatch } from 'react-redux';
 import LoginForm from './components/auth/LoginForm';
 import SignUpForm from './components/auth/SignUpForm';
 import UI from './components/UI/UI';
+import NavBar from './components/UI/NavBar/NavBar';
 import Collection from './components/UI/Collection/Collection';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
-import NavBar from './components/UI/NavBar/NavBar';
+import CoinDetail from './components/UI/CoinDetail/CoinDetail';
+import CollectionContent from './components/UI/CollectionContent/CollectionContent'
 
 import { authenticate } from './store/session';
 
@@ -49,6 +51,12 @@ function App() {
 				</ProtectedRoute>
 				<ProtectedRoute path="/collections" exact={true}>
 					<Collection />
+				</ProtectedRoute>
+				<ProtectedRoute path="/coins/:coinId" exact={true}>
+					<CoinDetail />
+				</ProtectedRoute>
+				<ProtectedRoute path="/collections/:collectionId" exact={true}>
+					<CollectionContent />
 				</ProtectedRoute>
 				<Route path="/home" exact={true}>
 					<UI />

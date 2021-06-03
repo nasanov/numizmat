@@ -4,30 +4,30 @@ import './SideBar.css';
 
 function SideBar() {
 	const user = useSelector(state => state.session.user);
-	console.log(user);
+	// console.log(user);
 	return (
 		<>
 			<div className="sidebar">
-				<ul class="sidebar-filter">
-					<li class="sidebar-filter__item">
-						<div class="sidebar-filter__content">
-							<ul class="categories">
+				<ul className="sidebar-filter">
+					<li className="sidebar-filter__item">
+						<div className="sidebar-filter__content">
+							<ul className="categories">
 								<li>
 									<h3>Country</h3>
 									<ul>
-										<li class="sub">
+										<li className="sub">
 											<label>Country 1</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Country 2</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Country 3</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Country 4</label>
 											<input type="checkbox"></input>
 										</li>
@@ -36,19 +36,19 @@ function SideBar() {
 								<li>
 									<h3>Series</h3>
 									<ul>
-										<li class="sub">
+										<li className="sub">
 											<label>Series 1</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Series 2</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Series 3</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Series 4</label>
 											<input type="checkbox"></input>
 										</li>
@@ -57,19 +57,19 @@ function SideBar() {
 								<li>
 									<h3>Year</h3>
 									<ul>
-										<li class="sub">
+										<li className="sub">
 											<label>Year 1</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Year 2</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Year 3</label>
 											<input type="checkbox"></input>
 										</li>
-										<li class="sub">
+										<li className="sub">
 											<label>Year 4</label>
 											<input type="checkbox"></input>
 										</li>
