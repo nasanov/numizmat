@@ -1,1 +1,85 @@
 /* TODO Add site wide styles */
+html {
+	background-color: #fff;
+}
+
+body {
+	padding: 50px;
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00b7ff;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ol,
+li,
+ul,
+div,
+span,
+body,
+header,
+nav {
+	font-size: 1rem;
+	color: inherit;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+i {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus,
+button:hover,
+button:active {
+	outline: none;
+}
+
+button {
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	font-family: inherit;
+	text-align: left;
+	cursor: pointer;
+}
+#root{
+	height: 100%;
+	width: 100%;
+}
+/*
+:root {
+  --fadedGreyBlue: rgba(190, 202, 211,.55);
+  --processCyan: rgba(0, 174, 214,1);
+  --sapphire: rgba(26, 88, 139, 1);
+
+  --primaryColor: var(--processCyan);
+  --primaryColorDark: var(--processCyan);
+  --secondaryColor: var(--processCyan);
+} */
