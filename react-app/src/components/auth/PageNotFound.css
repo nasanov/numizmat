@@ -1,0 +1,36 @@
+.notfound__wrap {
+	position: relative;
+	margin: 120px auto;
+	width: 400px;
+	border-radius: 5px;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.notfound__text {
+	user-select: none;
+	text-align: center;
+	font-weight: 600;
+	font-size: 2.6em;
+	margin-top: 10px;
+	color: #1b1b1b;
+	margin-bottom: 10px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.notfound__logo {
+	height: 335px;
+	width: 335px;
+	justify-self: center;
+	align-self: center;
+	user-select: none;
+	pointer-events: none;
+}
+
+.notfound__links {
+	display: flex;
+	user-select: none;
+	justify-content: space-around;
+}

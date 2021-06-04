@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import './SideBar.css';
+import { Modal } from '../../../context/Modal';
+import AddCoinModal from './AddCoinModal.js';
 
 export default function SideBar() {
 	// const user = useSelector(state => state.session.user);
@@ -12,8 +14,9 @@ export default function SideBar() {
 	for (let i in categories) {
 		arr.push(i);
 	}
-	console.log(categories);
-	console.log(arr);
+
+	// console.log(categories);
+	// console.log(arr);
 
 	return (
 		<>
@@ -21,6 +24,9 @@ export default function SideBar() {
 				<ul className="sidebar-filter">
 					<li className="sidebar-filter__item">
 						<div className="sidebar-filter__content">
+							<AddCoinModal />
+							<input type="search" placeholder="search"></input>
+							{/* Automaticly filter the content while typing */}
 							<ul className="categories">
 								{arr.map(category => {
 									return (

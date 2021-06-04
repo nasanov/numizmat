@@ -3,7 +3,7 @@
 // ################################################################ //
 
 const SET_COINS = 'set/COINS';
-// ? const ADD_COIN = 'add/COIN';
+const ADD_COIN = 'add/COIN';
 // ? const EDIT_COIN = 'edit/COIN';
 // ? const DELETE_COIN = 'delete/COIN';
 
@@ -16,10 +16,10 @@ const setCoins = coins => ({
 	coins,
 });
 
-// ? export const addCoin = coin => ({
-// ? 	type: ADD_COIN,
-// ? 	coin,
-// ? })
+export const addCoin = coin => ({
+	type: ADD_COIN,
+	coin,
+})
 
 // ? export const editCoin = coin => ({
 // ? 	type: EDIT_COIN,
@@ -47,22 +47,22 @@ export const getCoins = () => async dispatch => {
 	}
 };
 
-// ? export const addNewCoin = coin_data => async dispatch => {
-// ? 	const response = await fetch(`/api/coins`, {
-// ? 		method: 'POST',
-// ? 		body: JSON.stringify(coin_data),
-// ? 		headers: {
-// ? 			'Content-Type': 'application/json',
-// ? 		},
-// ? 	});
-// ? 	if (response.ok) {
-// ? 		const data = await response.json();
-// ? 		dispatch(addCoin(data.coin));
-// ? 		return coin;
-// ? 	} else {
-// ? 		throw response;
-// ? 	}
-// ? };
+export const addNewCoin = coin_data => async dispatch => {
+	const response = await fetch(`/api/coins`, {
+		method: 'POST',
+		body: JSON.stringify(coin_data),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+	if (response.ok) {
+		const data = await response.json();
+		dispatch(addCoin(data.coin));
+		return data.coin;
+	} else {
+		throw response;
+	}
+};
 
 // ? export const modifyCoin = (coin_id, coin_data) => async dispatch => {
 // ? 	const response = await fetch(`/api/coins/${coin_id}`, {
@@ -105,10 +105,10 @@ export default function coinReducer(state = initialState, action) {
 		case SET_COINS:
 			newState = { ...state, ...action.coins };
 			return newState;
-		// case ADD_COIN:
-		// 	newState = { ...state }
-		// 	newState[action.coin.id] = action.coin
-		// 	return newState;
+		case ADD_COIN:
+			newState = { ...state }
+			newState[action.coin.id] = action.coin
+			return newState;
 		// case EDIT_COIN:
 		// 	newState = { ...state }
 		// 	newState[action.coin.id] = action.coin

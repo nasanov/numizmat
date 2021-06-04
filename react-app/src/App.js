@@ -16,6 +16,7 @@ import CollectionContent from './components/UI/CollectionContent/CollectionConte
 import CoinDetail from './components/UI/CoinDetail/CoinDetail';
 import UsersList from './components/UsersList';
 import User from './components/User';
+import PageNotFound from './components/auth/PageNotFound';
 // import NavBar from './components/UI/NavBar/NavBar';
 
 // ################################################################## //
@@ -86,7 +87,7 @@ function App() {
 					<UI />
 				</Route>
 				<Route>
-					<h1>404</h1>
+					<PageNotFound />
 				</Route>
 			</Switch>
 		</BrowserRouter>
