@@ -7,7 +7,7 @@ import './UI.css';
 const UI = () => {
 	return (
 		<>
-			{/* <NavBar /> */}
+			<NavBar />
 			<div className="main__container">
 				<SideBar />
 				<CoinsList />

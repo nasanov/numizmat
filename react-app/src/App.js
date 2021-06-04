@@ -10,9 +10,10 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
 import CoinDetail from './components/UI/CoinDetail/CoinDetail';
-import CollectionContent from './components/UI/CollectionContent/CollectionContent'
+import CollectionContent from './components/UI/CollectionContent/CollectionContent';
 import { getCollections } from './store/collections';
 import { authenticate } from './store/session';
+import Splash from './components/UI/Splash/Splash';
 
 function App() {
 	// const user = useSelector(state => state.session.user);
@@ -36,10 +37,9 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<NavBar />
 			<Switch>
 				<Route path="/" exact={true}>
-					<h1>Splash Page</h1>
+					<Splash />
 				</Route>
 				<Route path="/login" exact={true}>
 					<LoginForm />
