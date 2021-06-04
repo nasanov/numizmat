@@ -2,7 +2,7 @@
    <h1>Welcome to Numizmat <img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"><img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"><img src="https://media.giphy.com/media/njON3jEmTYHEfRbfsk/giphy.gif" width="25px"> </h1>
 </div>
 
-[Numizmat](<!-- Live Link -->) is a coin tracking application, built using Python Flask, JavaScript, React, Redux and PostgresSQL.
+[Numizmat](https://numizmat.herokuapp.com/) is a coin tracking application, built using Python Flask, JavaScript, React, Redux and PostgresSQL.
 
 ## Technologies
 
