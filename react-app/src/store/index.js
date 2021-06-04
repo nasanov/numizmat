@@ -3,11 +3,13 @@ import thunk from 'redux-thunk';
 import session from './session';
 import coinReducer from './coins';
 import collectionReducer from './collections';
+import categoryReducer from './categories';
 
 const rootReducer = combineReducers({
 	session,
 	coins: coinReducer,
-	collections: collectionReducer
+	collections: collectionReducer,
+	categories: categoryReducer,
 });
 
 let enhancer;

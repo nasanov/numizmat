@@ -5,13 +5,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCoins } from '../../../store/coins';
 
 export default function CoinsList() {
-	const dispatch = useDispatch();
+	// const dispatch = useDispatch();
 
-	useEffect(() => {
-		dispatch(getCoins());
-	}, [dispatch]);
+	// useEffect(() => {
+	// 	dispatch(getCoins());
+	// }, [dispatch]);
 
 	const coins = useSelector(state => state.coins);
+	
 
 	let arr = [];
 	for (let i in coins) {

@@ -12,6 +12,53 @@ def all_coins():
     return {"coins": [coin.to_dict() for coin in coins]}
 
 
+# GET ALL COIN CATEGORIES
+@coin_routes.route('/categories')
+def all_categories():
+    coins = Coin.query.all()
+
+    categories = {
+        "composition": [],
+        "country": [],
+        "diameter": [],
+        "is_collectible": [],
+        "mintage": [],
+        "orientation": [],
+        "series": [],
+        "shape": [],
+        "thickness": [],
+        "weight": [],
+        "year": []
+    }
+
+    for coin in coins:
+        if coin.composition not in categories["composition"]:
+            categories["composition"].append(coin.composition)
+        if coin.country not in categories["country"]:
+            categories["country"].append(coin.country)
+        if coin.diameter not in categories["diameter"]:
+            categories["diameter"].append(coin.diameter)
+        if coin.is_collectible not in categories["is_collectible"]:
+            categories["is_collectible"].append(coin.is_collectible)
+        if coin.mintage not in categories["mintage"]:
+            categories["mintage"].append(coin.mintage)
+        if coin.orientation not in categories["orientation"]:
+            categories["orientation"].append(coin.orientation)
+        if coin.series not in categories["series"]:
+            categories["series"].append(coin.series)
+        if coin.shape not in categories["shape"]:
+            categories["shape"].append(coin.shape)
+        if coin.thickness not in categories["thickness"]:
+            categories["thickness"].append(coin.thickness)
+        if coin.weight not in categories["weight"]:
+            categories["weight"].append(coin.weight)
+        if coin.year not in categories["year"]:
+            categories["year"].append(coin.year)
+
+    # print("******************", categories)
+    return {"categories": categories}
+
+
 # ADD NEW COIN
 # @coin_routes.route('/', methods=['POST'])
 # def add_coin():
