@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, NavLink } from 'react-router-dom';
 import { login } from '../../store/session';
 import './LoginForm.css';
 
@@ -8,6 +8,8 @@ const LoginForm = () => {
 	const [errors, setErrors] = useState([]);
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+	const [isPassHidden, setPassHidden] = useState(true);
+
 	const user = useSelector(state => state.session.user);
 	const dispatch = useDispatch();
 
@@ -27,7 +29,7 @@ const LoginForm = () => {
 		setPassword(e.target.value);
 	};
 
-	const demoClick = async e => {
+	const demoLogin = async e => {
 		e.preventDefault();
 		await dispatch(login('demo@aa.io', 'password'));
 	};
@@ -39,6 +41,13 @@ const LoginForm = () => {
 	return (
 		<div className="login-container">
 			<div className="loginWrap">
+				<div className="switch-link-container">
+					<h1 className="login-form-header">Login</h1>
+					<span className="switchLinkName">New user?</span>
+					<NavLink to="/sign-up" className="switchLink">
+						Sign up
+					</NavLink>
+				</div>
 				<form onSubmit={onLogin}>
 					<div>
 						{errors.map(error => (
@@ -46,20 +55,37 @@ const LoginForm = () => {
 						))}
 					</div>
 					<div>
-						<label htmlFor="email">Email</label>
-						<input name="email" type="text" placeholder="Email" value={email} onChange={updateEmail} />
+						<input
+							name="email"
+							className="login-input"
+							type="text"
+							placeholder="Email"
+							value={email}
+							required
+							onChange={updateEmail}
+						/>
 					</div>
 					<div>
-						<label htmlFor="password">Password</label>
 						<input
 							name="password"
-							type="password"
+							type={isPassHidden ? 'password' : 'text'}
 							placeholder="Password"
 							value={password}
+							className="login-input"
 							onChange={updatePassword}
 						/>
-						<button type="submit">Login</button>
-						<button onClick={demoClick}>Demo Login</button>
+						{isPassHidden ? (
+							<i className="far fa-eye-slash hidePassword" onClick={e => setPassHidden(false)}></i>
+						) : (
+							<i className="far fa-eye hidePassword" onClick={e => setPassHidden(true)}></i>
+						)}
+
+						<button type="submit" className="login-btn">
+							Login
+						</button>
+						<button onClick={demoLogin} className="demo-btn">
+							Demo Login
+						</button>
 					</div>
 				</form>
 			</div>

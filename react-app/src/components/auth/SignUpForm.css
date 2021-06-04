@@ -1,12 +1,12 @@
-.login-container {
+.signup-container {
 	display: flex;
 }
 
-.loginWrap {
+.signupWrap {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 200px;
-	height: 350px;
+	margin-top: 180px;
+	height: 500px;
 	width: 350px;
 	border-radius: 20px;
 	/* border: 2px solid blue; */
@@ -17,7 +17,7 @@
 	box-shadow: 0px 2px 15px #333;
 }
 
-.login-form-header {
+.signup-form-header {
 	text-align: center;
 	font-weight: 600;
 	font-size: 1.5em;
@@ -27,25 +27,27 @@
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.login-input {
+.signup-input {
 	width: 90%;
-	margin-left: 5%;
+	width: 240px;
+	/* margin-left: 5%; */
 	margin-bottom: 10px;
 	height: 40px;
 	border-radius: 5px;
 	outline: 0;
+	border: 1px solid #cccccc;
+	padding: 0 0 0 10px;
+	font-size: 14px;
 }
 
-.login-btn,
-.demo-btn {
+.signup-btn {
 	border: 3px solid #065cbe;
 	color: rgb(78, 78, 78);
 	background-color: #fff;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align: center;
 	font-weight: bold;
-	width: 90%;
-	margin-left: 5%;
+	width: 240px;
 	margin-bottom: 10px;
 	height: 40px;
 	border-radius: 5px;
@@ -53,19 +55,12 @@
 	transition: all 0.3s;
 }
 
-.login-btn:hover,
-.demo-btn:hover {
+.signup-btn:hover{
 	background-color: #065cbe;
 	color: #fff;
 }
 
-.login-input {
-	border: 1px solid #cccccc;
-	padding: 0 0 0 10px;
-	font-size: 14px;
-}
-
-.login-input:focus {
+.signup-input:focus {
 	border: 1px solid #046daa;
 }
 
@@ -83,25 +78,4 @@
 	margin-left: 5px;
 	margin-right: 20px;
 	text-decoration: none;
-}
-
-.errorsList {
-	list-style-position: none;
-	margin-left: 20px;
-}
-
-.errorsContainer {
-	width: 90%;
-	border: 1px solid #c44536;
-	padding: 10px;
-	background-color: #ffb1b4;
-	color: #c44536;
-	border-radius: 5px;
-	margin: 15px 5%;
-}
-
-.hidePassword {
-	position: absolute;
-	bottom: 160px;
-	right: 50px;
 }
