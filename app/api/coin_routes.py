@@ -1,6 +1,8 @@
 from flask import Blueprint, jsonify, request
 from app.models import Coin, Collection, User, db
+from app.aws import allowed_file, get_unique_filename, upload_file_to_s3, delete_file_from_s3
 from flask_login import current_user, login_user, logout_user, login_required
+from app.forms import AddCoinForm
 
 coin_routes = Blueprint('coins', __name__)
 
@@ -60,31 +62,90 @@ def all_categories():
 
 
 # ADD NEW COIN
-# @coin_routes.route('/', methods=['POST'])
-# def add_coin():
-#     # get info from request and pass it to the Coin instance
+@coin_routes.route('/', methods=['POST'])
+def add_coin():
+    # get info from request and pass it to the Coin instance
+    # form = AddCoinForm()
+    # print("######### form ########", request.form)
+    # print("######### files ########", request.files)
 
-#     coin = Coin(
-#         name=request.json['name'],
-#         obverse_photo=request.json['obverse_photo'],
-#         reverse_photo=request.json['reverse_photo'],
-#         country=request.json['country'],
-#         is_collectible=request.json['is_collectible'],
-#         series=request.json['series'],
-#         year=request.json['year'],
-#         mintage=request.json['mintage'],
-#         value=request.json['value'],
-#         composition=request.json['composition'],
-#         weight=request.json['weight'],
-#         diameter=request.json['diameter'],
-#         thickness=request.json['thickness'],
-#         shape=request.json['shape'],
-#         orientation=request.json['orientation'],
-#     )
+    # if "obversePhoto" not in request.files:
+    #     return {"errors": "image required"}, 400
+    # if "reversePhoto" not in request.files:
+    #     return {"errors": "image required"}, 400
 
-#     db.session.add(coin)
-#     db.session.commit()
-#     return {"coin": coin.to_dict()}
+    obverse_image = request.files["obversePhoto"]
+    reverse_image = request.files["reversePhoto"]
+
+    if obverse_image == 'null' or obverse_image == 'undefined':
+        obverse_image = None
+    if reverse_image == 'null' or reverse_image == 'undefined':
+        reverse_image = None
+
+    if not allowed_file(obverse_image.filename):
+        return {"errors": "file type not permitted"}, 400
+    if not allowed_file(reverse_image.filename):
+        return {"errors": "file type not permitted"}, 400
+
+    obverse_image.filename = get_unique_filename(obverse_image.filename)
+    reverse_image.filename = get_unique_filename(reverse_image.filename)
+
+    upload_obverse = upload_file_to_s3(obverse_image)
+    upload_reverse = upload_file_to_s3(reverse_image)
+
+    print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
+    print(obverse_image.filename, reverse_image)
+    print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
+    print(upload_obverse, upload_reverse)
+
+    if "url" not in upload_obverse:
+        return upload_obverse, 400
+    if "url" not in upload_reverse:
+        return upload_reverse, 400
+
+    url_obverse = upload_obverse["url"]
+    url_reverse = upload_reverse["url"]
+
+    # form['csrf_token'].data = request.cookies['csrf_token']
+    # if form.validate_on_submit():
+
+    coin = Coin(
+        # name=form.data['name'],
+        # obverse_photo=url_obverse,
+        # reverse_photo=url_reverse,
+        # country=form.data['country'],
+        # is_collectible=form.data['is_collectible'],
+        # series=form.data['series'],
+        # year=form.data['year'],
+        # mintage=form.data['mintage'],
+        # value=form.data['value'],
+        # composition=form.data['composition'],
+        # weight=form.data['weight'],
+        # diameter=form.data['diameter'],
+        # thickness=form.data['thickness'],
+        # shape=form.data['shape'],
+        # orientation=form.data['orientation'],
+        name=request.form['name'],
+        obverse_photo=url_obverse,
+        reverse_photo=url_reverse,
+        country=request.form['country'],
+        is_collectible=request.form['is_collectible'],
+        series=request.form['series'],
+        year=request.form['year'],
+        mintage=request.form['mintage'],
+        value=request.form['value'],
+        composition=request.form['composition'],
+        weight=request.form['weight'],
+        diameter=request.form['diameter'],
+        thickness=request.form['thickness'],
+        shape=request.form['shape'],
+        orientation=request.form['orientation'],
+    )
+
+    # db.session.add(coin)
+    # db.session.commit()
+    return {"coin": coin.to_dict()}
+
 
 # EDIT COIN
 # @coin_routes.route('/<int:coin_id>', methods=['PUT'])
