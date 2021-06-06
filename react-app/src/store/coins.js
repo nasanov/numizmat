@@ -19,7 +19,7 @@ const setCoins = coins => ({
 export const addCoin = coin => ({
 	type: ADD_COIN,
 	coin,
-})
+});
 
 // ? export const editCoin = coin => ({
 // ? 	type: EDIT_COIN,
@@ -48,12 +48,32 @@ export const getCoins = () => async dispatch => {
 };
 
 export const addNewCoin = coin_data => async dispatch => {
-	const response = await fetch(`/api/coins`, {
+
+	const formData = new FormData();
+	formData.append('composition', coin_data['composition']);
+	formData.append('country', coin_data['country']);
+	formData.append('diameter', coin_data['diameter']);
+	formData.append('isCollectible', coin_data['isCollectible']);
+	formData.append('mintage', coin_data['mintage']);
+	formData.append('name', coin_data['name']);
+	formData.append('obversePhoto', coin_data['obversePhoto']);
+	formData.append('orientation', coin_data['orientation']);
+	formData.append('reversePhoto', coin_data['reversePhoto']);
+	formData.append('series', coin_data['series']);
+	formData.append('shape', coin_data['shape']);
+	formData.append('thickness', coin_data['thickness']);
+	formData.append('value', coin_data['value']);
+	formData.append('weight', coin_data['weight']);
+	formData.append('year', coin_data['year']);
+	console.log(formData);
+
+	const response = await fetch(`/api/coins/`, {
 		method: 'POST',
-		body: JSON.stringify(coin_data),
-		headers: {
-			'Content-Type': 'application/json',
-		},
+		body: formData,
+		// body: JSON.stringify(coin_data),
+		// headers: {
+			// 'Content-Type': 'application/json',
+		// },
 	});
 	if (response.ok) {
 		const data = await response.json();
@@ -106,8 +126,8 @@ export default function coinReducer(state = initialState, action) {
 			newState = { ...state, ...action.coins };
 			return newState;
 		case ADD_COIN:
-			newState = { ...state }
-			newState[action.coin.id] = action.coin
+			newState = { ...state };
+			newState[action.coin.id] = action.coin;
 			return newState;
 		// case EDIT_COIN:
 		// 	newState = { ...state }

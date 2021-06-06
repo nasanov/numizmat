@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import './SideBar.css';
-import { Modal } from '../../../context/Modal';
 import AddCoinModal from './AddCoinModal.js';
 
 export default function SideBar() {
