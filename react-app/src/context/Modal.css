@@ -27,7 +27,6 @@
 	margin: 0 0;
 	padding: 20px 5px;
 	min-width: 300px;
-	min-height: 300px;
 	z-index: 99;
 	animation: fadeIn 0.5s;
 }

@@ -1,6 +1,8 @@
 .coins-list__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* TODO: make rows size fixed OR make pagination */
+	grid-auto-rows: 330px;
 }
 
 .add-coin_img {
@@ -9,5 +11,33 @@
 }
 
 .coin__container {
-	margin-top: 40px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	padding-top: 25px;
+	border-radius: 10px;
+	height: 310px;
+	/* border: 1px solid #fff; */
+	width: 90%;
+	margin-left: 15px;
+	transition: all 0.5s;
+}
+
+.coin__container:hover {
+	box-shadow: 0px 0 30px 1px rgba(73, 73, 73, 0.4);
+}
+
+.coin__title {
+	width: 80%;
+}
+
+.coin__block--btn {
+	margin-top: 5px;
+}
+
+.coin__add-to-collection--btn {
+	margin-right: 5px;
+	margin-left: 5px;
 }

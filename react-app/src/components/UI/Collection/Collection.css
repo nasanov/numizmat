@@ -1,12 +1,13 @@
 .collection-list__container {
-	margin: 0 auto;
+	margin: 70px auto;
 	width: 70%;
-	margin-top: 50px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 15px;
+	row-gap: 15px;
 }
 
 .add-collection_img {
 	font-size: 185px;
-	color: #333;
+	/* color: #333; */
 }

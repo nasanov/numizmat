@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
+import './CoinDetail.css';
 
 export default function CoinDetail() {
 	const { coinId } = useParams();
@@ -20,18 +21,11 @@ export default function CoinDetail() {
 			<div className="coin-detail__container">
 				<h1 className="coin-info-title">{coin?.name}</h1>
 				<div className="coin-info-photos">
-					<img src={coin?.obverse_photo} alt={`${coin?.name}`} className="coin_img"></img>
-					<img src={coin?.reverse_photo} alt={`${coin?.name}`} className="coin_img"></img>
-				</div>
-				<div className="coin__additional-info">
-					<span>{coin?.value}</span>
+					<img src={coin?.obverse_photo} alt={`${coin?.name}`} className="coin__detail--img"></img>
+					<img src={coin?.reverse_photo} alt={`${coin?.name}`} className="coin__detail--img"></img>
 				</div>
 				<div className="coin-info-additional_info">
 					<div className="coin-information">
-						<div className="detail-entry">
-							<span>id:</span>
-							<span>{coin?.id}</span>
-						</div>
 						<div className="detail-entry">
 							<span>name:</span>
 							<span>{coin?.name}</span>

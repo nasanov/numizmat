@@ -3,7 +3,7 @@
 // ################################################################ //
 
 const SET_COLLECTIONS = 'set/COLLECTIONS';
-// ? const ADD_COLLECTION = 'add/COLLECTION';
+const ADD_COLLECTION = 'add/COLLECTION';
 // ? const EDIT_COLLECTION = 'edit/COLLECTION';
 // ? const DELETE_COLLECTION = 'delete/COLLECTION';
 
@@ -16,10 +16,10 @@ const setCollections = collections => ({
 	collections,
 });
 
-// ? export const addCollection = collection => ({
-// ? 	type: ADD_COLLECTION,
-// ? 	collection,
-// ? })
+export const addCollection = collection => ({
+	type: ADD_COLLECTION,
+	collection,
+});
 
 // ? export const editCollection = collection => ({
 // ? 	type: EDIT_COLLECTION,
@@ -47,6 +47,23 @@ export const getCollections = () => async dispatch => {
 	}
 };
 
+export const addNewCollection = collection_name => async dispatch => {
+	const response = await fetch(`/api/collections/`, {
+		method: 'POST',
+		body: JSON.stringify(collection_name),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+	if (response.ok) {
+		const data = await response.json();
+		dispatch(addCollection(data.collection));
+		return data.collection;
+	} else {
+		throw response;
+	}
+};
+
 // ################################################################### //
 // ############################  REDUCERS  ########################### //
 // ################################################################### //
@@ -58,6 +75,10 @@ export default function collectionReducer(state = initialState, action) {
 	switch (action.type) {
 		case SET_COLLECTIONS:
 			newState = { ...state, ...action.collections };
+			return newState;
+		case ADD_COLLECTION:
+			newState = { ...state };
+			newState[action.collection.id] = action.collection;
 			return newState;
 		default:
 			return state;

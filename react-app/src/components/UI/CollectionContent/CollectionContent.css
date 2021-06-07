@@ -1,0 +1,26 @@
+.collection__content--container {
+	width: 80%;
+	margin: 70px auto;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.collection__content--img {
+	width: 70px;
+}
+
+.collection__content--table {
+}
+
+.collection__content--table tr {
+	transition: all 0.8s;
+}
+.collection__content--table tr:hover {
+	background-color: rgb(226, 226, 226);
+}
+
+.collection__content--amount {
+	width: 50px;
+}

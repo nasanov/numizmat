@@ -1,3 +1,35 @@
 .collection__add-collection--btn {
 	color: red;
 }
+
+.collection__container {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 10px;
+	transition: all 0.5s;
+}
+
+.collection__title {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.collection__container:hover {
+	box-shadow: 0px 0 30px 1px rgba(73, 73, 73, 0.4);
+}
+
+.collection__title--name {
+	font-size: 14px;
+	color: #333;
+}
+
+.collection__title--value {
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+}

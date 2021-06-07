@@ -1,6 +1,6 @@
 /* TODO Add site wide styles */
 html {
-	background-color: #fff;
+	background-color: rgb(235, 235, 235);
 }
 
 body {
@@ -69,7 +69,7 @@ button {
 	text-align: left;
 	cursor: pointer;
 }
-#root{
+#root {
 	height: 100%;
 	width: 100%;
 }

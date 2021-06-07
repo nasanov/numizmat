@@ -3,7 +3,7 @@ import CoinBlock from './CoinsBlock';
 import './CoinsList.css';
 import { useSelector, useDispatch } from 'react-redux';
 
-export default function CoinsList() {
+export default function CoinsList({ searchTerm }) {
 	// const dispatch = useDispatch();
 
 	// useEffect(() => {
@@ -11,18 +11,32 @@ export default function CoinsList() {
 	// }, [dispatch]);
 
 	const coins = useSelector(state => state.coins);
+	const filteredCoins = useSelector(state => state.filteredCoins);
 
 	let arr = [];
-	for (let i in coins) {
-		arr.push(coins[i]);
+	if (filteredCoins['items']) {
+		arr = filteredCoins['items'];
+	} else {
+		for (let i in coins) {
+			arr.push(coins[i]);
+		}
 	}
 
 	return (
 		<>
+			{/* <span>{arr.length}: coins found</span> */}
 			<div className="coins-list__container">
-				{arr.map(coin => {
-					return <CoinBlock coin={coin} key={coin.id} />;
-				})}
+				{arr
+					?.filter(coin => {
+						if (searchTerm == '') {
+							return coin;
+						} else if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+							return coin;
+						}
+					})
+					.map(coin => {
+						return <CoinBlock coin={coin} key={coin.id} />;
+					})}
 				<div className="coin__container">
 					<div>
 						<i class="fas fa-plus add-coin_img"></i>

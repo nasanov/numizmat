@@ -1,13 +1,17 @@
 .main-nav {
 	padding: 0;
-	background-color: #ccc;
+	background-color: #fff;
 	display: grid;
-	grid-template-columns: 100px 70px 160px 1fr 120px 100px 120px;
-	height: 38px;
+	grid-template-columns: 140px 1fr 480px 120px 100px;
+	height: 50px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 70;
+	align-items: center;
+	justify-self: flex-end;
+	border-bottom: 1px solid #ccc;
 }
 
 .main-nav-home {
@@ -17,6 +21,10 @@
 	font-weight: bold;
 	text-decoration: none;
 	margin-right: 5px;
+}
+
+.main-nav-list {
+	display: flex;
 }
 
 /* SEARCH */
@@ -48,4 +56,17 @@
 
 .username {
 	margin-right: 20px;
+}
+
+.fa-user,
+.fa-star,
+.fa-th,
+.fa-coins,
+.fa-sign-out-alt {
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+.fa-user:hover {
+	cursor: default;
 }

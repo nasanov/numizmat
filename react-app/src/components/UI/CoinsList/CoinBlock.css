@@ -1,3 +1,53 @@
 .coin__add-to-collection--btn {
 	color: red;
 }
+
+.flip-card {
+	background-color: transparent;
+	width: 200px;
+	height: 200px;
+	perspective: 1000px;
+}
+
+.flip-card-inner {
+	position: inherit;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:focus {
+	outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	color: black;
+	transform: rotateY(180deg);
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-card-back {
+	color: white;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

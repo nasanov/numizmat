@@ -15,13 +15,15 @@ def all_collections():
 
 
 # ADD NEW COLLECTION
-# @collection_routes.route('/', methods=['POST'])
-# def add_collection():
-#     # get info from request and pass it to the Collection instance
-
-#     db.session.add(collection)
-#     db.session.commit()
-#     return {"collection": collection.to_dict()}
+@collection_routes.route('/', methods=['POST'])
+def add_collection():
+    # get info from request and pass it to the Collection instance
+    collection_name = request.json['name']
+    print(collection_name, current_user.id)
+    collection = Collection(name=collection_name, user_id=current_user.id)
+    db.session.add(collection)
+    db.session.commit()
+    return {"collection": collection.to_dict()}
 
 # EDIT COLLECTION
 # @collection_routes.route('/<int:collection_id>', methods=['PUT'])

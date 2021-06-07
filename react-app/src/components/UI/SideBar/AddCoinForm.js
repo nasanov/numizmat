@@ -37,7 +37,7 @@ const AddCoinForm = ({ setShowModal }) => {
 	const { user } = useSelector(state => state.session);
 
 	if (!user) {
-		return <Redirect to="/" />;
+		return <Redirect to="/login" />;
 	}
 
 	const handleSubmit = async e => {
@@ -145,8 +145,6 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="American Samoa">American Samoa</option>
 						<option value="Andorra">Andorra</option>
 						<option value="Angola">Angola</option>
-						<option value="Anguilla">Anguilla</option>
-						<option value="Antigua & Barbuda">Antigua & Barbuda</option>
 						<option value="Argentina">Argentina</option>
 						<option value="Armenia">Armenia</option>
 						<option value="Aruba">Aruba</option>
@@ -168,16 +166,13 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
 						<option value="Botswana">Botswana</option>
 						<option value="Brazil">Brazil</option>
-						<option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
 						<option value="Brunei">Brunei</option>
 						<option value="Bulgaria">Bulgaria</option>
-						<option value="Burkina Faso">Burkina Faso</option>
 						<option value="Burundi">Burundi</option>
 						<option value="Cambodia">Cambodia</option>
 						<option value="Cameroon">Cameroon</option>
 						<option value="Canada">Canada</option>
 						<option value="Canary Islands">Canary Islands</option>
-						<option value="Cape Verde">Cape Verde</option>
 						<option value="Cayman Islands">Cayman Islands</option>
 						<option value="Central African Republic">Central African Republic</option>
 						<option value="Chad">Chad</option>
@@ -204,19 +199,14 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="East Timor">East Timor</option>
 						<option value="Ecuador">Ecuador</option>
 						<option value="Egypt">Egypt</option>
-						<option value="El Salvador">El Salvador</option>
 						<option value="Equatorial Guinea">Equatorial Guinea</option>
 						<option value="Eritrea">Eritrea</option>
 						<option value="Estonia">Estonia</option>
 						<option value="Ethiopia">Ethiopia</option>
 						<option value="Falkland Islands">Falkland Islands</option>
-						<option value="Faroe Islands">Faroe Islands</option>
 						<option value="Fiji">Fiji</option>
 						<option value="Finland">Finland</option>
 						<option value="France">France</option>
-						<option value="French Guiana">French Guiana</option>
-						<option value="French Polynesia">French Polynesia</option>
-						<option value="French Southern Ter">French Southern Ter</option>
 						<option value="Gabon">Gabon</option>
 						<option value="Gambia">Gambia</option>
 						<option value="Georgia">Georgia</option>
@@ -243,7 +233,6 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Iran">Iran</option>
 						<option value="Iraq">Iraq</option>
 						<option value="Ireland">Ireland</option>
-						<option value="Isle of Man">Isle of Man</option>
 						<option value="Israel">Israel</option>
 						<option value="Italy">Italy</option>
 						<option value="Jamaica">Jamaica</option>
@@ -261,8 +250,6 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Lebanon">Lebanon</option>
 						<option value="Lesotho">Lesotho</option>
 						<option value="Liberia">Liberia</option>
-						<option value="Libya">Libya</option>
-						<option value="Liechtenstein">Liechtenstein</option>
 						<option value="Lithuania">Lithuania</option>
 						<option value="Luxembourg">Luxembourg</option>
 						<option value="Macau">Macau</option>
@@ -273,7 +260,6 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Maldives">Maldives</option>
 						<option value="Mali">Mali</option>
 						<option value="Malta">Malta</option>
-						<option value="Marshall Islands">Marshall Islands</option>
 						<option value="Martinique">Martinique</option>
 						<option value="Mauritania">Mauritania</option>
 						<option value="Mauritius">Mauritius</option>
@@ -290,8 +276,7 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Nambia">Nambia</option>
 						<option value="Nauru">Nauru</option>
 						<option value="Nepal">Nepal</option>
-						<option value="Netherland Antilles">Netherland Antilles</option>
-						<option value="Netherlands">Netherlands (Holland, Europe)</option>
+						<option value="Netherlands">Netherlands (Holland)</option>
 						<option value="Nevis">Nevis</option>
 						<option value="New Caledonia">New Caledonia</option>
 						<option value="New Zealand">New Zealand</option>
@@ -315,25 +300,16 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Portugal">Portugal</option>
 						<option value="Puerto Rico">Puerto Rico</option>
 						<option value="Qatar">Qatar</option>
-						<option value="Republic of Montenegro">Republic of Montenegro</option>
 						<option value="Republic of Serbia">Republic of Serbia</option>
 						<option value="Reunion">Reunion</option>
 						<option value="Romania">Romania</option>
 						<option value="Russia">Russia</option>
-						<option value="Rwanda">Rwanda</option>
-						<option value="St Barthelemy">St Barthelemy</option>
-						<option value="St Eustatius">St Eustatius</option>
-						<option value="St Helena">St Helena</option>
 						<option value="St Kitts-Nevis">St Kitts-Nevis</option>
 						<option value="St Lucia">St Lucia</option>
-						<option value="St Maarten">St Maarten</option>
-						<option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
-						<option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
 						<option value="Saipan">Saipan</option>
 						<option value="Samoa">Samoa</option>
 						<option value="Samoa American">Samoa American</option>
 						<option value="San Marino">San Marino</option>
-						<option value="Sao Tome & Principe">Sao Tome & Principe</option>
 						<option value="Saudi Arabia">Saudi Arabia</option>
 						<option value="Senegal">Senegal</option>
 						<option value="Seychelles">Seychelles</option>
@@ -347,24 +323,16 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="Spain">Spain</option>
 						<option value="Sri Lanka">Sri Lanka</option>
 						<option value="Sudan">Sudan</option>
-						<option value="Suriname">Suriname</option>
 						<option value="Swaziland">Swaziland</option>
 						<option value="Sweden">Sweden</option>
 						<option value="Switzerland">Switzerland</option>
-						<option value="Syria">Syria</option>
-						<option value="Tahiti">Tahiti</option>
 						<option value="Taiwan">Taiwan</option>
 						<option value="Tajikistan">Tajikistan</option>
 						<option value="Tanzania">Tanzania</option>
 						<option value="Thailand">Thailand</option>
 						<option value="Togo">Togo</option>
-						<option value="Tokelau">Tokelau</option>
-						<option value="Tonga">Tonga</option>
-						<option value="Trinidad & Tobago">Trinidad & Tobago</option>
-						<option value="Tunisia">Tunisia</option>
 						<option value="Turkey">Turkey</option>
 						<option value="Turkmenistan">Turkmenistan</option>
-						<option value="Turks & Caicos Is">Turks & Caicos Is</option>
 						<option value="Tuvalu">Tuvalu</option>
 						<option value="Uganda">Uganda</option>
 						<option value="United Kingdom">United Kingdom</option>
@@ -373,16 +341,10 @@ const AddCoinForm = ({ setShowModal }) => {
 						<option value="United States of America">United States of America</option>
 						<option value="Uraguay">Uruguay</option>
 						<option value="Uzbekistan">Uzbekistan</option>
-						<option value="Vanuatu">Vanuatu</option>
 						<option value="Vatican City State">Vatican City State</option>
 						<option value="Venezuela">Venezuela</option>
 						<option value="Vietnam">Vietnam</option>
-						<option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
-						<option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
-						<option value="Wake Island">Wake Island</option>
-						<option value="Wallis & Futana Is">Wallis & Futana Is</option>
 						<option value="Yemen">Yemen</option>
-						<option value="Zaire">Zaire</option>
 						<option value="Zambia">Zambia</option>
 						<option value="Zimbabwe">Zimbabwe</option>
 					</datalist>
@@ -501,14 +463,13 @@ const AddCoinForm = ({ setShowModal }) => {
 						type="text"
 						placeholder="orientation"
 						value={orientation}
-						list='orientations'
+						list="orientations"
 						onChange={e => setOrientation(e.target.value)}
 					></input>
 					<datalist id="orientations">
 						<option value="Medallic Orientation">Medallic Orientation</option>
 						<option value="Coin Orientation">Coin Orientation</option>
 					</datalist>
-
 				</div>
 				<button className="coin-form__button" type="submit">
 					Add Coin
