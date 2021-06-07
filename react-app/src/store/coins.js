@@ -48,7 +48,6 @@ export const getCoins = () => async dispatch => {
 };
 
 export const addNewCoin = coin_data => async dispatch => {
-
 	const formData = new FormData();
 	formData.append('composition', coin_data['composition']);
 	formData.append('country', coin_data['country']);
@@ -72,7 +71,7 @@ export const addNewCoin = coin_data => async dispatch => {
 		body: formData,
 		// body: JSON.stringify(coin_data),
 		// headers: {
-			// 'Content-Type': 'application/json',
+		// 'Content-Type': 'application/json',
 		// },
 	});
 	if (response.ok) {
@@ -119,7 +118,7 @@ export const addNewCoin = coin_data => async dispatch => {
 
 const initialState = {};
 
-export default function coinReducer(state = initialState, action) {
+export default function coinReducer(state = initialState, action, filteredItems = [], country = '') {
 	let newState;
 	switch (action.type) {
 		case SET_COINS:

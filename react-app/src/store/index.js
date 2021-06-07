@@ -2,6 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import session from './session';
 import coinReducer from './coins';
+import filteredCoinReducer from './filteredCoins';
 import collectionReducer from './collections';
 import categoryReducer from './categories';
 
@@ -10,6 +11,7 @@ const rootReducer = combineReducers({
 	coins: coinReducer,
 	collections: collectionReducer,
 	categories: categoryReducer,
+	filteredCoins: filteredCoinReducer
 });
 
 let enhancer;

@@ -1,6 +1,8 @@
 .coins-list__container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* TODO: make rows size fixed OR make pagination */
+	grid-template-rows: 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px 290px;
 }
 
 .add-coin_img {
