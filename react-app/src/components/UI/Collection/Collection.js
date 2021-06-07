@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import NavBar from '../NavBar/NavBar';
 import CollectionBlock from './CollectionBlock';
+import AddCollectionModal from './AddCollectionModal';
 import './Collection.css';
 
 export default function Collection() {
@@ -20,12 +21,7 @@ export default function Collection() {
 				{arr.map(collection => {
 					return <CollectionBlock collection={collection} key={collection.id} />;
 				})}
-				<div className="collection__container">
-					<div>
-						<i class="fas fa-plus add-collection_img"></i>
-					</div>
-					<button className="collection__add-collection--btn">Add New collection</button>
-				</div>
+				<AddCollectionModal />
 			</div>
 		</>
 	);

@@ -29,6 +29,7 @@ export default function SideBar({ setSearchTerm }) {
 					<li className="sidebar-filter__item">
 						<div className="sidebar-filter__content">
 							<AddCoinModal />
+							<p>Search by Name:</p>
 							<input
 								type="search"
 								placeholder="Search ..."
@@ -37,7 +38,7 @@ export default function SideBar({ setSearchTerm }) {
 								}}
 							></input>
 							<div>
-								<span>Sort by country:</span>
+								<p>Sort by country:</p>
 								<select onChange={e => dispatch(filterCoinsByCountry(coins, e.target.value))}>
 									<option value="">All Countries</option>
 									<option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -45,7 +46,7 @@ export default function SideBar({ setSearchTerm }) {
 								</select>
 							</div>
 							<div>
-								<span>Order by:</span>
+								<p>Order by:</p>
 								<select onChange={e => dispatch(sortCoinsByYear(filteredCoins, e.target.value))}>
 									<option value="country">Country</option>
 									<option value="name">Name</option>
@@ -55,27 +56,29 @@ export default function SideBar({ setSearchTerm }) {
 									<option value="country">Country</option>
 								</select>
 							</div>
-							{/* Automaticly filter the content while typing */}
-							<ul className="categories">
-								{arr.map(category => {
-									return (
-										<li>
-											<h3>{category}</h3>
-											<ul>
-												{categories[category].map(category_item => {
-													return (
-														<li className="sub">
-															<label>{category_item}</label>
-															<input type="checkbox"></input>
-														</li>
-													);
-												})}
-											</ul>
-										</li>
-									);
-								})}
-							</ul>
 						</div>
+					</li>
+					<li className="sidebar-filter__item">
+						{/* Automaticly filter the content while typing */}
+						<ul className="categories">
+							{arr.map(category => {
+								return (
+									<li>
+										<h3>{category}</h3>
+										<ul>
+											{categories[category].map(category_item => {
+												return (
+													<li className="sub">
+														<label>{category_item}</label>
+														<input type="checkbox"></input>
+													</li>
+												);
+											})}
+										</ul>
+									</li>
+								);
+							})}
+						</ul>
 					</li>
 				</ul>
 			</div>

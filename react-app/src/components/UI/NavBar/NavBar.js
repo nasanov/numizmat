@@ -12,23 +12,28 @@ function Navigation() {
 			<NavLink to="/" className="main-nav-home">
 				Numizmat
 			</NavLink>
-			<NavLink to="/home" className="main-nav-home">
-				Coins
-			</NavLink>
-			<NavLink to="/collections" className="main-nav-home">
-				My Collections
-			</NavLink>
 			<form className="nav-search">
 				<input type="text" placeholder="Search..." className="nav-searchBar" />
 			</form>
-			<NavLink to="/users" exact={true} className="main-nav-home" activeClassName="active">
+			<div className="main-nav-list">
+				<NavLink to="/home" className="main-nav-home">
+					<i class="fas fa-coins"></i> Coins
+				</NavLink>
+				<NavLink to="/collections" className="main-nav-home">
+					<i class="fas fa-th"></i>My Collections
+				</NavLink>
+				<NavLink to="/collections" className="main-nav-home">
+					<i class="fa fa-star"></i>WishList
+				</NavLink>
+			</div>
+			{/* <NavLink to="/users" exact={true} className="main-nav-home" activeClassName="active">
 				Users
-			</NavLink>
+			</NavLink> */}
 			{user ? (
 				<>
-					<div className="username_logo ">
+					<div className="username_logo">
+						<i class="fa fa-user"></i>
 						<span className="username">{user?.username}</span>
-						<div className="nav-logo"></div>
 					</div>
 					<LogoutButton />
 				</>

@@ -4,7 +4,7 @@
 
 .flip-card {
 	background-color: transparent;
-	width: 100px;
+	width: 200px;
 	height: 200px;
 	perspective: 1000px;
 }
@@ -37,6 +37,7 @@
 
 .flip-card-front {
 	color: black;
+	transform: rotateY(180deg);
 	z-index: 2;
 	display: flex;
 	justify-content: center;
@@ -45,7 +46,6 @@
 
 .flip-card-back {
 	color: white;
-	transform: rotateY(180deg);
 	z-index: 1;
 	display: flex;
 	justify-content: center;

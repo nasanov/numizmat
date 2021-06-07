@@ -37,7 +37,7 @@ const AddCoinForm = ({ setShowModal }) => {
 	const { user } = useSelector(state => state.session);
 
 	if (!user) {
-		return <Redirect to="/" />;
+		return <Redirect to="/login" />;
 	}
 
 	const handleSubmit = async e => {
@@ -463,14 +463,13 @@ const AddCoinForm = ({ setShowModal }) => {
 						type="text"
 						placeholder="orientation"
 						value={orientation}
-						list='orientations'
+						list="orientations"
 						onChange={e => setOrientation(e.target.value)}
 					></input>
 					<datalist id="orientations">
 						<option value="Medallic Orientation">Medallic Orientation</option>
 						<option value="Coin Orientation">Coin Orientation</option>
 					</datalist>
-
 				</div>
 				<button className="coin-form__button" type="submit">
 					Add Coin

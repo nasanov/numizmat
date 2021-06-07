@@ -10,12 +10,12 @@ export default function CoinBlock({ coin }) {
 					<div className="flip-card-inner">
 						<div className="flip-card-front">
 							<NavLink to={`/coins/${coin.id}`}>
-								<img src={coin.reverse_photo} alt={`${coin.name}`} className="coin_img"></img>
+								<img src={coin.obverse_photo} alt={`${coin.name}`} className="coin_img"></img>
 							</NavLink>
 						</div>
 						<div className="flip-card-back">
 							<NavLink to={`/coins/${coin.id}`}>
-								<img src={coin.obverse_photo} alt={`${coin.name}`} className="coin_img"></img>
+								<img src={coin.reverse_photo} alt={`${coin.name}`} className="coin_img"></img>
 							</NavLink>
 						</div>
 					</div>
@@ -33,7 +33,10 @@ export default function CoinBlock({ coin }) {
 			{/* <div className="coin__additional-info">
 				<span>{coin['value ']}</span>
 			</div> */}
-			<button className="coin__add-to-collection--btn">Add</button>
+			<div className="coin__block--btn">
+				<button className="coin__add-to-collection--btn">Add to wishlist</button>
+				<button className="coin__add-to-collection--btn">Add to collection</button>
+			</div>
 		</div>
 	);
 }

@@ -24,6 +24,7 @@ export default function CoinsList({ searchTerm }) {
 
 	return (
 		<>
+			{/* <span>{arr.length}: coins found</span> */}
 			<div className="coins-list__container">
 				{arr
 					?.filter(coin => {

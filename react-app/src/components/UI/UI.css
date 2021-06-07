@@ -1,4 +1,7 @@
 .main__container {
-	margin-top: 38px;
 	display: flex;
+	width: 80%;
+	margin: 50px auto;
+	justify-content: center;
+	/* background-color: #ccc; */
 }
