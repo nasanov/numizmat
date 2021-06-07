@@ -19,7 +19,8 @@ export default function Collection() {
 			<NavBar />
 			<div className="collection-list__container">
 				{arr.map(collection => {
-					return <CollectionBlock collection={collection} key={collection.id} />;
+					if (collection.name !== 'Wishlist')
+						return <CollectionBlock collection={collection} key={collection.id} />;
 				})}
 				<AddCollectionModal />
 			</div>

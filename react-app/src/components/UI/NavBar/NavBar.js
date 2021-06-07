@@ -3,10 +3,15 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './NavBar.css';
 import LogoutButton from '../../auth/LogoutButton';
+import Collection from '../Collection/Collection';
 
 function Navigation() {
 	const user = useSelector(state => state.session.user);
+	const collection = useSelector(state => state.collections['1']);
 
+	const wishlistId = collection?.id;
+
+	console.log('^^^^^^^^^^^^^^^^^', wishlistId);
 	return (
 		<nav className="main-nav">
 			<NavLink to="/" className="main-nav-home">
@@ -17,13 +22,13 @@ function Navigation() {
 			</form>
 			<div className="main-nav-list">
 				<NavLink to="/home" className="main-nav-home">
-					<i class="fas fa-coins"></i> Coins
+					<i className="fas fa-coins"></i> Coins
 				</NavLink>
 				<NavLink to="/collections" className="main-nav-home">
-					<i class="fas fa-th"></i>My Collections
+					<i className="fas fa-th"></i>My Collections
 				</NavLink>
-				<NavLink to="/collections" className="main-nav-home">
-					<i class="fa fa-star"></i>WishList
+				<NavLink to={`/collections/${wishlistId}`} className="main-nav-home">
+					<i className="fa fa-star"></i>WishList
 				</NavLink>
 			</div>
 			{/* <NavLink to="/users" exact={true} className="main-nav-home" activeClassName="active">
@@ -32,7 +37,7 @@ function Navigation() {
 			{user ? (
 				<>
 					<div className="username_logo">
-						<i class="fa fa-user"></i>
+						<i className="fa fa-user"></i>
 						<span className="username">{user?.username}</span>
 					</div>
 					<LogoutButton />

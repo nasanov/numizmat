@@ -2,7 +2,7 @@
 	padding: 0;
 	background-color: #fff;
 	display: grid;
-	grid-template-columns: 140px 1fr 480px 120px 100px;
+	grid-template-columns: 140px 1fr 480px 120px 120px;
 	height: 50px;
 	position: fixed;
 	top: 0;

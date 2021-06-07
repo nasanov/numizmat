@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import CoinBlock from './CoinsBlock';
 import './CoinsList.css';
 import { useSelector, useDispatch } from 'react-redux';
+import AddCoinModal from '../SideBar/AddCoinModal';
 
 export default function CoinsList({ searchTerm }) {
 	// const dispatch = useDispatch();
@@ -39,10 +40,10 @@ export default function CoinsList({ searchTerm }) {
 					})}
 				<div className="coin__container">
 					<div>
-						<i class="fas fa-plus add-coin_img"></i>
+						<i className="fas fa-plus add-coin_img"></i>
 					</div>
-					<div className="coin__title">Add new coin</div>
-					<button className="coin__add-to-collection--btn">Add New Coin</button>
+					{/* <div className="coin__title">Add new coin</div> */}
+					<AddCoinModal />
 				</div>
 			</div>
 		</>

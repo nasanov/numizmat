@@ -13,7 +13,7 @@ export default function Footer() {
 							<ul className="footer-list">
 								<li className="footer-li">Name: Nurs Asanov</li>
 								<li className="footer-li">
-									E-mail: <a href="mailto:nurs.asanov@pm.me">nurs.asanov@pm.me</a>
+									E-mail: <a href="mailto:nursultan.asanov@pm.me">nurs.asanov@pm.me</a>
 								</li>
 							</ul>
 						</div>

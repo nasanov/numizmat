@@ -10,7 +10,7 @@ export default function AddCollectionModal() {
 		<>
 			<div className="collection__container" onClick={() => setShowModal(true)}>
 				<div>
-					<i class="fas fa-plus add-collection_img"></i>
+					<i className="fas fa-plus add-collection_img"></i>
 				</div>
 				<button className="sidebar-add-to-collection--btn">Add New Collection</button>
 			</div>

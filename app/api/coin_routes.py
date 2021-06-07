@@ -10,7 +10,8 @@ coin_routes = Blueprint('coins', __name__)
 # GET ALL COINS
 @coin_routes.route('/')
 def all_coins():
-    coins = Coin.query.all()
+    coins = Coin.query.filter(
+        Coin.user_id == current_user.id or Coin.user_id == 2).all()
     return {"coins": [coin.to_dict() for coin in coins]}
 
 
@@ -93,10 +94,10 @@ def add_coin():
     upload_obverse = upload_file_to_s3(obverse_image)
     upload_reverse = upload_file_to_s3(reverse_image)
 
-    print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
-    print(obverse_image.filename, reverse_image)
-    print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
-    print(upload_obverse, upload_reverse)
+    # print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
+    # print(obverse_image.filename, reverse_image)
+    # print("hello *&*&*&*&*&*^*^&*^*^&*&^*&^*&^*&*&^*")
+    # print(upload_obverse, upload_reverse)
 
     if "url" not in upload_obverse:
         return upload_obverse, 400
@@ -108,28 +109,13 @@ def add_coin():
 
     # form['csrf_token'].data = request.cookies['csrf_token']
     # if form.validate_on_submit():
-
+    print("$$$$$$$$$$$$$$$$$$", request.form)
     coin = Coin(
-        # name=form.data['name'],
-        # obverse_photo=url_obverse,
-        # reverse_photo=url_reverse,
-        # country=form.data['country'],
-        # is_collectible=form.data['is_collectible'],
-        # series=form.data['series'],
-        # year=form.data['year'],
-        # mintage=form.data['mintage'],
-        # value=form.data['value'],
-        # composition=form.data['composition'],
-        # weight=form.data['weight'],
-        # diameter=form.data['diameter'],
-        # thickness=form.data['thickness'],
-        # shape=form.data['shape'],
-        # orientation=form.data['orientation'],
         name=request.form['name'],
         obverse_photo=url_obverse,
         reverse_photo=url_reverse,
         country=request.form['country'],
-        is_collectible=request.form['is_collectible'],
+        # is_collectible=request.form['isCollectible'],
         series=request.form['series'],
         year=request.form['year'],
         mintage=request.form['mintage'],
@@ -140,10 +126,11 @@ def add_coin():
         thickness=request.form['thickness'],
         shape=request.form['shape'],
         orientation=request.form['orientation'],
+        user_id=current_user.id
     )
-
-    # db.session.add(coin)
-    # db.session.commit()
+    print(coin)
+    db.session.add(coin)
+    db.session.commit()
     return {"coin": coin.to_dict()}
 
 
@@ -158,3 +145,19 @@ def add_coin():
 #     coin.name = request.json
 #     db.session.commit()
 #     return {"coin": coin.to_dict()}
+
+    # name=form.data['name'],
+    # obverse_photo=url_obverse,
+    # reverse_photo=url_reverse,
+    # country=form.data['country'],
+    # is_collectible=form.data['is_collectible'],
+    # series=form.data['series'],
+    # year=form.data['year'],
+    # mintage=form.data['mintage'],
+    # value=form.data['value'],
+    # composition=form.data['composition'],
+    # weight=form.data['weight'],
+    # diameter=form.data['diameter'],
+    # thickness=form.data['thickness'],
+    # shape=form.data['shape'],
+    # orientation=form.data['orientation'],

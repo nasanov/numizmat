@@ -51,3 +51,8 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.coin_img {
+	width: 180px;
+	height: 180px;
+}

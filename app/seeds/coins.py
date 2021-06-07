@@ -4,6 +4,7 @@ from faker import Faker
 import json
 # import os
 
+
 def seed_coins():
     # fake = Faker()
 
@@ -61,7 +62,8 @@ def seed_coins():
             diameter=coin['diameter'],
             # thickness=coin['thickness'],
             shape=coin['shape'],
-            # orientation=coin['orientation']
+            # orientation=coin['orientation'],
+            user_id=2
         )
         db.session.add(load_coin)
 

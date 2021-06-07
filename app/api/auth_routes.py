@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, session, request
-from app.models import User, db
+from app.models import User, db, Collection
 from app.forms import LoginForm
 from app.forms import SignUpForm
 from flask_login import current_user, login_user, logout_user, login_required
@@ -73,6 +73,19 @@ def sign_up():
         )
         db.session.add(user)
         db.session.commit()
+
+        last_user = User.query.filter(User.email == form.data['email']).first()
+        # print("%%%%%%%%%%%%%%%%%%%%", last_user)
+        collections = [
+            {"name": 'All Coins', 'user_id':  last_user.id},
+            {"name": 'Wishlist', 'user_id':  last_user.id},
+        ]
+        for collection in collections:
+            load_collections = Collection(
+                name=collection['name'], user_id=collection['user_id'])
+            db.session.add(load_collections)
+            db.session.commit()
+
         login_user(user)
         return user.to_dict()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401

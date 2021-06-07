@@ -63,12 +63,12 @@ export default function SideBar({ setSearchTerm }) {
 						<ul className="categories">
 							{arr.map(category => {
 								return (
-									<li>
+									<li key={category.id}>
 										<h3>{category}</h3>
 										<ul>
-											{categories[category].map(category_item => {
+											{categories[category]?.map(category_item => {
 												return (
-													<li className="sub">
+													<li className="sub" key={category_item?.id}>
 														<label>{category_item}</label>
 														<input type="checkbox"></input>
 													</li>

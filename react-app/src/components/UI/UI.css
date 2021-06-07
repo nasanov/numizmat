@@ -1,7 +1,7 @@
 .main__container {
 	display: flex;
-	width: 80%;
+	width: 1500px;
 	margin: 50px auto;
-	justify-content: center;
+	justify-content: flex-start;
 	/* background-color: #ccc; */
 }

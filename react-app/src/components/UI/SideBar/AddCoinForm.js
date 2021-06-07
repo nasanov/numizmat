@@ -53,9 +53,9 @@ const AddCoinForm = ({ setShowModal }) => {
 			mintage,
 			value,
 			composition,
-			weight,
-			diameter,
-			thickness,
+			weight: weight === '' ? 0 : weight,
+			diameter: diameter === '' ? 0 : diameter,
+			thickness: thickness === '' ? 0 : thickness,
 			shape,
 			orientation,
 		};
@@ -81,7 +81,7 @@ const AddCoinForm = ({ setShowModal }) => {
 								onChange={e => setReversePhoto(e.target.files[0])}
 								hidden
 							/>
-							<label htmlFor="reverse-pic-btn" class="coin-form__photo-button">
+							<label htmlFor="reverse-pic-btn" className="coin-form__photo-button">
 								{reversePhoto?.name ? reversePhoto?.name : 'Reverse Photo'}
 							</label>
 						</div>
@@ -94,7 +94,7 @@ const AddCoinForm = ({ setShowModal }) => {
 								onChange={e => setObversePhoto(e.target.files[0])}
 								hidden
 							/>
-							<label htmlFor="obverse-pic-btn" class="coin-form__photo-button">
+							<label htmlFor="obverse-pic-btn" className="coin-form__photo-button">
 								{obversePhoto?.name ? obversePhoto?.name : 'Obverse Photo'}
 							</label>
 						</div>
@@ -104,7 +104,7 @@ const AddCoinForm = ({ setShowModal }) => {
 					<div className="errorsContainer">
 						<span>The following errors occurred:</span>
 						<ul className="errorsList">
-							{errors.map((error, idx) => (
+							{errors?.map((error, idx) => (
 								<li key={idx}>{error}</li>
 							))}
 						</ul>
@@ -449,6 +449,7 @@ const AddCoinForm = ({ setShowModal }) => {
 						onChange={e => setShape(e.target.value)}
 					></input>
 					<datalist id="shapes">
+						<option value="Round">Round</option>
 						<option value="Triangular">Triangular</option>
 						<option value="Square/diamond">Square/diamond</option>
 						<option value="Pentagonal">Pentagonal</option>

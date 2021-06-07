@@ -108,7 +108,8 @@ class Coin(db.Model):
     # obverse = db.Column(db.Text)
     # reverse = db.Column(db.Text)
     # verified = db.Column(db.Integer)
-    # user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False) # Who created this coin, admin by default
+    # Who created this coin, admin by default
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
 
     collections = db.relationship("Collection",
                                   secondary=coin_collections,

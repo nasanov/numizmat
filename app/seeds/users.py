@@ -9,8 +9,11 @@ def seed_users():
     fake = Faker()
     demo = User(username='Demo', email='demo@aa.io',
                 password='password', firstname='DemoFirstName', lastname='DemoLastName', country="DemoCountry")
+    publisher = User(username='admin', email='admin@aa.io',
+                     password='password', firstname='adminFirstName', lastname='adminLastName', country="adminCountry")
 
     db.session.add(demo)
+    db.session.add(publisher)
 
     users = []
     for _ in range(50):
