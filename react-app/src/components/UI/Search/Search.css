@@ -1,3 +1,13 @@
+/* @keyframes slidein {
+	from {
+		margin-top: -100%;
+	}
+
+	to {
+		margin-top: 0%;
+	}
+} */
+
 .search-container {
 	position: absolute;
 	top: 36px;
@@ -14,6 +24,8 @@
 	border-left: 1px solid rgba(0, 0, 0, 0.15);
 	border-right: 1px solid rgba(0, 0, 0, 0.15);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	/* animation-duration: 1s;
+	animation-name: slidein; */
 }
 
 .search-container:hover {
@@ -35,7 +47,7 @@
 }
 
 .search__secondary-info {
-	/* margin: 0 0 0 10px; */
+	margin: 0 10px 0 0;
 	font-size: 80%;
 	color: grey;
 }

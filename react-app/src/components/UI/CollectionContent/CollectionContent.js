@@ -12,13 +12,13 @@ export default function CollectionContent() {
 
 	let current_collection;
 	for (let i in collections) {
-		console.log(collections[i]['id'] === parseInt(collectionId));
+		// console.log(collections[i]['id'] === parseInt(collectionId));
 		if (collections[i]['id'] === parseInt(collectionId)) {
 			current_collection = collections[i];
 			break;
 		}
 	}
-	console.log(current_collection);
+	// console.log(current_collection);
 
 	return (
 		<>

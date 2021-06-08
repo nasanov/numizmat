@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import NavBar from '../NavBar/NavBar';
 import CollectionBlock from './CollectionBlock';
-import AddCollectionModal from './AddCollectionModal';
+import AddCollectionModal from './AddCollectionModal/AddCollectionModal';
 import './Collection.css';
 
 export default function Collection() {

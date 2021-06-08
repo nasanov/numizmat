@@ -7,11 +7,14 @@ from app.forms import AddCoinForm
 coin_routes = Blueprint('coins', __name__)
 
 
-# GET ALL COINS
+# GET ALL COINS FOR THE CURRENT USER
 @coin_routes.route('/')
 def all_coins():
-    coins = Coin.query.filter(
-        Coin.user_id == current_user.id or Coin.user_id == 2).all()
+    current_user_coins = Coin.query.filter(
+        Coin.user_id == current_user.id).all()
+    admins_coins = Coin.query.filter(
+        Coin.user_id == 2).all()
+    coins = current_user_coins + admins_coins
     return {"coins": [coin.to_dict() for coin in coins]}
 
 
@@ -60,6 +63,13 @@ def all_categories():
 
     # print("******************", categories)
     return {"categories": categories}
+
+
+# GET ONE COINS
+@coin_routes.route('/<int:coin_id>', methods=['GET'])
+def one_coin(coin_id):
+    coin = Coin.query.get(coin_id)
+    return {"coin": coin.to_dict()}
 
 
 # ADD NEW COIN
@@ -135,29 +145,84 @@ def add_coin():
 
 
 # EDIT COIN
-# @coin_routes.route('/<int:coin_id>', methods=['PUT'])
-# def edit_coin(coin_id):
+@coin_routes.route('/<int:coin_id>/', methods=['PUT'])
+def edit_coin(coin_id):
+    if not current_user.is_authenticated:
+        return {'errors': ['Unauthorized']}
 
-#     if not current_user.is_authenticated:
-#         return {'errors': ['Unauthorized']}
+    # print("request files", request.files)
+    # print("request json", request.form["obversePhoto"])
+    if request.form["obversePhoto"] != 'undefined' or request.form["reversePhoto"] != 'undefined':
+        url_obverse = request.form["obversePhoto"]
+        url_reverse = request.form["reversePhoto"]
+    else:
+        obverse_image = request.files["obversePhoto"]
+        reverse_image = request.files["reversePhoto"]
 
-#     coin = Coin.query.get(coin_id)
-#     coin.name = request.json
-#     db.session.commit()
-#     return {"coin": coin.to_dict()}
+        if obverse_image == 'null' or obverse_image == 'undefined':
+            obverse_image = None
+        if reverse_image == 'null' or reverse_image == 'undefined':
+            reverse_image = None
 
-    # name=form.data['name'],
-    # obverse_photo=url_obverse,
-    # reverse_photo=url_reverse,
-    # country=form.data['country'],
-    # is_collectible=form.data['is_collectible'],
-    # series=form.data['series'],
-    # year=form.data['year'],
-    # mintage=form.data['mintage'],
-    # value=form.data['value'],
-    # composition=form.data['composition'],
-    # weight=form.data['weight'],
-    # diameter=form.data['diameter'],
-    # thickness=form.data['thickness'],
-    # shape=form.data['shape'],
-    # orientation=form.data['orientation'],
+        if not allowed_file(obverse_image.filename):
+            return {"errors": "file type not permitted"}, 400
+        if not allowed_file(reverse_image.filename):
+            return {"errors": "file type not permitted"}, 400
+
+        obverse_image.filename = get_unique_filename(obverse_image.filename)
+        reverse_image.filename = get_unique_filename(reverse_image.filename)
+
+        upload_obverse = upload_file_to_s3(obverse_image)
+        upload_reverse = upload_file_to_s3(reverse_image)
+
+        if "url" not in upload_obverse:
+            return upload_obverse, 400
+        if "url" not in upload_reverse:
+            return upload_reverse, 400
+
+        url_obverse = upload_obverse["url"]
+        url_reverse = upload_reverse["url"]
+
+    coin = Coin.query.get(coin_id)
+
+    coin.name = request.form['name']
+    coin.obverse_photo = url_obverse
+    coin.reverse_photo = url_reverse
+    coin.country = request.form['country']
+    coin.series = request.form['series']
+    coin.year = request.form['year']
+    coin.mintage = request.form['mintage']
+    coin.value = request.form['value']
+    coin.composition = request.form['composition']
+    coin.weight = request.form['weight']
+    coin.diameter = request.form['diameter']
+    coin.thickness = request.form['thickness']
+    coin.shape = request.form['shape']
+    coin.orientation = request.form['orientation']
+
+    # db.session.commit()
+    return {"coin": coin.to_dict()}
+
+
+# DELETE COIN
+@coin_routes.route('/<int:coin_id>/', methods=['DELETE'])
+def dm_delete(coin_id):
+    coin = Coin.query.get(coin_id)
+    db.session.delete(coin)
+    db.session.commit()
+
+    return {'coin': coin.to_dict()}
+
+
+# ADD COIN TO COLLECTION
+@coin_routes.route('/<int:coinId>/', methods=['POST'])
+def add_coin_to_collection(coinId):
+    # print("#################", coinId)
+
+    coin = Coin.query.get(coinId)
+    collection = Collection.query.get(request.json)
+    # print(collection)
+    coin.in_collections.append(collection)
+    db.session.commit()
+    return {"coin": coin.to_dict(),
+            "collection": collection.to_dict()}

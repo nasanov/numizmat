@@ -22,7 +22,7 @@ export default function Search() {
 
 	useEffect(() => {
 		const fetchCoinsAndCollections = async () => {
-			console.log(searchParam);
+			// console.log(searchParam);
 			const res = await fetch('/api/search/', {
 				method: 'POST',
 				headers: {

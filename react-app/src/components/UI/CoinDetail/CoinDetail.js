@@ -1,20 +1,31 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useParams, NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams, NavLink, useHistory } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import './CoinDetail.css';
+import AddToCollectionModal from '../Collection/AddToCollectionModal/AddToCollectionModal';
+import EditCoinModal from './EditCoinModal/EditCoinModal';
+import { removeCoin } from '../../../store/coins';
 
 export default function CoinDetail() {
 	const { coinId } = useParams();
 	const coin = useSelector(state => state.coins[coinId]);
 	const collections = useSelector(state => state.collections);
+	const user = useSelector(state => state.session.user);
 
+	const dispatch = useDispatch();
+	const history = useHistory();
 	let collections_array = [];
 	for (let i in collections) {
 		collections_array.push(collections[i]);
 	}
 
-	console.log(collections);
+	const editCoinHandler = () => {};
+	const deleteCoinHandler = () => {
+		dispatch(removeCoin(coin.id));
+		history.push('/home');
+	};
+
 	return (
 		<>
 			<NavBar />
@@ -80,12 +91,26 @@ export default function CoinDetail() {
 						</div>
 					</div>
 				</div>
-				<button className="coin__add-to-collection--btn">Add to</button>
+				{/* <button className="coin__add-to-collection--btn">Add to</button>
 				<select>
 					{collections_array.map(collection => {
 						return <option>{collection?.name}</option>;
 					})}
-				</select>
+				</select> */}
+				<AddToCollectionModal coin={coin} />
+				{coin?.user_id === user.id ? (
+					<div className="">
+						<EditCoinModal coin={coin} />
+						{/* <button className="coin__add-to-collection--btn" onClick={editCoinHandler}>
+							Edit coin
+						</button> */}
+						<button className="coin__add-to-collection--btn" onClick={deleteCoinHandler}>
+							Delete coin
+						</button>
+					</div>
+				) : (
+					<></>
+				)}
 			</div>
 		</>
 	);

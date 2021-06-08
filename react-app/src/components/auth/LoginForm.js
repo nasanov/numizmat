@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Redirect, NavLink } from 'react-router-dom';
 import { login } from '../../store/session';
 import './LoginForm.css';
+import { getCollections } from '../../store/collections';
+import { getCoins } from '../../store/coins';
 
 const LoginForm = () => {
 	const [errors, setErrors] = useState([]);
@@ -19,6 +21,9 @@ const LoginForm = () => {
 		if (data.errors) {
 			setErrors(data.errors);
 		}
+		// temporary: to update users coins and collections after relogin
+		dispatch(getCoins());
+		dispatch(getCollections());
 	};
 
 	const updateEmail = e => {
@@ -32,6 +37,10 @@ const LoginForm = () => {
 	const demoLogin = async e => {
 		e.preventDefault();
 		await dispatch(login('demo@aa.io', 'password'));
+
+		// temporary: to update demo users coins and collections after relogin
+		dispatch(getCoins());
+		dispatch(getCollections());
 	};
 
 	if (user) {

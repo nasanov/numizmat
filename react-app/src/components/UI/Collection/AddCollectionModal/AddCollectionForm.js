@@ -11,7 +11,7 @@ import './AddCollectionForm.css';
 // ############################  STORES  ############################ //
 // ################################################################## //
 
-import { addNewCollection } from '../../../store/collections';
+import { addNewCollection } from '../../../../store/collections';
 
 export default function AddCollectionForm({ setShowModal }) {
 	const dispatch = useDispatch();

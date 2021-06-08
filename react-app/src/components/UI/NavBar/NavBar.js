@@ -8,11 +8,11 @@ import Search from '../Search/Search';
 
 function Navigation() {
 	const user = useSelector(state => state.session.user);
-	const collection = useSelector(state => state.collections['1']);
+	const collection = useSelector(state => state.collections);
 
-	const wishlistId = collection?.id;
+	var collectionIds = Object.keys(collection);
+	var wishlistId = collectionIds.find(id => collection[id]['name'] === 'Wishlist');
 
-	console.log('^^^^^^^^^^^^^^^^^', wishlistId);
 	return (
 		<nav className="main-nav">
 			<NavLink to="/" className="main-nav-home">

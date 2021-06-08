@@ -144,6 +144,7 @@ class Coin(db.Model):
             "thickness": self.thickness,
             "shape": self.shape,
             "orientation": self.orientation,
+            "user_id": self.user_id,
             'in_collections': [collection.to_dict_basic() for collection in self.in_collections],
         }
 
@@ -165,6 +166,7 @@ class Coin(db.Model):
             "thickness": self.thickness,
             "shape": self.shape,
             "orientation": self.orientation,
+            "user_id": self.user_id
         }
 
 
