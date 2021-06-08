@@ -62,7 +62,7 @@ export default function SideBar({ setSearchTerm }) {
 					<li className="sidebar-filter__item">
 						{/* Automaticly filter the content while typing */}
 						<ul className="categories">
-							{arr.map(category => {
+							{/* {arr.map(category => {
 								return (
 									<li key={category.id}>
 										<h3>{category}</h3>
@@ -78,7 +78,7 @@ export default function SideBar({ setSearchTerm }) {
 										</ul>
 									</li>
 								);
-							})}
+							})} */}
 						</ul>
 					</li>
 				</ul>
