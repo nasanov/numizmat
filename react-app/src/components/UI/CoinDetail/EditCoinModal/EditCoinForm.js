@@ -5,34 +5,36 @@ import { useDispatch, useSelector } from 'react-redux';
 // ############################################################### //
 // ############################  CSS  ############################ //
 // ############################################################### //
-import './AddCoinForm.css';
-import Arrow from '../../../images/sort-down-solid.svg';
+
+import './EditCoinForm.css';
+import Arrow from '../../../../images/sort-down-solid.svg';
+
 // ################################################################## //
 // ############################  STORES  ############################ //
 // ################################################################## //
 
-import { addNewCoin } from '../../../store/coins';
+import { modifyCoin } from '../../../../store/coins';
 
-const AddCoinForm = ({ setShowModal }) => {
+export default function EditCoinForm({ setShowModal, coin }) {
 	// const history = useHistory();
 	const dispatch = useDispatch();
 
-	const [name, setName] = useState('');
-	const [obversePhoto, setObversePhoto] = useState('');
-	const [reversePhoto, setReversePhoto] = useState('');
-	const [country, setCountry] = useState('');
-	const [isCollectible, setIsCollectible] = useState('');
-	const [series, setSeries] = useState('');
-	const [year, setYear] = useState('');
-	const [mintage, setMintage] = useState('');
-	const [value, setValue] = useState('');
-	const [composition, setComposition] = useState('');
-	const [weight, setWeight] = useState('');
-	const [diameter, setDiameter] = useState('');
-	const [thickness, setThickness] = useState('');
-	const [shape, setShape] = useState('');
-	const [orientation, setOrientation] = useState('');
-	const [errors, setErrors] = useState('');
+	const [name, setName] = useState(coin.name);
+	const [obversePhoto, setObversePhoto] = useState(coin.obverse_photo);
+	const [reversePhoto, setReversePhoto] = useState(coin.reverse_photo);
+	const [country, setCountry] = useState(coin.country);
+	const [isCollectible, setIsCollectible] = useState(coin.is_collectibe);
+	const [series, setSeries] = useState(coin.series);
+	const [year, setYear] = useState(coin.year);
+	const [mintage, setMintage] = useState(coin.mintage);
+	const [value, setValue] = useState(coin.value);
+	const [composition, setComposition] = useState(coin.composition);
+	const [weight, setWeight] = useState(coin.weight);
+	const [diameter, setDiameter] = useState(coin.diameter);
+	const [thickness, setThickness] = useState(coin.thickness);
+	const [shape, setShape] = useState(coin.shape);
+	const [orientation, setOrientation] = useState(coin.orientation);
+	const [errors, setErrors] = useState([]);
 
 	const { user } = useSelector(state => state.session);
 
@@ -60,12 +62,12 @@ const AddCoinForm = ({ setShowModal }) => {
 			orientation,
 		};
 
-		let newCoin = await dispatch(addNewCoin(coin_info));
+		let editedCoin = await dispatch(modifyCoin(coin.id, coin_info));
 
-		if (newCoin.name) {
+		if (editedCoin.name) {
 			setShowModal(false);
 		} else {
-			setErrors(newCoin.errors);
+			setErrors(editedCoin.errors);
 		}
 	};
 
@@ -489,11 +491,9 @@ const AddCoinForm = ({ setShowModal }) => {
 					</datalist>
 				</div>
 				<button className="coin-form__button" type="submit">
-					Add Coin
+					Edit Coin
 				</button>
 			</form>
 		</div>
 	);
-};
-
-export default AddCoinForm;
+}
