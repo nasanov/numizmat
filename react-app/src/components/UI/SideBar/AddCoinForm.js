@@ -69,9 +69,27 @@ const AddCoinForm = ({ setShowModal }) => {
 		}
 	};
 
+	const demoData = async e => {
+		e.preventDefault();
+
+		setName("The Queen's Beasts The Red Dragon of Wales 2018");
+		setCountry('United Kingdom');
+		setIsCollectible('True');
+		setSeries("The Queen's Beasts");
+		setYear('2018');
+		setMintage('500');
+		setValue('10');
+		setComposition('Silver (.999');
+		setWeight(156.3);
+		setDiameter(65.0);
+		setThickness(9.5);
+		setShape('Round');
+		setOrientation('Medallic Orientation');
+	};
+
 	return (
 		<div className="coin-form__div">
-			<form className="coin-form__main" onSubmit={handleSubmit}>
+			<form className="coin-form__main" onSubmit={handleSubmit} autocomplete="on">
 				<div className="coin-form__photo-outer-container">
 					<div className="coin-form__photo-container">
 						<div className="coin-form__photo-input">
@@ -490,6 +508,9 @@ const AddCoinForm = ({ setShowModal }) => {
 				</div>
 				<button className="coin-form__button" type="submit">
 					Add Coin
+				</button>
+				<button className="coin-form__button" onClick={demoData}>
+					Demo Data
 				</button>
 			</form>
 		</div>
