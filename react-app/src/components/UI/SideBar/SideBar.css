@@ -37,3 +37,12 @@
 	padding: 3px;
 	text-align: center;
 }
+
+.sidebar__search {
+	border-radius: 7px;
+	outline: none;
+	height: 24px;
+	border: 1px solid #cccccc;
+	padding: 0 0 0 10px;
+	font-size: 13px;
+}

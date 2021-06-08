@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import './NavBar.css';
 import LogoutButton from '../../auth/LogoutButton';
 import Collection from '../Collection/Collection';
+import Search from '../Search/Search';
 
 function Navigation() {
 	const user = useSelector(state => state.session.user);
@@ -17,9 +18,10 @@ function Navigation() {
 			<NavLink to="/" className="main-nav-home">
 				Numizmat
 			</NavLink>
-			<form className="nav-search">
+			<Search />
+			{/* <form className="nav-search">
 				<input type="text" placeholder="Search..." className="nav-searchBar" />
-			</form>
+			</form> */}
 			<div className="main-nav-list">
 				<NavLink to="/home" className="main-nav-home">
 					<i className="fas fa-coins"></i> Coins

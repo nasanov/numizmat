@@ -1,0 +1,60 @@
+.search-container {
+	position: absolute;
+	top: 36px;
+	padding: 15px;
+	background-color: white;
+	width: 500px;
+	left: 0;
+	border-radius: 0px 0px 5px 5px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	color: black;
+	z-index: 99;
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.search-container:hover {
+	display: flex;
+}
+.search__coin-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.search__photo--container {
+	display: flex;
+}
+.search__photo--container img {
+	width: 50px;
+	height: 50px;
+	margin-right: 4px;
+}
+
+.search__secondary-info {
+	/* margin: 0 0 0 10px; */
+	font-size: 80%;
+	color: grey;
+}
+
+.search__coin-title {
+	/* margin-left: 10px; */
+}
+
+.search__result--item {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.search__coin-info {
+	margin-left: 6px;
+}
+
+.search__secondary-collection--info {
+	margin: 0 0 0 10px;
+	font-size: 80%;
+	color: grey;
+}

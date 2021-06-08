@@ -32,7 +32,8 @@ export default function SideBar({ setSearchTerm }) {
 							<p>Search by Name:</p>
 							<input
 								type="search"
-								placeholder="Search ..."
+								placeholder="Search by name ..."
+								className="sidebar__search"
 								onChange={e => {
 									setSearchTerm(e.target.value);
 								}}
