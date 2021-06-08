@@ -33,3 +33,7 @@
 	font-weight: 600;
 	color: #333;
 }
+
+.collection__image {
+	border-radius: 10px 10px 0 0;
+}
