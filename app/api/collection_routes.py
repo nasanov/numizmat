@@ -25,26 +25,28 @@ def add_collection():
     db.session.commit()
     return {"collection": collection.to_dict()}
 
+
 # EDIT COLLECTION
-# @collection_routes.route('/<int:collection_id>', methods=['PUT'])
-# def edit_collection(collection_id):
+@collection_routes.route('/<int:collection_id>/', methods=['PUT'])
+def edit_collection(collection_id):
 
-#     if not current_user.is_authenticated:
-#         return {'errors': ['Unauthorized']}
+    if not current_user.is_authenticated:
+        return {'errors': ['Unauthorized']}
 
-#     collection = Collection.query.get(collection_id)
-#     collection.name = request.json
-#     db.session.commit()
-#     return {"collection": collection.to_dict()}
+    collection = Collection.query.get(collection_id)
+    collection.name = request.json
+    db.session.commit()
+    return {"collection": collection.to_dict()}
+
 
 # DELETE COLLECTION
-# @collection_routes.route('/<int:collection_id>', methods=['DELETE'])
-# def delete_collection(collection_id):
+@collection_routes.route('/<int:collection_id>/', methods=['DELETE'])
+def delete_collection(collection_id):
 
-#     if not current_user.is_authenticated:
-#         return {'errors': ['Unauthorized']}
+    if not current_user.is_authenticated:
+        return {'errors': ['Unauthorized']}
 
-#     collection = Collection.query.get(collection_id)
-#     delete collection
-#     db.session.commit()
-#     return {"collection": collection.to_dict()}
+    collection = Collection.query.get(collection_id)
+    db.session.delete(collection)
+    db.session.commit()
+    return {"collection": collection.to_dict()}

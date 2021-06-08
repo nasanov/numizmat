@@ -4,8 +4,8 @@
 
 const SET_COLLECTIONS = 'set/COLLECTIONS';
 const ADD_COLLECTION = 'add/COLLECTION';
-// ? const EDIT_COLLECTION = 'edit/COLLECTION';
-// ? const DELETE_COLLECTION = 'delete/COLLECTION';
+const EDIT_COLLECTION = 'edit/COLLECTION';
+const DELETE_COLLECTION = 'delete/COLLECTION';
 const ADD_TO_COLLECTION = 'add/TO_COLLECTION';
 // ################################################################## //
 // ############################  ACTIONS  ########################### //
@@ -29,15 +29,15 @@ export const addTo = (coin, collection) => ({
 	},
 });
 
-// ? export const editCollection = collection => ({
-// ? 	type: EDIT_COLLECTION,
-// ? 	collection
-// ? })
+export const editCollection = collection => ({
+	type: EDIT_COLLECTION,
+	collection,
+});
 
-// ? export const deleteCollection = collection => ({
-// ? 	type: DELETE_COLLECTION,
-// ? 	collection,
-// ? })
+export const deleteCollection = collection => ({
+	type: DELETE_COLLECTION,
+	collection,
+});
 
 // ################################################################# //
 // ############################  THUNKS  ########################### //
@@ -91,6 +91,35 @@ export const addToCollection =
 		}
 	};
 
+export const modifyCollection = (collection_id, collection_name) => async dispatch => {
+	const response = await fetch(`/api/collections/${collection_id}/`, {
+		method: 'PUT',
+		body: JSON.stringify(collection_name),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	});
+	if (response.ok) {
+		const data = await response.json();
+		dispatch(editCollection(data.collection));
+		return data.collection;
+	} else {
+		throw response;
+	}
+};
+
+export const removeCollection = collection_id => async dispatch => {
+	const response = await fetch(`/api/collections/${collection_id}/`, {
+		method: 'DELETE',
+	});
+	if (response.ok) {
+		const data = await response.json();
+		dispatch(deleteCollection(data.collection));
+	} else {
+		throw response;
+	}
+};
+
 // ################################################################### //
 // ############################  REDUCERS  ########################### //
 // ################################################################### //
@@ -118,6 +147,14 @@ export default function collectionReducer(state = initialState, action) {
 			// console.log('newState', newState);
 			// console.log('action', action.payload.collection.id);
 			newState[action.payload.collection.id].coins_in.push(action.payload.coin);
+			return newState;
+		case EDIT_COLLECTION:
+			newState = { ...state };
+			newState[action.collection.id] = action.collection;
+			return newState;
+		case DELETE_COLLECTION:
+			newState = { ...state };
+			delete newState[action.collection.id];
 			return newState;
 		default:
 			return state;

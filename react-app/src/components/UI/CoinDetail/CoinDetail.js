@@ -20,7 +20,6 @@ export default function CoinDetail() {
 		collections_array.push(collections[i]);
 	}
 
-	const editCoinHandler = () => {};
 	const deleteCoinHandler = () => {
 		dispatch(removeCoin(coin.id));
 		history.push('/home');

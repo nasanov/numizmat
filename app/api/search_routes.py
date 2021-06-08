@@ -9,7 +9,8 @@ search_routes = Blueprint('search', __name__)
 @search_routes.route('/', methods=['GET', 'POST'])
 def search():
     searchTerm = request.json['searchParam']
-    print("####", request.json)
+    # print("####", request.json)
+
     coins = Coin.query.filter(
         Coin.user_id == current_user.id or Coin.user_id == 2).filter(Coin.name.ilike(f'%{searchTerm}%') | Coin.series.ilike(
             f'%{searchTerm}%') | Coin.composition.ilike(f'{searchTerm}%')).limit(10).all()
