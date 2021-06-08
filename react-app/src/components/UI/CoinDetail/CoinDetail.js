@@ -14,7 +14,7 @@ export default function CoinDetail() {
 		collections_array.push(collections[i]);
 	}
 
-	console.log(collections);
+	// console.log(collections);
 	return (
 		<>
 			<NavBar />

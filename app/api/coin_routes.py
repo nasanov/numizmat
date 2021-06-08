@@ -62,6 +62,13 @@ def all_categories():
     return {"categories": categories}
 
 
+# GET ONE COINS
+@coin_routes.route('/<int:coin_id>', methods=['GET'])
+def one_coin(coin_id):
+    coin = Coin.query.get(coin_id)
+    return {"coin": coin.to_dict()}
+
+
 # ADD NEW COIN
 @coin_routes.route('/', methods=['POST'])
 def add_coin():
@@ -161,3 +168,17 @@ def add_coin():
     # thickness=form.data['thickness'],
     # shape=form.data['shape'],
     # orientation=form.data['orientation'],
+
+
+# ADD COIN TO COLLECTION
+@coin_routes.route('/<int:coinId>/', methods=['POST'])
+def add_coin_to_collection(coinId):
+    print("#################", coinId)
+
+    coin = Coin.query.get(coinId)
+    collection = Collection.query.get(request.json)
+    # print(collection)
+    coin.in_collections.append(collection)
+    db.session.commit()
+    return {"coin": coin.to_dict(),
+            "collection": collection.to_dict()}

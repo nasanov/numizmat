@@ -64,7 +64,7 @@ export const addNewCoin = coin_data => async dispatch => {
 	formData.append('value', coin_data['value']);
 	formData.append('weight', coin_data['weight']);
 	formData.append('year', coin_data['year']);
-	console.log(formData);
+	// console.log(formData);
 
 	const response = await fetch(`/api/coins/`, {
 		method: 'POST',
@@ -122,7 +122,12 @@ export default function coinReducer(state = initialState, action, filteredItems 
 	let newState;
 	switch (action.type) {
 		case SET_COINS:
-			newState = { ...state, ...action.coins };
+			// newState = { ...state, ...action.coins };
+			// return newState;
+			newState = {};
+			action.coins.forEach(coin => {
+				newState[coin.id] = coin;
+			});
 			return newState;
 		case ADD_COIN:
 			newState = { ...state };

@@ -1,6 +1,7 @@
 import React from 'react';
 import './CoinBlock.css';
 import { NavLink } from 'react-router-dom';
+import AddToCollectionModal from '../Collection/AddToCollectionModal/AddToCollectionModal';
 
 export default function CoinBlock({ coin }) {
 	return (
@@ -34,8 +35,11 @@ export default function CoinBlock({ coin }) {
 				<span>{coin['value ']}</span>
 			</div> */}
 			<div className="coin__block--btn">
-				<button className="coin__add-to-collection--btn">Add to wishlist</button>
-				<button className="coin__add-to-collection--btn">Add to collection</button>
+				{/* <button className="coin__add-to-collection--btn" onClick={addToWishlist}>Add to wishlist</button> */}
+				{/* <button className="coin__add-to-collection--btn" onClick={addToCollection}>
+					Add to collection
+				</button> */}
+				<AddToCollectionModal coin={coin} />
 			</div>
 		</div>
 	);
