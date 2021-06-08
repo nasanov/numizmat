@@ -80,6 +80,7 @@ const AddCoinForm = ({ setShowModal }) => {
 								id="reverse-pic-btn"
 								onChange={e => setReversePhoto(e.target.files[0])}
 								hidden
+								accept="image/png, image/jpeg"
 							/>
 							<label htmlFor="reverse-pic-btn" className="coin-form__photo-button">
 								{reversePhoto?.name ? reversePhoto?.name : 'Reverse Photo'}
@@ -93,6 +94,7 @@ const AddCoinForm = ({ setShowModal }) => {
 								id="obverse-pic-btn"
 								onChange={e => setObversePhoto(e.target.files[0])}
 								hidden
+								accept="image/png, image/jpeg"
 							/>
 							<label htmlFor="obverse-pic-btn" className="coin-form__photo-button">
 								{obversePhoto?.name ? obversePhoto?.name : 'Obverse Photo'}
