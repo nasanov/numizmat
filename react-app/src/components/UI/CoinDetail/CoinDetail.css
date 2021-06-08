@@ -23,4 +23,6 @@
 
 .coin__detail--img {
 	margin: 0 20px 0 0;
+	width: 180px;
+	height: 180px;
 }
