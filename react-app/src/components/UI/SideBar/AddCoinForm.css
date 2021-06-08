@@ -49,7 +49,7 @@
 
 .coin-form__input {
 	margin: 10px 5px;
-	width: 90%;
+	/* width: 90%; */
 	height: 30px;
 	border-radius: 5px;
 	border: 1px solid #cccccc;
@@ -82,4 +82,12 @@
 	border: none;
 	transition: all 1s;
 	text-align: center;
+}
+
+.arrow-down {
+	position: absolute;
+	transform: translateX(-25px);
+	/* transform: translateY(12px); */
+	margin-top: 12px;
+	pointer-events: none;
 }
