@@ -26,11 +26,39 @@
 
 #### Authentication
 
--   Users can sign up, and log in
+-   Users can sign up
+-   Users can log in
+-   Users can log in as a demo user
 
-#### Live chat
+#### Coins
 
--   Live chat is implemented by using Socket.io library. It enables real-time, bidirectional and event-based communication.
+- Users are able to create a coin using the Add coin button on the sidebar, or at the end of the coins list
+- Users are able to edit and delete the coin on the particular coin details page
+- Users can only delete coins that they own
+- Users are able to add the coin to the collection or to the wishlist using the `Add to collection` button
+
+
+#### Collections
+
+- Users are able to create a collection using the `Add collection` button on the collections page
+- Users are able to edit and delete the collection on the collections page
+- Users can only delete collections that they own
+
+#### Search / Filter
+
+- Users are able to search for the coins and collections using the search input field on the navigation bar
+- Users are able to search only for coins and collections that were created by admin user or by themselves
+- Users are able to filter by name using the input field on the sidebar
+- Users are able to filter coins by Country, name e.t.c
+
+#### Import/Export to CSV
+
+- Users are able to import CSV file to add coins into the existing collection
+- Users are able to import CSV file and create new collection
+
+<!-- #### Live chat
+
+-   Live chat is implemented by using Socket.io library. It enables real-time, bidirectional and event-based communication. -->
 
 ## Installation
 
