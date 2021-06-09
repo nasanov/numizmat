@@ -208,6 +208,8 @@ def edit_coin(coin_id):
 @coin_routes.route('/<int:coin_id>/', methods=['DELETE'])
 def dm_delete(coin_id):
     coin = Coin.query.get(coin_id)
+    # collections = coin_collections.query.all()
+    # print(collections)
     db.session.delete(coin)
     db.session.commit()
 
