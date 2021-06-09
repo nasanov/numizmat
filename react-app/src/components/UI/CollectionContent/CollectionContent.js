@@ -1,14 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import './CollectionContent.css';
+
+import { getCollections } from '../../../store/collections';
 
 export default function CollectionContent() {
 	const { collectionId } = useParams();
 	// const collection = useSelector(state => state.collections[collectionId]);
 	// console.log(collection);
 	const collections = useSelector(state => state.collections);
+	const [fileToImport, setFileToImport] = useState('');
+	const dispatch = useDispatch();
 
 	let current_collection;
 	for (let i in collections) {
@@ -40,9 +44,25 @@ export default function CollectionContent() {
 				'Content-Type': 'application/json',
 			},
 		});
+
 		const data = await res.text();
 		// console.log(data);
 		download('export.csv', data);
+	};
+
+	const importToTheCollection = async () => {
+		const formData = new FormData();
+		formData.append('fileToImport', fileToImport);
+
+		// console.log(formData);
+		// console.log(fileToImport);
+		const res = await fetch(`/api/collections/${collectionId}/import/`, {
+			method: 'POST',
+			body: formData,
+		});
+
+		const data = await res.json();
+		dispatch(getCollections());
 	};
 
 	return (
@@ -52,6 +72,21 @@ export default function CollectionContent() {
 				<h1 className="collection-title">{current_collection?.name}</h1>
 				<h3 className="">Coins in collection: {current_collection?.coins_in.length}</h3>
 				<button onClick={exportCollection}>Export in CSV</button>
+				{/* File import */}
+
+				<input
+					type="file"
+					id="importCsv"
+					onChange={e => setFileToImport(e.target.files[0])}
+					hidden
+					accept="text/csv"
+				/>
+				<label htmlFor="importCsv" className="coin-form__photo-button">
+					{fileToImport?.name ? fileToImport?.name : 'File To Import'}
+				</label>
+
+				<button onClick={importToTheCollection}>Import to the database</button>
+
 				<table className="collection__content--table">
 					<tr>
 						<th>#</th>

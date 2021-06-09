@@ -29,6 +29,7 @@ export default function CoinsList({ searchTerm }) {
 							return coin;
 						} else return null;
 					})
+					.slice(0, 99)
 					.map(coin => {
 						return <CoinBlock coin={coin} key={coin.id} />;
 					})}
