@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory, Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // ############################################################### //
@@ -41,8 +40,7 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 	for (let i in collections) {
 		collections_array.push(collections[i]);
 	}
-	// console.log(collection.id);
-	// console.log(coin.id);
+	
 	useEffect(() => {
 		setCollection(collections_array[0].id);
 	}, []);
@@ -50,6 +48,18 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 	return (
 		<div className="collection-form__div">
 			<form className="collection-form__main" onSubmit={handleSubmit}>
+				{errors.length ? (
+					<div className="errorsContainer">
+						<span>The following errors occurred:</span>
+						<ul className="errorsList">
+							{errors?.map((error, idx) => (
+								<li key={idx}>{error}</li>
+							))}
+						</ul>
+					</div>
+				) : (
+					<div></div>
+				)}
 				<div className="collection-form__div">
 					<label htmlFor="users-collections">Choose your collection:</label>
 					<select

@@ -1,23 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../../../context/Search';
-import { useHistory } from 'react-router-dom';
 import './Search.css';
-// import ProfilePhoto from '../UserProfile/ProfilePhoto';
 
 export default function Search() {
 	const { searchParam, setSearchParam, matchingValues, setMatchingValues } = useSearch();
-	let history = useHistory();
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		// setSearchParam('');
-		// setMatchingValues([]);
-		// if (e.target.className.includes('coin_ele')) {
-		// 	history.push(`/coins/${e.target.id}`);
-		// } else {
-		// 	history.push(`/collections/${e.target.id}`);
-		// }
 	};
 
 	useEffect(() => {
@@ -64,8 +54,12 @@ export default function Search() {
 								{ele.year ? (
 									<div className="search__result--item">
 										<div className="search__photo--container">
-											<img src={ele.obverse_photo} style={{ marginRight: '10px;' }}></img>
-											<img src={ele.reverse_photo}></img>
+											<img
+												src={ele.obverse_photo}
+												style={{ marginRight: '10px;' }}
+												alt="obverse"
+											></img>
+											<img src={ele.reverse_photo} alt="reverse"></img>
 										</div>
 										<div className="search__coin-info">
 											<span id={ele.id} className={'search__coin-title'}>

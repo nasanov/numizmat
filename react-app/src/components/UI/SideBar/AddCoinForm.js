@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // ############################################################### //
@@ -14,7 +14,6 @@ import Arrow from '../../../images/sort-down-solid.svg';
 import { addNewCoin } from '../../../store/coins';
 
 const AddCoinForm = ({ setShowModal }) => {
-	// const history = useHistory();
 	const dispatch = useDispatch();
 
 	const [name, setName] = useState('');
@@ -160,7 +159,7 @@ const AddCoinForm = ({ setShowModal }) => {
 							list="countries"
 							// style="background:url('images/arrow_down.png') no-repeat right center"
 						/>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 
 					<datalist id="countries">
@@ -429,7 +428,7 @@ const AddCoinForm = ({ setShowModal }) => {
 							list="compositions"
 							onChange={e => setComposition(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="compositions">
 						<option value="Silver">Silver (.925)</option>
@@ -477,7 +476,7 @@ const AddCoinForm = ({ setShowModal }) => {
 							list="shapes"
 							onChange={e => setShape(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="shapes">
 						<option value="Round">Round</option>
@@ -499,7 +498,7 @@ const AddCoinForm = ({ setShowModal }) => {
 							list="orientations"
 							onChange={e => setOrientation(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="orientations">
 						<option value="Medallic Orientation">Medallic Orientation</option>

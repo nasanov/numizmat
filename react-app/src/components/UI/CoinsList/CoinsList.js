@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import CoinBlock from './CoinsBlock';
 import './CoinsList.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import AddCoinModal from '../SideBar/AddCoinModal';
 
 export default function CoinsList({ searchTerm }) {
-	// const dispatch = useDispatch();
-
-	// useEffect(() => {
-	// 	dispatch(getCoins());
-	// }, [dispatch]);
-
 	const coins = useSelector(state => state.coins);
 	const filteredCoins = useSelector(state => state.filteredCoins);
 
@@ -29,11 +23,11 @@ export default function CoinsList({ searchTerm }) {
 			<div className="coins-list__container">
 				{arr
 					?.filter(coin => {
-						if (searchTerm == '') {
+						if (searchTerm === '') {
 							return coin;
 						} else if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
 							return coin;
-						}
+						} else return null;
 					})
 					.map(coin => {
 						return <CoinBlock coin={coin} key={coin.id} />;

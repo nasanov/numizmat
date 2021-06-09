@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // ############################################################### //
@@ -17,7 +17,7 @@ export default function AddCollectionForm({ setShowModal }) {
 	const dispatch = useDispatch();
 
 	const [name, setName] = useState('');
-	const [errors, setErrors] = useState('');
+	const [errors, setErrors] = useState([]);
 	const { user } = useSelector(state => state.session);
 
 	if (!user) {
@@ -42,6 +42,11 @@ export default function AddCollectionForm({ setShowModal }) {
 	return (
 		<div className="collection-form__div">
 			<form className="collection-form__main" onSubmit={handleSubmit}>
+				<div>
+					{errors.map(error => (
+						<div>{error}</div>
+					))}
+				</div>
 				<div className="collection-form__div">
 					<input
 						className="collection-form__input"

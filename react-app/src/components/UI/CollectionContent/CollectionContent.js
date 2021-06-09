@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useParams, NavLink } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import './CollectionContent.css';
 
@@ -44,6 +44,7 @@ export default function CollectionContent() {
 						<th>Orientation</th>
 						<th>Shape</th>
 						<th>Amount</th>
+						<th>Delete</th>
 					</tr>
 
 					{current_collection?.coins_in.map((coin, id) => {
@@ -52,10 +53,18 @@ export default function CollectionContent() {
 								<tr key={coin.id}>
 									<td>{id}</td>
 									<td>
-										<img src={coin?.obverse_photo} className="collection__content--img"></img>
+										<img
+											src={coin?.obverse_photo}
+											className="collection__content--img"
+											alt="obverse"
+										></img>
 									</td>
 									<td>
-										<img src={coin?.reverse_photo} className="collection__content--img"></img>
+										<img
+											src={coin?.reverse_photo}
+											className="collection__content--img"
+											alt="reverse"
+										></img>
 									</td>
 									<td>{coin?.name}</td>
 									<td>{coin?.country}</td>

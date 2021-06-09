@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // ############################################################### //
@@ -39,6 +39,18 @@ export default function EditCollectionForm({ setShowModal, collection }) {
 	return (
 		<div className="collection-form__div">
 			<form className="collection-form__main" onSubmit={handleSubmit}>
+				{errors.length ? (
+					<div className="errorsContainer">
+						<span>The following errors occurred:</span>
+						<ul className="errorsList">
+							{errors?.map((error, idx) => (
+								<li key={idx}>{error}</li>
+							))}
+						</ul>
+					</div>
+				) : (
+					<div></div>
+				)}
 				<div className="collection-form__div">
 					<input
 						className="collection-form__input"

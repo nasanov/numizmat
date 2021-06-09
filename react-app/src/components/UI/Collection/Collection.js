@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import NavBar from '../NavBar/NavBar';
 import CollectionBlock from './CollectionBlock';
@@ -19,8 +19,11 @@ export default function Collection() {
 			<NavBar />
 			<div className="collection-list__container">
 				{arr.map(collection => {
-					if (collection.name !== 'Wishlist')
+					if (collection.name !== 'Wishlist') {
 						return <CollectionBlock collection={collection} key={collection.id} />;
+					} else {
+						return null;
+					}
 				})}
 				<AddCollectionModal />
 			</div>

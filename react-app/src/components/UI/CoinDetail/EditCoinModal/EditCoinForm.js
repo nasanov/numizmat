@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // ############################################################### //
@@ -16,7 +16,6 @@ import Arrow from '../../../../images/sort-down-solid.svg';
 import { modifyCoin } from '../../../../store/coins';
 
 export default function EditCoinForm({ setShowModal, coin }) {
-	// const history = useHistory();
 	const dispatch = useDispatch();
 
 	const [name, setName] = useState(coin.name);
@@ -74,6 +73,11 @@ export default function EditCoinForm({ setShowModal, coin }) {
 	return (
 		<div className="coin-form__div">
 			<form className="coin-form__main" onSubmit={handleSubmit}>
+				<div>
+					{errors.map(error => (
+						<div>{error}</div>
+					))}
+				</div>
 				<div className="coin-form__photo-outer-container">
 					<div className="coin-form__photo-container">
 						<div className="coin-form__photo-input">
@@ -144,7 +148,7 @@ export default function EditCoinForm({ setShowModal, coin }) {
 							list="countries"
 							// style="background:url('images/arrow_down.png') no-repeat right center"
 						/>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 
 					<datalist id="countries">
@@ -413,7 +417,7 @@ export default function EditCoinForm({ setShowModal, coin }) {
 							list="compositions"
 							onChange={e => setComposition(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="compositions">
 						<option value="Silver">Silver (.925)</option>
@@ -461,7 +465,7 @@ export default function EditCoinForm({ setShowModal, coin }) {
 							list="shapes"
 							onChange={e => setShape(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="shapes">
 						<option value="Round">Round</option>
@@ -483,7 +487,7 @@ export default function EditCoinForm({ setShowModal, coin }) {
 							list="orientations"
 							onChange={e => setOrientation(e.target.value)}
 						></input>
-						<img src={Arrow} className="arrow-down"></img>
+						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					</div>
 					<datalist id="orientations">
 						<option value="Medallic Orientation">Medallic Orientation</option>

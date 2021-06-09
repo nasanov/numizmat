@@ -1,8 +1,10 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams, NavLink, useHistory } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar';
+import { useParams, useHistory } from 'react-router-dom';
+
 import './CoinDetail.css';
+
+import NavBar from '../NavBar/NavBar';
 import AddToCollectionModal from '../Collection/AddToCollectionModal/AddToCollectionModal';
 import EditCoinModal from './EditCoinModal/EditCoinModal';
 import { removeCoin } from '../../../store/coins';

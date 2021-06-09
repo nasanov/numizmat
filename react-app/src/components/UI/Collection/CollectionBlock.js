@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './CollectionBlock.css';
 import { useDispatch } from 'react-redux';
+import './CollectionBlock.css';
 
 import EditCollectionModal from './EditCollectionModal/EditCollectionModal';
 import { removeCollection } from '../../../store/collections';
@@ -16,7 +16,12 @@ export default function CollectionBlock({ collection }) {
 	return (
 		<div className="collection__container">
 			<NavLink to={`/collections/${collection.id}`}>
-				<img src="https://i.stack.imgur.com/y9DpT.jpg" width="300" className="collection__image"></img>
+				<img
+					src="https://i.stack.imgur.com/y9DpT.jpg"
+					width="300"
+					className="collection__image"
+					alt="collection_img"
+				></img>
 			</NavLink>
 			<NavLink to={`/collections/${collection.id}`}>
 				<div className="collection__title">
