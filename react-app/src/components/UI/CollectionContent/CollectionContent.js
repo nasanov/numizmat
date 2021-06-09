@@ -20,12 +20,38 @@ export default function CollectionContent() {
 	}
 	// console.log(current_collection);
 
+	function download(filename, file) {
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(file));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+		element.click();
+		document.body.removeChild(element);
+	}
+
+	const exportCollection = async () => {
+		// download in csv
+		const res = await fetch(`/api/collections/${collectionId}/download/`, {
+			method: 'POST',
+			// body: JSON.stringify(collectionId),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
+		const data = await res.text();
+		// console.log(data);
+		download('export.csv', data);
+	};
+
 	return (
 		<>
 			<NavBar />
 			<div className="collection__content--container">
 				<h1 className="collection-title">{current_collection?.name}</h1>
 				<h3 className="">Coins in collection: {current_collection?.coins_in.length}</h3>
+				<button onClick={exportCollection}>Export in CSV</button>
 				<table className="collection__content--table">
 					<tr>
 						<th>#</th>
