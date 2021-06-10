@@ -38,18 +38,21 @@ export const filterCoinsByCountry = (coins, country) => async dispatch => {
 };
 
 export const sortCoinsByYear = (coins, sort) => async dispatch => {
-	let coins_arr = coins['items'];
+	console.log(sort);
+	// let coins_arr = coins['items'];
 	// console.log('$$$$$', coins_arr);
 	// if (sort !== '') {
 	// 	coins_arr.sort((a, b) => (sort === ('lowest') ?
 	// 	(a.year > b.year ? 1:-1)
 	// 	: (a.year < b.year ? 1 : -1))
 	// } else {
-	coins_arr.sort((a, b) => (a.sort > b.sort ? 1 : -1));
+
+	coins.sort((a, b) => (a[sort] > b[sort] ? 1 : -1));
 	// }
 	// console.log('sorted, ', coins);
-	dispatch(sortByYear(coins_arr, sort));
-	return coins_arr;
+
+	dispatch(sortByYear(coins, sort));
+	return coins;
 };
 // ################################################################### //
 // ############################  REDUCERS  ########################### //

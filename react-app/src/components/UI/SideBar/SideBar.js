@@ -20,7 +20,20 @@ export default function SideBar({ setSearchTerm }) {
 		arr.push(i);
 	}
 
-	console.log(categories.country);
+	let coins_arr = [];
+	if (filteredCoins['items']) {
+		coins_arr = filteredCoins['items'];
+	} else {
+		for (let i in coins) {
+			coins_arr.push(coins[i]);
+		}
+	}
+
+	const handleOrderBy = e => {
+		e.preventDefault();
+		dispatch(sortCoinsByYear(coins_arr, e.target.value));
+	};
+	// console.log(categories.country);
 	return (
 		<>
 			<div className="sidebar">
@@ -49,7 +62,7 @@ export default function SideBar({ setSearchTerm }) {
 							</div>
 							<div>
 								<p>Order by:</p>
-								<select onChange={e => dispatch(sortCoinsByYear(filteredCoins, e.target.value))}>
+								<select onChange={handleOrderBy}>
 									<option value="country">Country</option>
 									<option value="name">Name</option>
 									<option value="year">Year</option>

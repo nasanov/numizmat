@@ -51,6 +51,9 @@ def delete_collection(collection_id):
         return {'errors': ['Unauthorized']}
 
     collection = Collection.query.get(collection_id)
+    # ! test this shit
+    collection.coins_in.clear()
+    db.session.commit()
     db.session.delete(collection)
     db.session.commit()
     return {"collection": collection.to_dict()}
