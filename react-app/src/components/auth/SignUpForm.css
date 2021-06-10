@@ -41,7 +41,7 @@
 }
 
 .signup-btn {
-	border: 3px solid #065cbe;
+	border: 3px solid #000;
 	color: rgb(78, 78, 78);
 	background-color: #fff;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -55,8 +55,8 @@
 	transition: all 0.3s;
 }
 
-.signup-btn:hover{
-	background-color: #065cbe;
+.signup-btn:hover {
+	background-color: #000;
 	color: #fff;
 }
 

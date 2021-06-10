@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
@@ -8,11 +8,15 @@ import { getCollections } from '../../../store/collections';
 
 export default function CollectionContent() {
 	const { collectionId } = useParams();
+	const dispatch = useDispatch();
 	// const collection = useSelector(state => state.collections[collectionId]);
 	// console.log(collection);
+	useEffect(() => {
+		dispatch(getCollections());
+	}, [dispatch]);
+
 	const collections = useSelector(state => state.collections);
 	const [fileToImport, setFileToImport] = useState('');
-	const dispatch = useDispatch();
 
 	let current_collection;
 	for (let i in collections) {
@@ -112,7 +116,7 @@ export default function CollectionContent() {
 						return (
 							<>
 								<tr key={coin.id}>
-									<td>{id}</td>
+									<td>{id + 1}</td>
 									<td>
 										<img
 											src={coin?.obverse_photo}
