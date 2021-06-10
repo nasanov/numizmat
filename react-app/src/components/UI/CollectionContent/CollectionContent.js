@@ -17,6 +17,7 @@ export default function CollectionContent() {
 
 	const collections = useSelector(state => state.collections);
 	const [fileToImport, setFileToImport] = useState('');
+	// const [coinsCount, setCoinsCount] = useState(1);
 
 	let current_collection;
 	for (let i in collections) {
@@ -108,7 +109,7 @@ export default function CollectionContent() {
 						<th>Weight</th>
 						<th>Orientation</th>
 						<th>Shape</th>
-						<th>Amount</th>
+						{/* <th>Amount</th> */}
 						<th>Delete</th>
 					</tr>
 
@@ -143,8 +144,18 @@ export default function CollectionContent() {
 									<td>{coin?.weight}</td>
 									<td>{coin?.orientation}</td>
 									<td>{coin?.shape}</td>
+									{/* <td>
+										<input
+											type="number"
+											value={coinsCount}
+											className="collection__content--amount"
+											onChange={e => setCoinsCount(e.target.value)}
+										></input>
+									</td> */}
 									<td>
-										<input type="number" value="1" className="collection__content--amount"></input>
+										<button>
+											<i class="far fa-trash-alt"></i>
+										</button>
 									</td>
 								</tr>
 							</>

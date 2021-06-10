@@ -73,6 +73,7 @@ export default function SideBar({ setSearchTerm }) {
 							</div>
 						</div>
 					</li>
+					{/* <h3>Coins found: {coins_arr.length}</h3> */}
 					<li className="sidebar-filter__item">
 						<ul className="categories">
 							{/* {arr.map(category => {

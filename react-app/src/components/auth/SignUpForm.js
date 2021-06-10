@@ -63,6 +63,10 @@ const SignUpForm = () => {
 					<NavLink to="/login" className="switchLink">
 						Login
 					</NavLink>
+					<span className="switchLinkName">Go</span>
+					<NavLink to="/" className="switchLink">
+						Home
+					</NavLink>
 				</div>
 				<form onSubmit={onSignUp}>
 					<div>

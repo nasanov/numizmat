@@ -16,12 +16,12 @@
 .coin-form__photo-container {
 	position: relative;
 	cursor: pointer;
-	margin: 10px 0;
 }
 
 .coin-form__photo-button {
 	margin: 10px 5px;
-	width: 90%;
+	display: block;
+	width: 150px;
 	height: 30px;
 	border-radius: 5px;
 	border: 1px solid #cccccc;

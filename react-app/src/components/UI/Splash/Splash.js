@@ -35,6 +35,11 @@ export default function Splash() {
 					{user ? (
 						<>
 							<div className="username_logo">
+								<NavLink to="/home" className="main-nav-home">
+									Coins
+								</NavLink>
+							</div>
+							<div className="username_logo">
 								<i className="fa fa-user"></i>
 								<span className="username">{user?.username}</span>
 							</div>

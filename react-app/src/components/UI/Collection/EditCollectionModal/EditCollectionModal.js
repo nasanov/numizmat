@@ -8,9 +8,9 @@ export default function EditCollectionModal({ collection }) {
 
 	return (
 		<>
-			<div className="collection__container" onClick={() => setShowModal(true)}>
-				<button className="sidebar-add-to-collection--btn">Edit Collection</button>
-			</div>
+			<button className="sidebar-add-to-collection--btn" onClick={() => setShowModal(true)}>
+				<i class="far fa-edit"></i> Edit
+			</button>
 			{showModal && (
 				<Modal onClose={() => setShowModal(false)}>
 					<EditCollectionForm setShowModal={setShowModal} collection={collection} />
