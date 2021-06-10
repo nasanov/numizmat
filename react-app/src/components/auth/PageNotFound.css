@@ -1,3 +1,8 @@
+.page-not-found-wrapper {
+	background-color: #fff;
+	height: 100vh;
+}
+
 .notfound__wrap {
 	position: relative;
 	margin: 120px auto;
@@ -33,4 +38,15 @@
 	display: flex;
 	user-select: none;
 	justify-content: space-around;
+}
+
+.switchLinkName404 {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.switchLink404 {
+	font-size: 12px;
+	color: #186dee;
+	text-decoration: none;
 }

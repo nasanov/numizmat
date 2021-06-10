@@ -12,16 +12,21 @@ export default function CollectionBlock({ collection }) {
 	const deleteCollectionHandler = () => {
 		dispatch(removeCollection(collection.id));
 	};
-
+	console.log(collection.coins_in);
 	return (
 		<div className="collection__container">
 			<NavLink to={`/collections/${collection.id}`}>
-				<img
+				<div className="collection__image--grid">
+					{collection?.coins_in?.slice(0, 4).map(coin => {
+						return <img src={coin.obverse_photo} className="collection__image"></img>;
+					})}
+				</div>
+				{/* <img
 					src="https://i.stack.imgur.com/y9DpT.jpg"
 					width="300"
 					className="collection__image"
 					alt="collection_img"
-				></img>
+				></img> */}
 			</NavLink>
 			<NavLink to={`/collections/${collection.id}`}>
 				<div className="collection__title">
@@ -42,7 +47,7 @@ export default function CollectionBlock({ collection }) {
 					<>
 						<EditCollectionModal collection={collection} />
 						<button className="coin__add-to-collection--btn" onClick={deleteCollectionHandler}>
-							Delete collection
+							<i class="far fa-trash-alt"></i> Delete
 						</button>
 					</>
 				)}

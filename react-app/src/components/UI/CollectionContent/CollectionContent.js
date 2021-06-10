@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
@@ -8,11 +8,16 @@ import { getCollections } from '../../../store/collections';
 
 export default function CollectionContent() {
 	const { collectionId } = useParams();
+	const dispatch = useDispatch();
 	// const collection = useSelector(state => state.collections[collectionId]);
 	// console.log(collection);
+	useEffect(() => {
+		dispatch(getCollections());
+	}, [dispatch]);
+
 	const collections = useSelector(state => state.collections);
 	const [fileToImport, setFileToImport] = useState('');
-	const dispatch = useDispatch();
+	// const [coinsCount, setCoinsCount] = useState(1);
 
 	let current_collection;
 	for (let i in collections) {
@@ -104,7 +109,7 @@ export default function CollectionContent() {
 						<th>Weight</th>
 						<th>Orientation</th>
 						<th>Shape</th>
-						<th>Amount</th>
+						{/* <th>Amount</th> */}
 						<th>Delete</th>
 					</tr>
 
@@ -112,7 +117,7 @@ export default function CollectionContent() {
 						return (
 							<>
 								<tr key={coin.id}>
-									<td>{id}</td>
+									<td>{id + 1}</td>
 									<td>
 										<img
 											src={coin?.obverse_photo}
@@ -139,8 +144,18 @@ export default function CollectionContent() {
 									<td>{coin?.weight}</td>
 									<td>{coin?.orientation}</td>
 									<td>{coin?.shape}</td>
+									{/* <td>
+										<input
+											type="number"
+											value={coinsCount}
+											className="collection__content--amount"
+											onChange={e => setCoinsCount(e.target.value)}
+										></input>
+									</td> */}
 									<td>
-										<input type="number" value="1" className="collection__content--amount"></input>
+										<button>
+											<i class="far fa-trash-alt"></i>
+										</button>
 									</td>
 								</tr>
 							</>

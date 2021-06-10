@@ -32,10 +32,18 @@
 }
 
 .sidebar-add-to-collection--btn {
-	border: 2px solid #ccc;
+	border: 2px solid rgb(0, 0, 0);
 	border-radius: 5px;
-	padding: 3px;
+	color: rgb(73, 73, 73);
+	padding: 6px 3px 3px 3px;
 	text-align: center;
+	transition: 0.5s;
+	/* font-weight: 500; */
+}
+
+.sidebar-add-to-collection--btn:hover {
+	color: #fff;
+	background-color: #000;
 }
 
 .sidebar__search {

@@ -62,7 +62,7 @@ export default function EditCollectionForm({ setShowModal, collection }) {
 					></input>
 				</div>
 				<button className="collection-form__button" type="submit">
-					Edit Collection
+				Edit Collection
 				</button>
 			</form>
 		</div>

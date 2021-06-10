@@ -14,8 +14,8 @@ import Splash from './components/UI/Splash/Splash';
 import Collection from './components/UI/Collection/Collection';
 import CollectionContent from './components/UI/CollectionContent/CollectionContent';
 import CoinDetail from './components/UI/CoinDetail/CoinDetail';
-import UsersList from './components/UsersList';
-import User from './components/User';
+// import UsersList from './components/UsersList';
+// import User from './components/User';
 import PageNotFound from './components/auth/PageNotFound';
 // import NavBar from './components/UI/NavBar/NavBar';
 
@@ -24,9 +24,9 @@ import PageNotFound from './components/auth/PageNotFound';
 // ################################################################## //
 
 import { authenticate } from './store/session';
-import { getCollections } from './store/collections';
-import { getCoins } from './store/coins';
-import { getCategories } from './store/categories';
+// import { getCollections } from './store/collections';
+// import { getCoins } from './store/coins';
+// import { getCategories } from './store/categories';
 
 function App() {
 	// const user = useSelector(state => state.session.user);
@@ -40,17 +40,17 @@ function App() {
 		})();
 	}, [dispatch]);
 
-	useEffect(() => {
-		dispatch(getCoins());
-	}, [dispatch]);
+	// useEffect(() => {
+	// 	dispatch(getCoins());
+	// }, [dispatch]);
 
-	useEffect(() => {
-		dispatch(getCollections());
-	}, [dispatch]);
+	// useEffect(() => {
+	// 	dispatch(getCollections());
+	// }, [dispatch]);
 
-	useEffect(() => {
-		dispatch(getCategories());
-	}, [dispatch]);
+	// useEffect(() => {
+	// 	dispatch(getCategories());
+	// }, [dispatch]);
 
 	if (!loaded) {
 		return null;
@@ -68,12 +68,12 @@ function App() {
 				<Route path="/sign-up" exact={true}>
 					<SignUpForm />
 				</Route>
-				<ProtectedRoute path="/users" exact={true}>
+				{/* <ProtectedRoute path="/users" exact={true}>
 					<UsersList />
 				</ProtectedRoute>
 				<ProtectedRoute path="/users/:userId" exact={true}>
 					<User />
-				</ProtectedRoute>
+				</ProtectedRoute> */}
 				<ProtectedRoute path="/collections" exact={true}>
 					<Collection />
 				</ProtectedRoute>

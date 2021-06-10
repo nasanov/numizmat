@@ -38,7 +38,7 @@
 
 .login-btn,
 .demo-btn {
-	border: 3px solid #065cbe;
+	border: 3px solid #000;
 	color: rgb(78, 78, 78);
 	background-color: #fff;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -55,7 +55,7 @@
 
 .login-btn:hover,
 .demo-btn:hover {
-	background-color: #065cbe;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -103,5 +103,5 @@
 .hidePassword {
 	position: absolute;
 	bottom: 160px;
-	right: 50px;
+	right: 30px;
 }

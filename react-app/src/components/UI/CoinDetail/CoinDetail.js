@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, useHistory } from 'react-router-dom';
 
@@ -7,16 +7,26 @@ import './CoinDetail.css';
 import NavBar from '../NavBar/NavBar';
 import AddToCollectionModal from '../Collection/AddToCollectionModal/AddToCollectionModal';
 import EditCoinModal from './EditCoinModal/EditCoinModal';
-import { removeCoin } from '../../../store/coins';
+import { getCoins, removeCoin } from '../../../store/coins';
+import { getCollections } from '../../../store/collections';
 
 export default function CoinDetail() {
 	const { coinId } = useParams();
+	const dispatch = useDispatch();
+	const history = useHistory();
+
+	useEffect(() => {
+		dispatch(getCoins());
+	}, [dispatch]);
+
+	useEffect(() => {
+		dispatch(getCollections());
+	}, [dispatch]);
+
 	const coin = useSelector(state => state.coins[coinId]);
 	const collections = useSelector(state => state.collections);
 	const user = useSelector(state => state.session.user);
 
-	const dispatch = useDispatch();
-	const history = useHistory();
 	let collections_array = [];
 	for (let i in collections) {
 		collections_array.push(collections[i]);
