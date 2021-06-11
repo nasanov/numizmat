@@ -58,7 +58,7 @@
 - Users are able to import CSV file and create new collection
 
 
-### Future Implementations
+## Future Implementations
 - Live chat so users will be able to talk to each other in one chat room 
 - Filtering By multiple columns
 - Pagination for the main page
@@ -78,8 +78,6 @@ This project can be run by following these steps:
 -   Create a .env file in the root directory (use .env.example).
 -   Run `pipenv shell` command
 -   Run `flask run` command from the root directory and `npm start` from the react-app directory
-
-## Future Improvements
 
 For additional information, checkout project's [Wiki](https://github.com/nasanov/numizmat/wiki) page.
 
