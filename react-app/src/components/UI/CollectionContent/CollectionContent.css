@@ -116,3 +116,11 @@ td:hover {
 .collection-content__delete_column {
 	text-align: center;
 }
+
+.collection-content--delete-btn {
+	transition: 0.5s;
+}
+
+.collection-content--delete-btn:hover {
+	color: red;
+}

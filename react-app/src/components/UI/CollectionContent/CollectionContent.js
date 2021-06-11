@@ -6,6 +6,7 @@ import './CollectionContent.css';
 
 import { getCollections } from '../../../store/collections';
 import { removeCollection } from '../../../store/collections';
+import { removeCoin } from '../../../store/coins';
 
 export default function CollectionContent() {
 	const { collectionId } = useParams();
@@ -71,11 +72,11 @@ export default function CollectionContent() {
 		dispatch(getCollections());
 	};
 
-	const deleteCollectionHandler = () => {
-		// e.preventDefault();
-		// console.log(e);
-		// const collection_id = e.target.value;
-		// dispatch(removeCollection(collections[collection_id]));
+	const deleteCoinHandler = e => {
+		e.preventDefault();
+		console.log(e.target.id);
+		dispatch(removeCoin(e.target.id));
+		dispatch(getCollections());
 	};
 
 	return (
@@ -175,14 +176,8 @@ export default function CollectionContent() {
 										></input>
 									</td> */}
 									<td className="collection-content__delete_column">
-										<button
-										// value={coin?.id}
-										// onClick={e => {
-										// 	console.log(e.target);
-										// 	dispatch(removeCollection(collections[e.target.value]));
-										// }}
-										>
-											<i class="far fa-trash-alt"></i>
+										<button>
+											<i class="far fa-trash-alt collection-content--delete-btn" id={coin?.id} onClick={deleteCoinHandler}></i>
 										</button>
 									</td>
 								</tr>
