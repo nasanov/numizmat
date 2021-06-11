@@ -61,6 +61,7 @@
 }
 
 .collection__importCSV--btn {
+	margin-top: 5px;
 	border: 2px solid rgb(0, 0, 0);
 	border-radius: 5px;
 	color: rgb(73, 73, 73);

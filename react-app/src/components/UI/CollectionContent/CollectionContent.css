@@ -112,3 +112,7 @@ td:hover {
 .fa-upload {
 	margin-right: 5px;
 }
+
+.collection-content__delete_column {
+	text-align: center;
+}

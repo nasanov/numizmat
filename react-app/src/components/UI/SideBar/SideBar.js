@@ -69,6 +69,7 @@ export default function SideBar({ setSearchTerm }) {
 									<option value="mintage">Mintage</option>
 									<option value="weight">Weight</option>
 									<option value="country">Country</option>
+									<option value="created_at">Date</option>
 								</select>
 							</div>
 						</div>
