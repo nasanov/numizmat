@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import './CollectionContent.css';
 
 import { getCollections } from '../../../store/collections';
+import { removeCollection } from '../../../store/collections';
 
 export default function CollectionContent() {
 	const { collectionId } = useParams();
@@ -70,28 +71,41 @@ export default function CollectionContent() {
 		dispatch(getCollections());
 	};
 
+	const deleteCollectionHandler = () => {
+		// e.preventDefault();
+		// console.log(e);
+		// const collection_id = e.target.value;
+		// dispatch(removeCollection(collections[collection_id]));
+	};
+
 	return (
 		<>
 			<NavBar />
 			<div className="collection__content--container">
 				<h1 className="collection-title">{current_collection?.name}</h1>
-				<h3 className="">Coins in collection: {current_collection?.coins_in.length}</h3>
-				<button onClick={exportCollection}>Export in CSV</button>
+				<h3 className="collection__coins-count">Coins in collection: {current_collection?.coins_in.length}</h3>
+
 				{/* File import */}
+				<div className="collection__import-export--btns">
+					<input
+						type="file"
+						id="importCsv"
+						onChange={e => setFileToImport(e.target.files[0])}
+						hidden
+						accept="text/csv"
+					/>
+					<label htmlFor="importCsv" className="importCSV--label">
+						{fileToImport?.name ? fileToImport?.name : 'File To Import'}
+					</label>
 
-				<input
-					type="file"
-					id="importCsv"
-					onChange={e => setFileToImport(e.target.files[0])}
-					hidden
-					accept="text/csv"
-				/>
-				<label htmlFor="importCsv" className="coin-form__photo-button">
-					{fileToImport?.name ? fileToImport?.name : 'File To Import'}
-				</label>
+					<button onClick={importToTheCollection} className="importCSV--btn">
+						<i class="fas fa-upload"></i> Import to the database
+					</button>
 
-				<button onClick={importToTheCollection}>Import to the database</button>
-
+					<button onClick={exportCollection} className="exportInCSV--btn">
+						<i class="fas fa-download"></i>Export in CSV
+					</button>
+				</div>
 				<table className="collection__content--table">
 					<tr>
 						<th>#</th>
@@ -117,22 +131,30 @@ export default function CollectionContent() {
 						return (
 							<>
 								<tr key={coin.id}>
-									<td>{id + 1}</td>
 									<td>
-										<img
-											src={coin?.obverse_photo}
-											className="collection__content--img"
-											alt="obverse"
-										></img>
+										<NavLink to={`/coins/${coin.id}`}>{id + 1}</NavLink>
 									</td>
 									<td>
-										<img
-											src={coin?.reverse_photo}
-											className="collection__content--img"
-											alt="reverse"
-										></img>
+										<NavLink to={`/coins/${coin.id}`}>
+											<img
+												src={coin?.obverse_photo}
+												className="collection__content--img"
+												alt="obverse"
+											></img>
+										</NavLink>
 									</td>
-									<td>{coin?.name}</td>
+									<td>
+										<NavLink to={`/coins/${coin.id}`}>
+											<img
+												src={coin?.reverse_photo}
+												className="collection__content--img"
+												alt="reverse"
+											></img>
+										</NavLink>
+									</td>
+									<td>
+										<NavLink to={`/coins/${coin.id}`}>{coin?.name}</NavLink>
+									</td>
 									<td>{coin?.country}</td>
 									<td>{coin?.composition}</td>
 									<td>{coin?.series}</td>
@@ -153,7 +175,13 @@ export default function CollectionContent() {
 										></input>
 									</td> */}
 									<td>
-										<button>
+										<button
+										// value={coin?.id}
+										// onClick={e => {
+										// 	console.log(e.target);
+										// 	dispatch(removeCollection(collections[e.target.value]));
+										// }}
+										>
 											<i class="far fa-trash-alt"></i>
 										</button>
 									</td>

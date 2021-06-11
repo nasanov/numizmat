@@ -14,8 +14,8 @@ export default function EditCoinModal({ coin }) {
 
 	return (
 		<>
-			<button className="sidebar-add-to-collection--btn" onClick={() => setShowModal(true)}>
-				Edit coin
+			<button className="edit__coin--btn" onClick={() => setShowModal(true)}>
+				<i class="far fa-edit edit__btn--pen"></i>Edit coin
 			</button>
 			{showModal && (
 				<Modal onClose={() => setShowModal(false)}>

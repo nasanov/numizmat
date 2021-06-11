@@ -38,3 +38,77 @@ td {
 tbody tr:nth-child(odd) {
 	background: #eee;
 }
+
+td:hover {
+	text-decoration: underline;
+}
+
+.collection__import-export--btns {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 440px;
+}
+.collection__coins-count {
+	color: rgb(105, 105, 105);
+}
+
+.exportInCSV--btn {
+	width: 120px;
+	line-height: 32px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+	color: #000;
+	transition: 0.3s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.exportInCSV--btn:hover {
+	color: white;
+	box-shadow: 0px 1px 3px lightgrey;
+	background-color: #000;
+}
+
+.importCSV--btn {
+	width: 180px;
+	line-height: 32px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+	color: #000;
+	transition: 0.3s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.importCSV--btn:hover {
+	color: white;
+	box-shadow: 0px 1px 3px lightgrey;
+	background-color: #000;
+}
+
+.importCSV--label {
+	width: 100px;
+	line-height: 32px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+	color: #000;
+	transition: 0.3s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.importCSV--label:hover {
+	color: white;
+	box-shadow: 0px 1px 3px lightgrey;
+	background-color: #000;
+}
+
+.fa-download,
+.fa-upload {
+	margin-right: 5px;
+}

@@ -1,0 +1,13 @@
+.edit__collection-btn {
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	color: rgb(73, 73, 73);
+	padding: 6px 8px 3px 8px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.edit__collection-btn:hover {
+	color: #fff;
+	background-color: #000;
+}

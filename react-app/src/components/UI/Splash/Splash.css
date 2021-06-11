@@ -34,8 +34,15 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 	width: 25%;
-	padding: 20px;
+	padding: 25px 20px 20px 20px;
 	text-align: center;
+	transition: 0.3s;
+}
+
+.splash__background--text:hover {
+	/* font-size: 45px; */
+	background-color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 .splash__background--quote {
@@ -67,7 +74,7 @@
 	transform: translate(-50%, -50%);
 	z-index: 2;
 	width: 320px;
-	padding: 20px;
+	padding: 25px 20px 20px 20px;
 }
 
 .splash__nav-link {

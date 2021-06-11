@@ -38,13 +38,30 @@
 	padding: 6px 3px 3px 3px;
 	text-align: center;
 	transition: 0.5s;
-	/* font-weight: 500; */
 }
 
 .sidebar-add-to-collection--btn:hover {
 	color: #fff;
 	background-color: #000;
 }
+
+/* .sidebar-add-to-collection--btn {
+	width: 120px;
+	line-height: 32px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 0.9em;
+	background-color: #fff;
+	color: #000;
+	transition: 0.3s;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.sidebar-add-to-collection--btn:hover {
+	color: white;
+	box-shadow: 0px 1px 3px lightgrey;
+	background-color: #000;
+} */
 
 .sidebar__search {
 	border-radius: 7px;

@@ -8,6 +8,7 @@ import './UI.css';
 import { getCollections } from '../../store/collections';
 import { getCoins } from '../../store/coins';
 import { getCategories } from '../../store/categories';
+import ArrowTop from './ArrowTop/ArrowTop';
 
 const UI = () => {
 	const [searchTerm, setSearchTerm] = useState('');
@@ -28,6 +29,7 @@ const UI = () => {
 	return (
 		<>
 			<NavBar />
+			<ArrowTop />
 			<div className="main__container">
 				<SideBar setSearchTerm={setSearchTerm} />
 				<CoinsList setSearchTerm={setSearchTerm} searchTerm={searchTerm} />

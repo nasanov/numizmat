@@ -3,5 +3,6 @@
 	width: 1500px;
 	margin: 50px auto;
 	justify-content: flex-start;
+	min-height: 100vh;
 	/* background-color: #ccc; */
 }

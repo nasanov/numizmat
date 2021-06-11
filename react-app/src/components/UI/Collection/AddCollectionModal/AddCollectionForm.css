@@ -16,7 +16,6 @@
 }
 
 .collection-form__div {
-	grid-area: firstname;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -24,7 +23,6 @@
 }
 
 .collection-form__button {
-	grid-area: button;
 	border-radius: 3px;
 	background-color: #000;
 	color: #fff;
@@ -40,4 +38,38 @@
 	border: none;
 	transition: all 1s;
 	text-align: center;
+}
+
+.collection-list__import-export--btns {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+.collection__importCSV--label {
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	color: rgb(73, 73, 73);
+	padding: 6px 3px 3px 3px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.collection__importCSV--label:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+.collection__importCSV--btn {
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	color: rgb(73, 73, 73);
+	padding: 6px 3px 3px 3px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.collection__importCSV--btn:hover {
+	color: #fff;
+	background-color: #000;
 }

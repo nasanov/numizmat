@@ -26,3 +26,55 @@
 	width: 180px;
 	height: 180px;
 }
+
+.coin__add-to-collection--btn {
+	transition: 0.3s;
+	padding: 5px;
+	position: relative;
+	display: inline-block;
+	/* font-size: 2em; */
+	font-weight: 800;
+	color: rgb(0, 0, 0);
+	overflow: hidden;
+	background: linear-gradient(to right, rgb(230, 73, 73), rgb(230, 73, 73) 50%, rgb(0, 0, 0) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
+}
+
+.coin__add-to-collection--btn:hover {
+	background-position: 0 100%;
+}
+
+.delete__btn--trash {
+	margin-right: 5px;
+}
+
+.coin__edit-delete--btns {
+	margin-top: 10px;
+}
+
+.edit__coin--btn {
+	transition: 0.3s;
+	padding: 5px;
+	position: relative;
+	display: inline-block;
+	/* font-size: 2em; */
+	font-weight: 800;
+	color: rgb(0, 0, 0);
+	overflow: hidden;
+	background: linear-gradient(to right, rgb(29, 145, 212), rgb(29, 145, 212) 50%, rgb(0, 0, 0) 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
+}
+
+.edit__coin--btn:hover {
+	background-position: 0 100%;
+}

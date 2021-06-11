@@ -110,13 +110,13 @@ export default function CoinDetail() {
 				</select> */}
 				<AddToCollectionModal coin={coin} />
 				{coin?.user_id === user.id ? (
-					<div className="">
+					<div className="coin__edit-delete--btns">
 						<EditCoinModal coin={coin} />
 						{/* <button className="coin__add-to-collection--btn" onClick={editCoinHandler}>
 							Edit coin
 						</button> */}
 						<button className="coin__add-to-collection--btn" onClick={deleteCoinHandler}>
-							Delete coin
+							<i class="far fa-trash-alt delete__btn--trash"></i>Delete coin
 						</button>
 					</div>
 				) : (

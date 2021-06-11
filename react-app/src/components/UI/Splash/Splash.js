@@ -35,11 +35,6 @@ export default function Splash() {
 					{user ? (
 						<>
 							<div className="username_logo">
-								<NavLink to="/home" className="main-nav-home">
-									Coins
-								</NavLink>
-							</div>
-							<div className="username_logo">
 								<i className="fa fa-user"></i>
 								<span className="username">{user?.username}</span>
 							</div>
@@ -62,7 +57,18 @@ export default function Splash() {
 				</nav>
 				<div className="splash__background--container">
 					<img src={splashImage} className="splash__background--image"></img>
-					<h1 className="splash__background--text"> Welcome to Numizmat</h1>
+					{/* {user ? (
+						<NavLink to="/home">
+							<h1 className="splash__background--text"> Welcome to Numizmat</h1>
+						</NavLink>
+					) : (
+						<NavLink to="/login">
+							<h1 className="splash__background--text"> Welcome to Numizmat</h1>
+						</NavLink>
+					)} */}
+					<NavLink to="/home">
+						<h1 className="splash__background--text"> Welcome to Numizmat</h1>
+					</NavLink>
 					<p className="splash__background--quote">
 						"Coin collecting is the only hobby where you can spend all your money and still have some left."
 					</p>

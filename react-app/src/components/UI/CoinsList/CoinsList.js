@@ -4,6 +4,7 @@ import './CoinsList.css';
 import { useSelector } from 'react-redux';
 import AddCoinModal from '../SideBar/AddCoinModal';
 
+
 export default function CoinsList({ searchTerm }) {
 	const coins = useSelector(state => state.coins);
 	const filteredCoins = useSelector(state => state.filteredCoins);

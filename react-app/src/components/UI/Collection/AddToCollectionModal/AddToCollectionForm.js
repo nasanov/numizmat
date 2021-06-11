@@ -40,7 +40,7 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 	for (let i in collections) {
 		collections_array.push(collections[i]);
 	}
-	
+
 	useEffect(() => {
 		setCollection(collections_array[0].id);
 	}, []);
@@ -60,11 +60,12 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 				) : (
 					<div></div>
 				)}
-				<div className="collection-form__div">
-					<label htmlFor="users-collections">Choose your collection:</label>
+				<div className="addToCollection-form__div">
+					<label htmlFor="addToCollection--title">Choose your collection:</label>
 					<select
-						id="users-collections"
+						id="addToCollection--title"
 						value={collection.id}
+						className="addToCollection-form__input"
 						onChange={e => setCollection(parseInt(e.target.value))}
 					>
 						Your collections
@@ -73,7 +74,7 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 						})}
 					</select>
 				</div>
-				<button className="collection-form__button" type="submit">
+				<button className="addToCollection-form__button" type="submit">
 					Add to Collection
 				</button>
 			</form>

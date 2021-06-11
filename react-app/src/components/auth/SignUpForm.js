@@ -68,6 +68,7 @@ const SignUpForm = () => {
 						Home
 					</NavLink>
 				</div>
+
 				<form onSubmit={onSignUp}>
 					<div>
 						<input

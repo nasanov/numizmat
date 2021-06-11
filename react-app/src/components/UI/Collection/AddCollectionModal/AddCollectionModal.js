@@ -25,25 +25,26 @@ export default function AddCollectionModal() {
 	return (
 		<>
 			<div className="collection__container">
-				<div>
-					<i className="fas fa-plus add-collection_img"></i>
+				<div className="collection__container--buttons">
+					<button className="sidebar-add-to-collection--btn" onClick={() => setShowModal(true)}>
+						Add New Collection
+					</button>
+					<div className="collection-list__import-export--btns">
+						<input
+							type="file"
+							id="importCsv"
+							onChange={e => setFileToImport(e.target.files[0])}
+							hidden
+							accept="text/csv"
+						/>
+						<label htmlFor="importCsv" className="collection__importCSV--label">
+							{fileToImport?.name ? fileToImport?.name : 'File To Import'}
+						</label>
+						<button className="collection__importCSV--btn" onClick={() => importNewCollection()}>
+							<i class="fas fa-upload"></i>Import Collection
+						</button>
+					</div>
 				</div>
-				<button className="sidebar-add-to-collection--btn" onClick={() => setShowModal(true)}>
-					Add New Collection
-				</button>
-				<input
-					type="file"
-					id="importCsv"
-					onChange={e => setFileToImport(e.target.files[0])}
-					hidden
-					accept="text/csv"
-				/>
-				<label htmlFor="importCsv" className="coin-form__photo-button">
-					{fileToImport?.name ? fileToImport?.name : 'File To Import'}
-				</label>
-				<button className="sidebar-add-to-collection--btn" onClick={() => importNewCollection()}>
-					Import Collection
-				</button>
 			</div>
 			{showModal && (
 				<Modal onClose={() => setShowModal(false)}>

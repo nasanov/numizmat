@@ -83,9 +83,9 @@ function App() {
 				<ProtectedRoute path="/collections/:collectionId" exact={true}>
 					<CollectionContent />
 				</ProtectedRoute>
-				<Route path="/home" exact={true}>
+				<ProtectedRoute path="/home" exact={true}>
 					<UI />
-				</Route>
+				</ProtectedRoute>
 				<Route>
 					<PageNotFound />
 				</Route>

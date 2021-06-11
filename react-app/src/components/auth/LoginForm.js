@@ -20,10 +20,11 @@ const LoginForm = () => {
 		const data = await dispatch(login(email, password));
 		if (data.errors) {
 			setErrors(data.errors);
+		} else {
+			// temporary: to update users coins and collections after relogin
+			dispatch(getCoins());
+			dispatch(getCollections());
 		}
-		// temporary: to update users coins and collections after relogin
-		dispatch(getCoins());
-		dispatch(getCollections());
 	};
 
 	const updateEmail = e => {
@@ -62,11 +63,18 @@ const LoginForm = () => {
 					</NavLink>
 				</div>
 				<form onSubmit={onLogin}>
-					<div>
-						{errors.map(error => (
-							<div>{error}</div>
-						))}
-					</div>
+					{errors.length ? (
+						<div className="errorsContainer">
+							<span>The following errors occurred:</span>
+							<ul className="errorsList">
+								{errors?.map((error, idx) => (
+									<li key={idx}>{error}</li>
+								))}
+							</ul>
+						</div>
+					) : (
+						<div></div>
+					)}
 					<div>
 						<input
 							name="email"

@@ -8,8 +8,8 @@ export default function EditCollectionModal({ collection }) {
 
 	return (
 		<>
-			<button className="sidebar-add-to-collection--btn" onClick={() => setShowModal(true)}>
-				<i class="far fa-edit"></i> Edit
+			<button className="edit__collection-btn" onClick={() => setShowModal(true)}>
+				<i class="far fa-edit "></i> Edit
 			</button>
 			{showModal && (
 				<Modal onClose={() => setShowModal(false)}>
