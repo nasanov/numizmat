@@ -1,8 +1,8 @@
-"""empty message
+"""trying to fix heroku
 
-Revision ID: 58afb06559f9
+Revision ID: d9405691d302
 Revises: 
-Create Date: 2021-06-11 12:02:01.800304
+Create Date: 2021-06-11 12:40:37.698864
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '58afb06559f9'
+revision = 'd9405691d302'
 down_revision = None
 branch_labels = None
 depends_on = None
