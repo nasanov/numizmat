@@ -67,6 +67,7 @@
 - Achievments for the collections
 - Add Kyrgyz and Russian languages
 - Add dark mode
+- User should be able to write notes for each coin (when and for how much he bought/exchanged/found the coin, quality, scratches/dents, etc)
 
 ## Installation
 
