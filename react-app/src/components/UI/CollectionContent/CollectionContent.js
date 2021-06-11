@@ -5,7 +5,7 @@ import NavBar from '../NavBar/NavBar';
 import './CollectionContent.css';
 
 import { getCollections } from '../../../store/collections';
-import { removeCollection } from '../../../store/collections';
+// import { removeCollection } from '../../../store/collections';
 import { removeCoin } from '../../../store/coins';
 
 export default function CollectionContent() {
@@ -74,7 +74,7 @@ export default function CollectionContent() {
 
 	const deleteCoinHandler = e => {
 		e.preventDefault();
-		console.log(e.target.id);
+		// console.log(e.target.id);
 		dispatch(removeCoin(e.target.id));
 		dispatch(getCollections());
 	};
@@ -177,7 +177,11 @@ export default function CollectionContent() {
 									</td> */}
 									<td className="collection-content__delete_column">
 										<button>
-											<i class="far fa-trash-alt collection-content--delete-btn" id={coin?.id} onClick={deleteCoinHandler}></i>
+											<i
+												class="far fa-trash-alt collection-content--delete-btn"
+												id={coin?.id}
+												onClick={deleteCoinHandler}
+											></i>
 										</button>
 									</td>
 								</tr>

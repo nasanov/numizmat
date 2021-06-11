@@ -38,7 +38,7 @@ export const filterCoinsByCountry = (coins, country) => async dispatch => {
 };
 
 export const sortCoinsByYear = (coins, sort) => async dispatch => {
-	console.log(sort);
+	// console.log(sort);
 	// let coins_arr = coins['items'];
 	// console.log('$$$$$', coins_arr);
 	if (sort === 'created_at') {

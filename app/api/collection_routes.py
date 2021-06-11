@@ -23,7 +23,7 @@ def all_collections():
 def add_collection():
     # get info from request and pass it to the Collection instance
     collection_name = request.json['name']
-    print(collection_name, current_user.id)
+    # print(collection_name, current_user.id)
     collection = Collection(name=collection_name, user_id=current_user.id)
     db.session.add(collection)
     db.session.commit()
@@ -115,7 +115,7 @@ def import_collection(collection_id):
     # getting the array of the lines
     arrayOfLines = newFile.split("\n")
 
-    print(len(arrayOfLines))
+    # print(len(arrayOfLines))
     # iterate over each line and split by ','
     for i in range(len(arrayOfLines) - 1):
         row = arrayOfLines[i].split(',')
@@ -145,7 +145,6 @@ def import_collection(collection_id):
         # push each coin to the coins_in array of the collection
         # collection.coins_in.append(new_coin)
 
-        print("**************************************")
         # print(row.split(','))
 
     db.session.commit()

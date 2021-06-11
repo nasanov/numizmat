@@ -75,7 +75,7 @@ def inject_csrf_token(response):
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def react_root(path):
-    print("path", path)
+    # print("path", path)
     if path == 'coin.gif':
         return app.send_static_file('coin.gif')
     return app.send_static_file('index.html')

@@ -45,7 +45,7 @@ def seed_coins():
     #     )
     # collection_id = random.randint(1, 3)
     for coin in coins:
-        print(coin)
+        # print(coin)
         load_coin = Coin(
             name=coin['title'],
             # collection_id=collection_id,

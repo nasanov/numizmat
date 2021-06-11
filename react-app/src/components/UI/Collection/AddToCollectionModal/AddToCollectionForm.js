@@ -28,7 +28,7 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 		};
 
 		let coin_collection = await dispatch(addToCollection(coin_collection_info));
-		console.log(coin_collection.coin.name);
+		// console.log(coin_collection.coin.name);
 		if (coin_collection.coin.name) {
 			setShowModal(false);
 		} else {

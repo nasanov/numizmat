@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Modal } from '../../../../context/Modal';
 import AddCollectionForm from './AddCollectionForm';
 import { getCollections } from '../../../../store/collections';
@@ -19,6 +19,7 @@ export default function AddCollectionModal() {
 			body: formData,
 		});
 		const data = await res.json();
+
 		dispatch(getCollections());
 	};
 

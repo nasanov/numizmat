@@ -8,7 +8,7 @@ coin_ids = []
 for i in data['list']:
     coin_ids.append(i['id'])
 
-print(coin_ids)
+# print(coin_ids)
 
 f.close()
 

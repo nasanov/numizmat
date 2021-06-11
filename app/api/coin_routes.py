@@ -120,7 +120,6 @@ def add_coin():
 
     # form['csrf_token'].data = request.cookies['csrf_token']
     # if form.validate_on_submit():
-    print("$$$$$$$$$$$$$$$$$$", request.form)
     coin = Coin(
         name=request.form['name'],
         obverse_photo=url_obverse,
@@ -139,7 +138,7 @@ def add_coin():
         orientation=request.form['orientation'],
         user_id=current_user.id
     )
-    print(coin)
+    # print(coin)
     db.session.add(coin)
     db.session.commit()
     return {"coin": coin.to_dict()}

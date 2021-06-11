@@ -29,10 +29,10 @@ f2.close()
 # for i in data:
 #     coins.append(data[i])
 
-# # print(data)
-# # print(coins)
+# print(data)
+# print(coins)
 
 # for i in coins:
-# 	print(i['years'][0]['year'])
+# print(i['years'][0]['year'])
 
 # f.close()
