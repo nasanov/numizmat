@@ -174,7 +174,7 @@ export default function CollectionContent() {
 											onChange={e => setCoinsCount(e.target.value)}
 										></input>
 									</td> */}
-									<td>
+									<td className="collection-content__delete_column">
 										<button
 										// value={coin?.id}
 										// onClick={e => {

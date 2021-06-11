@@ -110,6 +110,7 @@ class Coin(db.Model):
     # verified = db.Column(db.Integer)
     # Who created this coin, admin by default
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+    created_at = db.Column(db.DateTime(timezone=True), default=datetime.now())
 
     collections = db.relationship("Collection",
                                   secondary=coin_collections,
@@ -145,6 +146,7 @@ class Coin(db.Model):
             "shape": self.shape,
             "orientation": self.orientation,
             "user_id": self.user_id,
+            "created_at": self.created_at,
             'in_collections': [collection.to_dict_basic() for collection in self.in_collections],
         }
 
@@ -166,7 +168,8 @@ class Coin(db.Model):
             "thickness": self.thickness,
             "shape": self.shape,
             "orientation": self.orientation,
-            "user_id": self.user_id
+            "user_id": self.user_id,
+            "created_at": self.created_at,
         }
 
 
@@ -176,6 +179,7 @@ class Collection(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    created_at = db.Column(db.DateTime(timezone=True), default=datetime.now())
 
     coins = db.relationship("Coin",
                             secondary=coin_collections,

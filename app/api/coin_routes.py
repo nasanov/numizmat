@@ -10,7 +10,7 @@ coin_routes = Blueprint('coins', __name__)
 # GET ALL COINS FOR THE CURRENT USER
 @coin_routes.route('/')
 def all_coins():
-    # .order_by(Coin.)
+    # .order_by(Coin.created_at.desc())
     current_user_coins = Coin.query.filter(
         Coin.user_id == current_user.id).all()
     admins_coins = Coin.query.filter(

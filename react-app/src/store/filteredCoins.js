@@ -41,14 +41,11 @@ export const sortCoinsByYear = (coins, sort) => async dispatch => {
 	console.log(sort);
 	// let coins_arr = coins['items'];
 	// console.log('$$$$$', coins_arr);
-	// if (sort !== '') {
-	// 	coins_arr.sort((a, b) => (sort === ('lowest') ?
-	// 	(a.year > b.year ? 1:-1)
-	// 	: (a.year < b.year ? 1 : -1))
-	// } else {
-
-	coins.sort((a, b) => (a[sort] > b[sort] ? 1 : -1));
-	// }
+	if (sort === 'created_at') {
+		coins.sort((a, b) => (a[sort] < b[sort] ? 1 : -1));
+	} else {
+		coins.sort((a, b) => (a[sort] > b[sort] ? 1 : -1));
+	}
 	// console.log('sorted, ', coins);
 
 	dispatch(sortByYear(coins, sort));
