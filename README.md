@@ -13,6 +13,7 @@
 -   PostgresQL
 -   WebSockets
 -   Faker
+-   AWS
 
 ## Features
 
@@ -56,9 +57,16 @@
 - Users are able to import CSV file to add coins into the existing collection
 - Users are able to import CSV file and create new collection
 
-<!-- #### Live chat
 
--   Live chat is implemented by using Socket.io library. It enables real-time, bidirectional and event-based communication. -->
+### Future Implementations
+- Live chat so users will be able to talk to each other in one chat room 
+- Filtering By multiple columns
+- Pagination for the main page
+- User Profile
+- News section with parsed news from different gov mint websites
+- Achievments for the collections
+- Add Kyrgyz and Russian languages
+- Add dark mode
 
 ## Installation
 
