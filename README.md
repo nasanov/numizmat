@@ -18,8 +18,10 @@
 ## Features
 
 #### Splash Page
+![db](https://github.com/nasanov/numizmat/blob/main/docs/splash.png)
 
 #### Main Page
+![db](https://github.com/nasanov/numizmat/blob/main/docs/Peek%202021-06-13%2017-48.gif)
 
 #### Database Schema
 
@@ -30,6 +32,9 @@
 -   Users can sign up
 -   Users can log in
 -   Users can log in as a demo user
+-   
+![db](https://github.com/nasanov/numizmat/blob/main/docs/login.png)
+
 
 #### Coins
 
@@ -44,6 +49,9 @@
 - Users are able to create a collection using the `Add collection` button on the collections page
 - Users are able to edit and delete the collection on the collections page
 - Users can only delete collections that they own
+
+![db](https://github.com/nasanov/numizmat/blob/main/docs/wishlist.png)
+
 
 #### Search / Filter
 
