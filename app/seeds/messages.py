@@ -18,7 +18,6 @@ def seed_messages():
     ]
 
     for _ in range(200):
-        # user_id = random.sample(channel.users_in, 1)[0].id
         user_id = random.randint(1, 6)
 
         messages.append(
