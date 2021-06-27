@@ -12,6 +12,7 @@ import Arrow from '../../../images/sort-down-solid.svg';
 // ################################################################## //
 
 import { addNewCoin } from '../../../store/coins';
+import { getCoins } from '../../store/coins';
 
 const AddCoinForm = ({ setShowModal }) => {
 	const dispatch = useDispatch();
@@ -63,6 +64,7 @@ const AddCoinForm = ({ setShowModal }) => {
 
 		if (newCoin.name) {
 			setShowModal(false);
+			dispatch(getCoins());
 		} else {
 			setErrors(newCoin.errors);
 		}
