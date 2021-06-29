@@ -11,16 +11,17 @@
 -   Flask
 -   SQLAlchemy
 -   PostgresQL
--   WebSockets
 -   Faker
 -   AWS
 
 ## Features
 
 #### Splash Page
+
 ![db](https://github.com/nasanov/numizmat/blob/main/docs/splash.png)
 
 #### Main Page
+
 ![db](https://github.com/nasanov/numizmat/blob/main/docs/Peek%202021-06-13%2017-48.gif)
 
 #### Database Schema
@@ -32,50 +33,46 @@
 -   Users can sign up
 -   Users can log in
 -   Users can log in as a demo user
--   
-![db](https://github.com/nasanov/numizmat/blob/main/docs/login.png)
-
+-   ![db](https://github.com/nasanov/numizmat/blob/main/docs/login.png)
 
 #### Coins
 
-- Users are able to create a coin using the Add coin button on the sidebar, or at the end of the coins list
-- Users are able to edit and delete the coin on the particular coin details page
-- Users can only delete coins that they own
-- Users are able to add the coin to the collection or to the wishlist using the `Add to collection` button
-
+-   Users are able to create a coin using the Add coin button on the sidebar, or at the end of the coins list
+-   Users are able to edit and delete the coin on the particular coin details page
+-   Users can only delete coins that they own
+-   Users are able to add the coin to the collection or to the wishlist using the `Add to collection` button
 
 #### Collections
 
-- Users are able to create a collection using the `Add collection` button on the collections page
-- Users are able to edit and delete the collection on the collections page
-- Users can only delete collections that they own
+-   Users are able to create a collection using the `Add collection` button on the collections page
+-   Users are able to edit and delete the collection on the collections page
+-   Users can only delete collections that they own
 
 ![db](https://github.com/nasanov/numizmat/blob/main/docs/wishlist.png)
 
-
 #### Search / Filter
 
-- Users are able to search for the coins and collections using the search input field on the navigation bar
-- Users are able to search only for coins and collections that were created by admin user or by themselves
-- Users are able to filter by name using the input field on the sidebar
-- Users are able to filter coins by Country, name e.t.c
+-   Users are able to search for the coins and collections using the search input field on the navigation bar
+-   Users are able to search only for coins and collections that were created by admin user or by themselves
+-   Users are able to filter by name using the input field on the sidebar
+-   Users are able to filter coins by Country, name e.t.c
 
 #### Import/Export to CSV
 
-- Users are able to import CSV file to add coins into the existing collection
-- Users are able to import CSV file and create new collection
-
+-   Users are able to import CSV file to add coins into the existing collection
+-   Users are able to import CSV file and create new collection
 
 ## Future Implementations
-- Live chat so users will be able to talk to each other in one chat room 
-- Filtering By multiple columns
-- Pagination for the main page
-- User Profile
-- News section with parsed news from different gov mint websites
-- Achievments for the collections
-- Add Kyrgyz and Russian languages
-- Add dark mode
-- User should be able to write notes for each coin (when and for how much he bought/exchanged/found the coin, quality, scratches/dents, etc)
+
+-   Live chat so users will be able to talk to each other in one chat room
+-   Filtering By multiple columns
+-   Pagination for the main page
+-   User Profile
+-   News section with parsed news from different gov mint websites
+-   Achievments for the collections
+-   Add Kyrgyz and Russian languages
+-   Add dark mode
+-   User should be able to write notes for each coin (when and for how much he bought/exchanged/found the coin, quality, scratches/dents, etc)
 
 ## Installation
 

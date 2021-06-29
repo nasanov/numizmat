@@ -1,5 +1,5 @@
 .collection__content--container {
-	width: 80%;
+	max-width: 1500px;
 	margin: 70px auto;
 	background-color: #fff;
 	padding: 30px;
@@ -35,8 +35,11 @@ td {
 	text-align: left;
 	border: 1px solid #ccc;
 }
-tbody tr:nth-child(odd) {
+/* tbody tr:nth-child(odd) {
 	background: #eee;
+} */
+tbody tr {
+	background: #fff;
 }
 
 td:hover {

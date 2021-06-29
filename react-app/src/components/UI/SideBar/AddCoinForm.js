@@ -11,8 +11,7 @@ import Arrow from '../../../images/sort-down-solid.svg';
 // ############################  STORES  ############################ //
 // ################################################################## //
 
-import { addNewCoin } from '../../../store/coins';
-import { getCoins } from '../../store/coins';
+import { getCoins, addNewCoin } from '../../../store/coins';
 
 const AddCoinForm = ({ setShowModal }) => {
 	const dispatch = useDispatch();

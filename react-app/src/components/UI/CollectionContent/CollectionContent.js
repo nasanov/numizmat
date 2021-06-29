@@ -100,37 +100,38 @@ export default function CollectionContent() {
 					</label>
 
 					<button onClick={importToTheCollection} className="importCSV--btn">
-						<i class="fas fa-upload"></i> Import to the database
+						<i className="fas fa-upload"></i> Import to the database
 					</button>
 
 					<button onClick={exportCollection} className="exportInCSV--btn">
-						<i class="fas fa-download"></i>Export in CSV
+						<i className="fas fa-download"></i>Export in CSV
 					</button>
 				</div>
 				<table className="collection__content--table">
-					<tr>
-						<th>#</th>
-						<th>Obverse</th>
-						<th>Reverse</th>
-						<th>Name</th>
-						<th>Country</th>
-						<th>Composition</th>
-						<th>Series</th>
-						<th>Mintage</th>
-						<th>Year</th>
-						{/* <th>Value</th> */}
-						<th>Diameter</th>
-						<th>Thickness</th>
-						<th>Weight</th>
-						<th>Orientation</th>
-						<th>Shape</th>
-						{/* <th>Amount</th> */}
-						<th>Delete</th>
-					</tr>
-
-					{current_collection?.coins_in.map((coin, id) => {
-						return (
-							<>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Reverse</th>
+							<th>Obverse</th>
+							<th>Name</th>
+							<th>Country</th>
+							<th>Composition</th>
+							<th>Series</th>
+							<th>Mintage</th>
+							<th>Year</th>
+							{/* <th>Value</th> */}
+							<th>Diameter</th>
+							<th>Thickness</th>
+							<th>Weight</th>
+							<th>Orientation</th>
+							<th>Shape</th>
+							{/* <th>Amount</th> */}
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						{current_collection?.coins_in.map((coin, id) => {
+							return (
 								<tr key={coin.id}>
 									<td>
 										<NavLink to={`/coins/${coin.id}`}>{id + 1}</NavLink>
@@ -138,18 +139,18 @@ export default function CollectionContent() {
 									<td>
 										<NavLink to={`/coins/${coin.id}`}>
 											<img
-												src={coin?.obverse_photo}
+												src={coin?.reverse_photo}
 												className="collection__content--img"
-												alt="obverse"
+												alt="reverse"
 											></img>
 										</NavLink>
 									</td>
 									<td>
 										<NavLink to={`/coins/${coin.id}`}>
 											<img
-												src={coin?.reverse_photo}
+												src={coin?.obverse_photo}
 												className="collection__content--img"
-												alt="reverse"
+												alt="obverse"
 											></img>
 										</NavLink>
 									</td>
@@ -169,25 +170,25 @@ export default function CollectionContent() {
 									<td>{coin?.shape}</td>
 									{/* <td>
 										<input
-											type="number"
-											value={coinsCount}
-											className="collection__content--amount"
-											onChange={e => setCoinsCount(e.target.value)}
+										type="number"
+										value={coinsCount}
+										className="collection__content--amount"
+										onChange={e => setCoinsCount(e.target.value)}
 										></input>
 									</td> */}
 									<td className="collection-content__delete_column">
 										<button>
 											<i
-												class="far fa-trash-alt collection-content--delete-btn"
+												className="far fa-trash-alt collection-content--delete-btn"
 												id={coin?.id}
 												onClick={deleteCoinHandler}
 											></i>
 										</button>
 									</td>
 								</tr>
-							</>
-						);
-					})}
+							);
+						})}
+					</tbody>
 				</table>
 			</div>
 		</>

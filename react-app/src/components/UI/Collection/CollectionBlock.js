@@ -18,7 +18,7 @@ export default function CollectionBlock({ collection }) {
 			<NavLink to={`/collections/${collection.id}`}>
 				<div className="collection__image--grid">
 					{collection?.coins_in?.slice(0, 4).map(coin => {
-						return <img src={coin.obverse_photo} className="collection__image" alt="collection-coin"></img>;
+						return <img src={coin.reverse_photo} className="collection__image" alt="collection-coin"></img>;
 					})}
 				</div>
 				{/* <img
