@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CoinBlock from './CoinsBlock';
 import './CoinsList.css';
 import { useSelector } from 'react-redux';
@@ -16,6 +16,8 @@ export default function CoinsList({ searchTerm }) {
 			arr.push(coins[i]);
 		}
 	}
+
+	// useEffect(() => {}, [coins]);
 
 	return (
 		<>

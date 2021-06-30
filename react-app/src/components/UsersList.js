@@ -13,9 +13,9 @@ function UsersList() {
     fetchData();
   }, []);
 
-  const userComponents = users.map((user) => {
+  const userComponents = users.map((user, idx) => {
     return (
-      <li key={user.id}>
+      <li key={idx}>
         <NavLink to={`/users/${user.id}`}>{user.username}</NavLink>
       </li>
     );

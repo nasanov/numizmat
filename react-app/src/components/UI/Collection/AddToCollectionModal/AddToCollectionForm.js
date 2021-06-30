@@ -70,7 +70,11 @@ export default function AddToCollectionForm({ setShowModal, coin }) {
 					>
 						Your collections
 						{collections_array.map(collection => {
-							return <option value={collection.id}>{collection.name}</option>;
+							return (
+								<option value={collection.id} key={collection.id}>
+									{collection.name}
+								</option>
+							);
 						})}
 					</select>
 				</div>

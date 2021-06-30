@@ -55,7 +55,12 @@ export default function SideBar({ setSearchTerm }) {
 								<select onChange={e => dispatch(filterCoinsByCountry(coins, e.target.value))}>
 									<option value="">All Countries</option>
 									{categories?.country?.map(country => {
-										if (country !== '') return <option value={country}>{country}</option>;
+										if (country !== '')
+											return (
+												<option value={country} key={country}>
+													{country}
+												</option>
+											);
 										else return null;
 									})}
 								</select>

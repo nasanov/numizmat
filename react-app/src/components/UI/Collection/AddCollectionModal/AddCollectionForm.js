@@ -43,8 +43,8 @@ export default function AddCollectionForm({ setShowModal }) {
 		<div className="collection-form__div">
 			<form className="collection-form__main" onSubmit={handleSubmit}>
 				<div>
-					{errors.map(error => (
-						<div>{error}</div>
+					{errors.map((error, idx) => (
+						<div key={idx}>{error}</div>
 					))}
 				</div>
 				<div className="collection-form__div">

@@ -11,9 +11,11 @@ export default function Footer() {
 						<div className="footer__blocks--item">
 							<h2 className="footer__subtitle">Contact info:</h2>
 							<ul className="footer-list">
-								<li className="footer-li">Name: Nurs Asanov</li>
 								<li className="footer-li">
-									E-mail: <a href="mailto:nursultan.asanov@pm.me">nurs.asanov@pm.me</a>
+									<a href="https://nasanov.github.io">Name: Nurs Asanov</a>
+								</li>
+								<li className="footer-li">
+									E-mail: <a href="mailto:nurs.asanov@pm.me">nurs.asanov@pm.me</a>
 								</li>
 							</ul>
 						</div>
@@ -33,18 +35,18 @@ export default function Footer() {
 							<div className="footer__blocks--item-ul">
 								<ul className="footer-list">
 									<li className="footer-li">
-										<a href="https://github.com/nasanov/numizmat">Numizmat</a>
+										<a href="https://numizmat.herokuapp.com/">Numizmat</a>
 									</li>
 									<li className="footer-li">
-										<a href="https://github.com/nasanov/zelp">Zelp</a>
+										<a href="https://zelp-app.herokuapp.com/">Zelp</a>
 									</li>
 								</ul>
 								<ul>
 									<li className="footer-li">
-										<a href="https://github.com/CodingInRhythm/woof_woof">Woof Woof</a>
+										<a href="https://woofwoof-app.herokuapp.com/">Woof Woof</a>
 									</li>
 									<li className="footer-li">
-										<a href="https://github.com/danielshoun/good-movies">Good-Movies</a>
+										<a href="https://good-movies-js.herokuapp.com/">Good-Movies</a>
 									</li>
 								</ul>
 							</div>

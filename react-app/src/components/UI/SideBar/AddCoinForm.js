@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // ############################  CSS  ############################ //
 // ############################################################### //
 import './AddCoinForm.css';
-import Arrow from '../../../images/sort-down-solid.svg';
+import Arrow from '../../../images/down-arrow.png';
 // ################################################################## //
 // ############################  STORES  ############################ //
 // ################################################################## //
@@ -63,7 +63,7 @@ const AddCoinForm = ({ setShowModal }) => {
 
 		if (newCoin.name) {
 			setShowModal(false);
-			dispatch(getCoins());
+			// dispatch(getCoins());
 		} else {
 			setErrors(newCoin.errors);
 		}
@@ -150,18 +150,18 @@ const AddCoinForm = ({ setShowModal }) => {
 						value={country}
 						onChange={e => setCountry(e.target.value)}
 					></input> */}
-					<div>
-						<input
-							className="coin-form__input"
-							type="text"
-							placeholder="country"
-							value={country}
-							onChange={e => setCountry(e.target.value)}
-							list="countries"
-							// style="background:url('images/arrow_down.png') no-repeat right center"
-						/>
-						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
-					</div>
+					{/* <div> */}
+					<input
+						className="coin-form__input"
+						type="text"
+						placeholder="country"
+						value={country}
+						onChange={e => setCountry(e.target.value)}
+						list="countries"
+						// style="background:url('images/arrow_down.png') no-repeat right center"
+					/>
+					<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
+					{/* </div> */}
 
 					<datalist id="countries">
 						<option value="Afganistan">Afghanistan</option>
@@ -420,17 +420,15 @@ const AddCoinForm = ({ setShowModal }) => {
 					></input>
 				</div>
 				<div className="coin-form__div">
-					<div>
-						<input
-							className="coin-form__input"
-							type="text"
-							placeholder="composition"
-							value={composition}
-							list="compositions"
-							onChange={e => setComposition(e.target.value)}
-						></input>
-						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
-					</div>
+					<input
+						className="coin-form__input"
+						type="text"
+						placeholder="composition"
+						value={composition}
+						list="compositions"
+						onChange={e => setComposition(e.target.value)}
+					></input>
+					<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
 					<datalist id="compositions">
 						<option value="Silver">Silver (.925)</option>
 						<option value="Silver">Silver (.999)</option>
@@ -468,17 +466,17 @@ const AddCoinForm = ({ setShowModal }) => {
 					></input>
 				</div>
 				<div className="coin-form__div">
-					<div>
-						<input
-							className="coin-form__input"
-							type="text"
-							placeholder="shape"
-							value={shape}
-							list="shapes"
-							onChange={e => setShape(e.target.value)}
-						></input>
-						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
-					</div>
+					{/* <div> */}
+					<input
+						className="coin-form__input"
+						type="text"
+						placeholder="shape"
+						value={shape}
+						list="shapes"
+						onChange={e => setShape(e.target.value)}
+					></input>
+					<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
+					{/* </div> */}
 					<datalist id="shapes">
 						<option value="Round">Round</option>
 						<option value="Triangular">Triangular</option>
@@ -490,17 +488,17 @@ const AddCoinForm = ({ setShowModal }) => {
 					</datalist>
 				</div>
 				<div className="coin-form__div">
-					<div>
-						<input
-							className="coin-form__input"
-							type="text"
-							placeholder="orientation"
-							value={orientation}
-							list="orientations"
-							onChange={e => setOrientation(e.target.value)}
-						></input>
-						<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
-					</div>
+					{/* <div> */}
+					<input
+						className="coin-form__input"
+						type="text"
+						placeholder="orientation"
+						value={orientation}
+						list="orientations"
+						onChange={e => setOrientation(e.target.value)}
+					></input>
+					<img src={Arrow} className="arrow-down" alt="arrow-down-icon"></img>
+					{/* </div> */}
 					<datalist id="orientations">
 						<option value="Medallic Orientation">Medallic Orientation</option>
 						<option value="Coin Orientation">Coin Orientation</option>

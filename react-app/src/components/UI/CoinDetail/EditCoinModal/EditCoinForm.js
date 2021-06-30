@@ -74,8 +74,8 @@ export default function EditCoinForm({ setShowModal, coin }) {
 		<div className="coin-form__div">
 			<form className="coin-form__main" onSubmit={handleSubmit}>
 				<div>
-					{errors.map(error => (
-						<div>{error}</div>
+					{errors.map((error, idx) => (
+						<div key={idx}>{error}</div>
 					))}
 				</div>
 				<div className="coin-form__photo-outer-container">
