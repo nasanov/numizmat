@@ -41,3 +41,27 @@
 	margin-right: 5px;
 	margin-left: 5px;
 }
+
+.pagination__container {
+	background: #fff;
+	width: 100%;
+	padding: 1rem;
+	margin: 3rem auto;
+	border-radius: 5px;
+	/* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3); */
+	counter-reset: pagination;
+	text-align: center;
+}
+
+.pagination-list {
+}
+
+.pagination-link {
+}
+
+.pagination-previous,
+.pagination-next {
+	color: #000;
+	background-color: #fff;
+	border: solid 1px #000;
+}

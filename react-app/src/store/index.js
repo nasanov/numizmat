@@ -5,13 +5,15 @@ import coinReducer from './coins';
 import filteredCoinReducer from './filteredCoins';
 import collectionReducer from './collections';
 import categoryReducer from './categories';
+import paginationReducer from './pages';
 
 const rootReducer = combineReducers({
 	session,
 	coins: coinReducer,
 	collections: collectionReducer,
 	categories: categoryReducer,
-	filteredCoins: filteredCoinReducer
+	filteredCoins: filteredCoinReducer,
+	pages: paginationReducer,
 });
 
 let enhancer;
