@@ -1,40 +1,58 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import CoinBlock from './CoinsBlock';
 import './CoinsList.css';
 import { useSelector, useDispatch } from 'react-redux';
 import AddCoinModal from '../SideBar/AddCoinModal';
-import { loadNewPage, loadExactPage } from '../../../store/pages';
+
+const coinsPerPage = 20;
+let arrayForCoins = [];
 
 export default function CoinsList({ searchTerm }) {
 	const coins = useSelector(state => state.coins);
 	const filteredCoins = useSelector(state => state.filteredCoins);
-	let dispatch = useDispatch();
+	const [coinsToShow, setCoinsToShow] = useState([]);
+	const [next, setNext] = useState(0);
+
+	// let dispatch = useDispatch();
 	let arr = [];
-	if (filteredCoins['items']) {
-		arr = filteredCoins['items'];
-	} else {
-		for (let i in coins) {
-			arr.push(coins[i]);
-		}
+	// if (filteredCoins['items']) {
+	// 	arr = filteredCoins['items'];
+	// } else {
+	// 	for (let i in coins) {
+	// 		arr.push(coins[i]);
+	// 	}
+	// }
+
+	for (let i in coins) {
+		arr.push(coins[i]);
 	}
 
-	const nextPage = () => {
-		dispatch(loadNewPage({ page: 1 }));
+	console.log('coins', coins);
+	console.log('arr', arr);
+	console.log('coinsToShow', coinsToShow);
+
+	const loopWithSlice = (start, end) => {
+		const slicedPosts = arr.slice(start, end);
+		console.log('slice', slicedPosts);
+		arrayForCoins = [...arrayForCoins, ...slicedPosts];
+		setCoinsToShow(arrayForCoins);
 	};
 
-	const previousPage = () => {
-		dispatch(loadNewPage({ page: -1 }));
-	};
+	useEffect(() => {
+		console.log('use effect first');
+		loopWithSlice(0, coinsPerPage);
+		console.log('use effect last');
+	}, []);
 
-	const goToPage = page => {
-		dispatch(loadExactPage({ page }));
+	const handleLoadMore = () => {
+		loopWithSlice(next, next + coinsPerPage);
+		setNext(next + coinsPerPage);
 	};
-	// useEffect(() => {}, [coins]);
 
 	return (
-		<div>
-			{/* <span>{arr.length}: coins found</span> */}
-			<div className="coins-list__container">
+		<div className="coins-list__wrapper">
+			<span>{coinsToShow.length}: coins found</span>
+			{/* <div className="coins-list__container">
 				{arr
 					?.filter(coin => {
 						if (searchTerm === '') {
@@ -52,42 +70,34 @@ export default function CoinsList({ searchTerm }) {
 					<div>
 						<i className="fas fa-plus add-coin_img"></i>
 					</div>
-					{/* <div className="coin__title">Add new coin</div> */}
+					<AddCoinModal />
+				</div>
+			</div> */}
+			<div className="coins-list__container">
+				{/* if searchTerm is not null , search in arr, else search in ocinsSHow */}
+				{coinsToShow
+					?.filter(coin => {
+						if (searchTerm === '') {
+							return coin;
+						} else if (coin.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+							return coin;
+						} else return null;
+					})
+					// .reverse()
+					// .slice(0, 47)
+					?.map(coin => {
+						return <CoinBlock coin={coin} key={coin.id} />;
+					})}
+				<div className="coin__container">
+					<div>
+						<i className="fas fa-plus add-coin_img"></i>
+					</div>
 					<AddCoinModal />
 				</div>
 			</div>
-			<div className="pagination__container">
-				<nav className="pagination" role="navigation" aria-label="pagination">
-					<button
-						className="button pagination-previous"
-						onClick={() => {
-							previousPage();
-						}}
-					>
-						Previous
-					</button>
-					<button
-						className="button pagination-next"
-						onClick={() => {
-							nextPage();
-						}}
-					>
-						Next page
-					</button>
-					<ul className="pagination-list">
-						{arr.slice(0, arr.length / 48).map((value, index) => (
-							<button
-								className="pagination-link"
-								aria-label="Page 1"
-								onClick={() => goToPage(index + 1)}
-								aria-current="page"
-							>
-								{index + 1}
-							</button>
-						))}
-					</ul>
-				</nav>
-			</div>
+			<button className="loadmore" onClick={handleLoadMore}>
+				Load more
+			</button>
 		</div>
 	);
 }
